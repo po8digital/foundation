@@ -1,0 +1,39 @@
+// Colors
+
+$white: #fff;
+$black: #000;
+$grey: #c4c4c4;
+$dark-grey: #7d868c;
+$light-grey: #ebebeb;
+$light-white: #f0f2f2;
+$lightest-grey: #f6f6f6;
+$darkest-grey: #4a4a4a;
+$primary-color: #369;
+$accent-color: tomato;
+$base-color: $darkest-grey;
+$base-bg: $light-white;
+
+//Fonts
+$base-font: 'Source Sans Pro', sans-serif;
+$heading-font: 'Source Sans Pro', sans-serif;
+$base-font-size: 1.6rem;
+
+//Transitions
+$transition: all 0.4s ease-in-out;
+
+//Widths:
+$xs: 36rem;
+$s: 48rem;
+$m: 76.8rem;
+$l: 102.4rem;
+$xl: 128rem;
+
+// Grid
+$grid-columns: 12;
+
+$xs-max: $s; // Set xs breakpoint's max width
+$sm-max: $m; // Set sm breakpoint's max width
+$md-max: $l; // Set md breakpoint's max width
+$lg-max: $xl; // Set lg breakpoint's max width
+
+$gutter: 1rem; // Set gutter size

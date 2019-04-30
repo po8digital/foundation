@@ -1,0 +1,36 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: $base-font;
+	font-size: $base-font-size;
+	color: $base-color;
+	background: $base-bg;
+	line-height: 1.5;
+}
+
+a {
+	transition: $transition;
+	text-decoration: none;
+	color: $accent-color;
+	&:hover {
+		color: $primary-color;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+strong,
+b {
+	font-weight: bold;
+}
