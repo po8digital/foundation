@@ -59,13 +59,18 @@
 .row.show-xs{display:-ms-flexbox !important;display:-webkit-box !important;display:flex !important}
 .hide-xs{display:none !important}
 html{font-size:62.5%}
-body{font-family:"Source Sans Pro",sans-serif;font-size:1.6rem;color:#4a4a4a;background:#f0f2f2;line-height:1.5}
+body{font-family:"Avenir",sans-serif;font-size:1.6rem;color:#292929;background:#faf5ef;line-height:1.5}
 a{-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out;text-decoration:none;color:tomato}
 a:hover{color:#369}
 .text-center{text-align:center}
 .text-right{text-align:right}
 .text-left{text-align:left}
+.text-justify{text-align:justify}
 strong,b{font-weight:bold}
+.font56{font-size:5.6rem}
+.font56--dark-green{color:#0b354c}
+.font56--salmon{color:#dd6052}
+.font56--light-pink{color:#21232b}
 .aligncenter{text-align:center}
 a.aligncenter img{display:block;margin:0 auto}
 a.alignnone{display:inline-block}

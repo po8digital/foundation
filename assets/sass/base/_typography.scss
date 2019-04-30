@@ -3,7 +3,10 @@ html {
 }
 body {
 	font-family: $base-font;
-	font-size: $base-font-size;
+	@include min-screen($m) {
+		font-size: $base-font-size;
+	}
+	font-size: $base-font-size-m;
 	color: $base-color;
 	background: $base-bg;
 	line-height: 1.5;
@@ -29,8 +32,55 @@ a {
 .text-left {
 	text-align: left;
 }
+.text-justify {
+	text-align: justify;
+}
 
 strong,
 b {
 	font-weight: bold;
+}
+
+.h2-font56 {
+	@include min-screen($m) {
+		font-size: 5.6rem;
+	}
+	font-size: 4.2rem;
+}
+.h1-font42 {
+	@include min-screen($m) {
+		font-size: 4.2rem;
+	}
+	font-size: 3.2rem;
+}
+
+.h3-font32 {
+	@include min-screen($m) {
+		font-size: 3.2rem;
+	}
+	@include min-screen($s) {
+		font-size: 2.4rem;
+	}
+	font-size: 2.2rem;
+}
+
+.h4-font21 {
+	@include min-screen($m) {
+		font-size: 2.1rem;
+	}
+	font-size: 1.8rem;
+}
+
+.blog-intro {
+	font-size: 2.8rem;
+}
+
+.dark-green {
+	color: $dark-green;
+}
+.salmon {
+	color: $salmon;
+}
+.light-pink {
+	color: $light-pink;
 }

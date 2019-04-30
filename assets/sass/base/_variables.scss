@@ -1,22 +1,31 @@
 // Colors
 
 $white: #fff;
-$black: #000;
-$grey: #c4c4c4;
-$dark-grey: #7d868c;
-$light-grey: #ebebeb;
-$light-white: #f0f2f2;
-$lightest-grey: #f6f6f6;
-$darkest-grey: #4a4a4a;
+$black: #21232b;
+$light-white: #faf5ef;
+$light-grey: #dcd8cb;
+$medium-grey: #707070;
+$grey: #b5afa0;
+$dark-grey: #707070;
+$darkest-grey: #292929;
+$light-pink: #21232b;
+$light-blue: #21232b;
+$blue: #21232b;
+$dark-blue: #132d7f;
+$dark-green: #0b354c;
+$green: #3ea576;
+$salmon: #dd6052;
+$brown: #b14437;
 $primary-color: #369;
 $accent-color: tomato;
 $base-color: $darkest-grey;
 $base-bg: $light-white;
 
 //Fonts
-$base-font: 'Source Sans Pro', sans-serif;
-$heading-font: 'Source Sans Pro', sans-serif;
-$base-font-size: 1.6rem;
+$base-font: 'Avenir', sans-serif;
+$heading-font: 'Avenir', sans-serif;
+$base-font-size: 2rem;
+$base-font-size-m: 1.6rem;
 
 //Transitions
 $transition: all 0.4s ease-in-out;
