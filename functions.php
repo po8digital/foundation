@@ -8,6 +8,7 @@
  * @since   Timber 0.1
  */
 require_once 'init.php';
+require_once 'functions/helper-functions.php';
 
 if (!class_exists('Timber')) {
 	add_action('admin_notices', function () {

@@ -1,0 +1,38 @@
+.dark-green {
+	color: $dark-green;
+}
+.salmon {
+	color: $salmon;
+}
+.light-pink {
+	color: $light-pink;
+}
+
+.blue {
+	color: $blue;
+}
+
+.black {
+	color: $black;
+}
+
+.light-grey {
+	color: $light-grey;
+}
+
+.bg-black {
+	background-color: $black;
+}
+
+.hidden {
+	display: none;
+}
+.no-margin {
+	margin: 0;
+}
+
+.hiddenM {
+	@include max-screen(724px) {
+		display: none;
+	}
+}

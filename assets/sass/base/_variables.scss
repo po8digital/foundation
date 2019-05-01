@@ -8,21 +8,21 @@ $medium-grey: #707070;
 $grey: #b5afa0;
 $dark-grey: #707070;
 $darkest-grey: #292929;
-$light-pink: #21232b;
-$light-blue: #21232b;
-$blue: #21232b;
+$light-pink: #ffeae1;
+$light-blue: #7db6ef;
+$blue: #246fc9;
 $dark-blue: #132d7f;
 $dark-green: #0b354c;
 $green: #3ea576;
 $salmon: #dd6052;
 $brown: #b14437;
-$primary-color: #369;
-$accent-color: tomato;
+$primary-color: $blue;
+$accent-color: $salmon;
 $base-color: $darkest-grey;
 $base-bg: $light-white;
 
 //Fonts
-$base-font: 'Avenir', sans-serif;
+$base-font: 'Avenir Book', sans-serif;
 $heading-font: 'Avenir', sans-serif;
 $base-font-size: 2rem;
 $base-font-size-m: 1.6rem;
@@ -31,11 +31,11 @@ $base-font-size-m: 1.6rem;
 $transition: all 0.4s ease-in-out;
 
 //Widths:
-$xs: 36rem;
-$s: 48rem;
-$m: 76.8rem;
-$l: 102.4rem;
-$xl: 128rem;
+$xs: 360px;
+$s: 480px;
+$m: 768px;
+$l: 1024px;
+$xl: 1280px;
 
 // Grid
 $grid-columns: 12;

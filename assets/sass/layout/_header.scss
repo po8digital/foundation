@@ -1,0 +1,58 @@
+.header {
+	padding: 0 20px;
+	@include flexbox(space-between, row nowrap);
+	align-items: center;
+}
+
+.header-search {
+	width: 24rem;
+	height: 24px;
+	@include flexbox;
+	align-items: center;
+	&__icon {
+		margin-top: -5px;
+	}
+	&__form {
+		max-width: 18rem;
+		margin-top: -5px;
+
+		input {
+			background: $black;
+			width: 18rem;
+			border: none;
+			color: $light-pink;
+			font-size: 1.2rem;
+			@include placeholder {
+				color: $light-pink;
+				font-size: 1.2rem;
+			}
+		}
+	}
+}
+
+.header-logo {
+	img {
+		@include max-screen(724px) {
+			max-width: 160px;
+		}
+	}
+	&__link {
+		max-height: 35px;
+	}
+}
+
+.header-menu {
+	@include flexbox(space-between, row nowrap);
+
+	&__sep {
+		padding: 0 15px;
+	}
+
+	&__trigger {
+		img {
+			@include min-screen(724px) {
+				padding-left: 15px;
+			}
+		}
+	}
+}
