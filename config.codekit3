@@ -194,6 +194,16 @@
 		"oAP": "/assets/fonts/Avenir-Medium.woff2",
 		"oF": 0
 		},
+	"/assets/img/close.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/close.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/hamburger.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -219,6 +229,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/img/logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/raw/close.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/raw/close.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -253,28 +273,6 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
-		},
-	"/assets/js/custom-gulp.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/assets/js/custom-gulp-min.js",
-		"oF": 1,
-		"sC": 1,
-		"tS": 0
-		},
-	"/assets/js/custom-gulp.min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/assets/js/custom-gulp.min-min.js",
-		"oF": 1,
-		"sC": 1,
-		"tS": 0
 		},
 	"/assets/js/custom.min.js": {
 		"bF": 0,
@@ -416,6 +414,19 @@
 		"oA": 1,
 		"oAP": "/assets/sass/components/_components.css",
 		"oF": 1,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/sass/components/_slide-menu.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/components/_slide-menu.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
@@ -634,7 +645,7 @@
 		"dS": 0,
 		"ft": 4,
 		"ma": 1,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "/style.css",
 		"oF": 3,
 		"oS": 0,
@@ -709,28 +720,6 @@
 		"oAP": "/functions/helper-functions.php",
 		"oF": 0
 		},
-	"/gulpfile.babel-min.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/gulpfile.babel-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"/gulpfile.babel.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "/gulpfile.babel-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"/header.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -770,28 +759,6 @@
 		"oA": 0,
 		"oAP": "/LICENSE",
 		"oF": 0
-		},
-	"/node_modules": {
-		"ft": 65536,
-		"oA": 2,
-		"oAP": "/build/node_modules",
-		"oF": 0
-		},
-	"/package-lock.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/package-lock-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"/package.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "/package-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
 		},
 	"/page.php": {
 		"cB": 0,
@@ -899,16 +866,6 @@
 		"oA": 0,
 		"oAP": "/style.css.map",
 		"oF": 0
-		},
-	"/style.min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/style.min-min.css",
-		"oF": 1,
-		"oS": 3
 		},
 	"/templates/404.twig": {
 		"cB": 0,
@@ -1030,6 +987,14 @@
 		"oAP": "/templates/partial/search.twig",
 		"oF": 0
 		},
+	"/templates/partial/social.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/partial/social.twig",
+		"oF": 0
+		},
 	"/templates/search.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -1093,17 +1058,6 @@
 		"oA": 0,
 		"oAP": "/tests/test-timber-starter-theme.php",
 		"oF": 0
-		},
-	"/wpgulp.config.js": {
-		"bF": 0,
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 1,
-		"oAP": "/wpgulp.config-min.js",
-		"oF": 1,
-		"sC": 1,
-		"tS": 0
 		}
 	},
 "hooks": [
@@ -1112,7 +1066,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 578411552.608482,
-	"displayValue": "foundation",
+	"displayValue": "foundation-theme",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-ceiling",
 	"iconImageWasSetByUser": 0
@@ -2569,7 +2523,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://foundation/",
+	"externalServerAddress": "http://ross-simmonds/",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
