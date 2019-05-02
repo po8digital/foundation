@@ -115,7 +115,7 @@ a,area,button,input,label,select,summary,textarea,[tabindex]{-ms-touch-action:ma
 @font-face{font-family:'Avenir';src:url("assets/fonts/Avenir-Black.eot");src:url("assets/fonts/Avenir-Black.eot?#iefix") format("embedded-opentype"),url("assets/fonts/Avenir-Black.woff2") format("woff2"),url("assets/fonts/Avenir-Black.woff") format("woff"),url("assets/fonts/Avenir-Black.ttf") format("truetype"),url("assets/fonts/Avenir-Black.svg#Avenir-Black") format("svg");font-weight:900;font-style:normal}
 @font-face{font-family:'Avenir Book';src:url("assets/fonts/Avenir-Book.eot");src:url("assets/fonts/Avenir-Book.eot?#iefix") format("embedded-opentype"),url("assets/fonts/Avenir-Book.woff2") format("woff2"),url("assets/fonts/Avenir-Book.woff") format("woff"),url("assets/fonts/Avenir-Book.ttf") format("truetype"),url("assets/fonts/Avenir-Book.svg#Avenir-Book") format("svg");font-weight:normal;font-style:normal}
 @font-face{font-family:'Avenir';src:url("assets/fonts/Avenir-Medium.eot");src:url("assets/fonts/Avenir-Medium.eot?#iefix") format("embedded-opentype"),url("assets/fonts/Avenir-Medium.woff2") format("woff2"),url("assets/fonts/Avenir-Medium.woff") format("woff"),url("assets/fonts/Avenir-Medium.ttf") format("truetype"),url("assets/fonts/Avenir-Medium.svg#Avenir-Medium") format("svg");font-weight:500;font-style:normal}
-html{font-size:62.5%}
+html{font-size:62.5%;overflow-x:hidden}
 body{font-family:"Avenir Book",sans-serif;font-size:1.6rem;color:#292929;background:#faf5ef;line-height:1.5}
 a{-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out;text-decoration:none;color:#dd6052}
 a:hover{color:#dd6052}
@@ -123,7 +123,7 @@ a:hover{color:#dd6052}
 .text-right{text-align:right}
 .text-left{text-align:left}
 .text-justify{text-align:justify}
-strong,b{font-weight:900}
+strong,b,.bold{font-family:'Avenir';font-weight:900}
 h1,h2,h3,h4,h5,h6{font-weight:900}
 h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{font-family:'Avenir'}
 .h2-font56{font-size:4.2rem}
@@ -158,6 +158,8 @@ a.alignright,img.alignright,.wp-caption.alignright{margin:0 0 20px 20px}
 .header-logo__link{max-height:35px}
 .header-menu{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-flow:row nowrap;flex-flow:row nowrap;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}
 .header-menu__sep{padding:0 15px}
+.header-menu__trigger{cursor:pointer;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
+.header-menu__trigger:hover{color:#dd6052}
 .dark-green{color:#0b354c}
 .salmon{color:#dd6052}
 .light-pink{color:#ffeae1}
@@ -167,6 +169,14 @@ a.alignright,img.alignright,.wp-caption.alignright{margin:0 0 20px 20px}
 .bg-black{background-color:#21232b}
 .hidden{display:none}
 .no-margin{margin:0}
+.slide-menu{position:absolute;top:0;right:-100%;width:100%;padding:50px;-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out}
+.slide-menu.isOpen{right:0}
+.slide-menu__close{position:absolute;right:20px;top:20px}
+.slide-menu__nav ul{padding:0;margin-bottom:100px}
+.slide-menu__nav ul .menu-item{padding:10px 0;font-size:4.2rem}
+.slide-menu__nav ul ul{display:none}
+.slide-menu__social{margin-bottom:100px}
+.slide-menu__social .fa{font-size:5rem;margin-right:25px}
 @media only screen and (min-width:41rem){.col-sm{-webkit-box-sizing:border-box;box-sizing:border-box;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-preferred-size:0;flex-basis:0;max-width:100%;padding:1rem}
 .col-sm-1{-webkit-box-sizing:border-box;box-sizing:border-box;-ms-flex-preferred-size:8.3333333333%;flex-basis:8.3333333333%;max-width:8.3333333333%;padding:1rem}
 .col-sm-offset-1{margin-left:8.3333333333%}
@@ -329,6 +339,7 @@ a.alignright,img.alignright,.wp-caption.alignright{margin:0 0 20px 20px}
 .row.show-xl{display:-ms-flexbox !important;display:-webkit-box !important;display:flex !important}
 .hide-xl{display:none !important}
 }@media only screen and (min-width:480px){.h3-font32{font-size:2.4rem}
+}@media only screen and (min-width:545px){.slide-menu{width:545px}
 }@media only screen and (min-width:724px){.header-menu__trigger img{padding-left:15px}
 }@media only screen and (min-width:768px){body{font-size:2rem}
 .h2-font56{font-size:5.6rem}

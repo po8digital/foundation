@@ -49,6 +49,11 @@
 	}
 
 	&__trigger {
+		cursor: pointer;
+		transition: $transition;
+		&:hover {
+			color: $accent-color;
+		}
 		img {
 			@include min-screen(724px) {
 				padding-left: 15px;

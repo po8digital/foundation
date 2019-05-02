@@ -36,6 +36,7 @@
 
 html {
 	font-size: 62.5%;
+	overflow-x: hidden;
 }
 body {
 	font-family: $base-font;
@@ -73,7 +74,9 @@ a {
 }
 
 strong,
-b {
+b,
+.bold {
+	font-family: 'Avenir';
 	font-weight: 900;
 }
 h1,

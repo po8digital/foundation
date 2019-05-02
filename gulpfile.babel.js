@@ -217,7 +217,7 @@ gulp.task('vendorsJS', () => {
 			babel({
 				presets: [
 					[
-						'@babel/preset-env', // Preset to compile your modern JS to ES5.
+						'@babel/env', // Preset to compile your modern JS to ES5.
 						{
 							targets: { browsers: config.BROWSERS_LIST }, // Target browser list to support.
 						},

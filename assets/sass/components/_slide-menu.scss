@@ -1,0 +1,39 @@
+.slide-menu {
+	position: absolute;
+	top: 0;
+	right: -100%;
+	&.isOpen {
+		right: 0;
+	}
+	width: 100%;
+	padding: 50px;
+	transition: $transition;
+	@include min-screen(545px) {
+		width: 545px;
+	}
+	&__close {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+	&__nav {
+		ul {
+			padding: 0;
+			margin-bottom: 100px;
+			.menu-item {
+				padding: 10px 0;
+				font-size: 4.2rem;
+			}
+			ul {
+				display: none;
+			}
+		}
+	}
+	&__social {
+		margin-bottom: 100px;
+		.fa {
+			font-size: 5rem;
+			margin-right: 25px;
+		}
+	}
+}

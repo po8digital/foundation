@@ -24,12 +24,12 @@ module.exports = {
 	// JS Vendor options.
 	jsVendorSRC: './assets/js/vendor/*.js', // Path to JS vendor folder.
 	jsVendorDestination: './assets/js/', // Path to place the compiled JS vendors file.
-	jsVendorFile: 'vendor', // Compiled JS vendors file name. Default set to vendors i.e. vendors.js.
+	jsVendorFile: 'vendor-gulp', // Compiled JS vendors file name. Default set to vendors i.e. vendors.js.
 
 	// JS Custom options.
 	jsCustomSRC: './assets/js/custom/*.js', // Path to JS custom scripts folder.
 	jsCustomDestination: './assets/js/', // Path to place the compiled JS custom scripts file.
-	jsCustomFile: 'custom', // Compiled JS custom file name. Default set to custom i.e. custom.js.
+	jsCustomFile: 'custom-gulp', // Compiled JS custom file name. Default set to custom i.e. custom.js.
 
 	// Images options.
 	imgSRC: './assets/img/raw/**/*', // Source folder of images which should be optimized and watched. You can also specify types e.g. raw/**.{png,jpg,gif} in the glob.
@@ -56,7 +56,7 @@ module.exports = {
 	BROWSERS_LIST: [
 		'last 2 version',
 		'> 1%',
-		'ie >= 11',
+		// 'ie >= 11',
 		'last 1 Android versions',
 		'last 1 ChromeAndroid versions',
 		'last 2 Chrome versions',

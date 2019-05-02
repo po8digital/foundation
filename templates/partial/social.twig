@@ -1,0 +1,4 @@
+{% for item in options.social_media %}
+    <a href="{{ item.url | e('esc_url')}}" target="_blank" class="fa fa-{{item.icon}}"></a>
+
+{% endfor %}

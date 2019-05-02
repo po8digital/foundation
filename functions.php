@@ -9,6 +9,7 @@
  */
 require_once 'init.php';
 require_once 'functions/helper-functions.php';
+require_once 'functions/enqueue-assets.php';
 
 if (!class_exists('Timber')) {
 	add_action('admin_notices', function () {

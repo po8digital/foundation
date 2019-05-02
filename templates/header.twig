@@ -1,9 +1,5 @@
 <div class="header-search hiddenM">
-    <div class="header-search__icon">
-        <img src="{{ theme.path }}/assets/img/lens.svg" alt="search">
-    </div>
-    <div class="header-search__sep salmon">|</div>
-    <div class="header-search__form">{{ fn("get_search_form") }}</div>
+    {% include "partial/search.twig" %}
 </div>
 <h1 class="header-logo no-margin" role="banner">
     <a class="header-logo__link" href="{{site.url}}" rel="home"><img src="{{ theme.path }}/assets/img/logo.svg" alt="logo"></a>
@@ -17,7 +13,19 @@
     </div>
 
 </div>
-<nav class="nav-main hidden" id="nav-main" role="navigation">
-    {% include "menu.twig" with {'menu': menu.get_items} %}
-</nav>
+<div class="slide-menu bg-black">
+    <div class="slide-menu__close">
+        <img src="{{theme.path}}/assets/img/close.svg" alt="close">
+    </div>
+    <div class="header-search">
+        {% include "partial/search.twig" %}
+    </div>
+
+    <nav class="slide-menu__nav" id="nav-main" role="navigation">
+        {% include "menu.twig" with {'menu': menu.get_items} %}
+    </nav>
+    <div class="slide-menu__social">
+        {% include "partial/social.twig" %}
+    </div>
+</div>
 <!-- #nav -->
