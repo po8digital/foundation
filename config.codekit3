@@ -204,6 +204,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/footer-bg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/footer-bg.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/footer-top.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/footer-top.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/hamburger.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -237,10 +257,30 @@
 	"/assets/img/raw/close.svg": {
 		"ft": 2097152,
 		"miP": 0,
-		"oA": 2,
-		"oAP": "/assets/img/raw/close.svg",
-		"oF": 0,
-		"opt": 0,
+		"oA": 0,
+		"oAP": "/assets/img/close.svg",
+		"oF": 3,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/raw/footer-bg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/assets/img/footer-bg.svg",
+		"oF": 3,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/raw/footer-top.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/assets/img/footer-top.svg",
+		"oF": 3,
+		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
@@ -248,9 +288,9 @@
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "/assets/img/raw/hamburger.svg",
-		"oF": 1,
-		"opt": 0,
+		"oAP": "/assets/img/hamburger.svg",
+		"oF": 3,
+		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
@@ -268,9 +308,9 @@
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
-		"oAP": "/assets/img/raw/logo.svg",
-		"oF": 1,
-		"opt": 0,
+		"oAP": "/assets/img/logo.svg",
+		"oF": 3,
+		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
@@ -718,6 +758,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/functions/helper-functions.php",
+		"oF": 0
+		},
+	"/functions/widget-areas.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/functions/widget-areas.php",
 		"oF": 0
 		},
 	"/header.php": {

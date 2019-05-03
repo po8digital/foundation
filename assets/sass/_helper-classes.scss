@@ -23,6 +23,13 @@
 .bg-black {
 	background-color: $black;
 }
+.bg-primary {
+	background: $primary-color;
+}
+
+.bg-light {
+	background: $light-white;
+}
 
 .hidden {
 	display: none;
@@ -35,4 +42,10 @@
 	@include max-screen(724px) {
 		display: none;
 	}
+}
+
+.wrapper {
+	max-width: $max-width;
+	padding: 0 30px;
+	margin: 0 auto;
 }

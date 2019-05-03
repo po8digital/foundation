@@ -1,9 +1,12 @@
 .slide-menu {
 	position: absolute;
 	top: 0;
-	right: -100%;
+	right: 0;
+	transform: translateX(100%);
+	// display: none;
 	&.isOpen {
-		right: 0;
+		display: block;
+		transform: translateX(0);
 	}
 	width: 100%;
 	padding: 50px;
@@ -15,6 +18,7 @@
 		position: absolute;
 		right: 20px;
 		top: 20px;
+		cursor: pointer;
 	}
 	&__nav {
 		ul {
@@ -34,6 +38,9 @@
 		.fa {
 			font-size: 5rem;
 			margin-right: 25px;
+			&:hover {
+				color: $primary-color;
+			}
 		}
 	}
 }

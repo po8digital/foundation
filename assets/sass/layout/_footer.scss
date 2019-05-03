@@ -1,0 +1,86 @@
+.footer {
+	overflow: hidden;
+	.wrapper {
+		max-width: 870px;
+	}
+}
+.footer__text {
+	padding: 45px 0;
+	margin: 0;
+}
+.fat-footer {
+	padding: 100px 0 150px;
+	background-color: $medium-blue;
+	color: $medium-blue;
+	position: relative;
+
+	background: $medium-blue url('./assets/img/footer-bg.svg') no-repeat bottom
+		right;
+	background-size: auto 98%;
+	@include screen(700px, $m) {
+		background-position-x: 573px;
+	}
+	@include max-screen(700px) {
+		background-position-x: 100px;
+		background-position-y: 750px;
+	}
+	@include min-screen(700px) {
+		&:before {
+			content: '';
+			position: absolute;
+			background: url('./assets/img/footer-top.svg');
+			width: 208px;
+			height: 31px;
+			right: 0;
+			top: -30px;
+			@include screen(700px, $m) {
+				right: -120px;
+			}
+		}
+	}
+
+	.wrapper {
+		@include min-screen(700px) {
+			padding-left: 100px;
+		}
+		padding-left: 35px;
+		@include flexbox(start, row nowrap);
+	}
+	&__social {
+		@include flexbox(start, column);
+		@include min-screen(700px) {
+			padding-right: 70px;
+		}
+		padding-right: 35px;
+		.fa {
+			font-size: 4.5rem;
+			margin-bottom: 30px;
+		}
+	}
+	&__menus {
+		@include min-screen(700px) {
+			@include flexbox(start, row wrap);
+		}
+
+		max-width: 622px;
+		.widget {
+			flex-basis: 50%;
+			@include min-screen(700px) {
+				padding-right: 70px;
+			}
+
+			margin-bottom: 50px;
+			ul {
+				padding: 0;
+			}
+			li {
+				list-style-type: none;
+				a {
+					color: $light-pink;
+					font-size: 1.4rem;
+					text-transform: capitalize;
+				}
+			}
+		}
+	}
+}

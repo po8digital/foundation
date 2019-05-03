@@ -10,6 +10,7 @@
 require_once 'init.php';
 require_once 'functions/helper-functions.php';
 require_once 'functions/enqueue-assets.php';
+require_once 'functions/widget-areas.php';
 
 if (!class_exists('Timber')) {
 	add_action('admin_notices', function () {
@@ -66,7 +67,7 @@ class StarterSite extends Timber\Site
 	{
 		$post               = new TimberPost();
 		$context['post']    = $post;
-		$context['menu'] = new Timber\Menu('primary-menu');
+		$context['menu'] = new Timber\Menu('main-menu');
 		$context['footer_menu'] = new Timber\Menu();
 		$context['site'] = $this;
 		$context['options'] = get_fields('options');
