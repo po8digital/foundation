@@ -1722,7 +1722,6 @@ img.alignright,
       background-position-x: 573px; } }
   @media only screen and (max-width: 700px) {
     .fat-footer {
-      background-position-x: 100px;
       background-position-y: 750px; } }
   @media only screen and (min-width: 700px) {
     .fat-footer:before {
@@ -1769,6 +1768,8 @@ img.alignright,
     .fat-footer__social .fa {
       font-size: 4.5rem;
       margin-bottom: 30px; }
+      .fat-footer__social .fa:hover {
+        color: #ffeae1; }
   .fat-footer__menus {
     max-width: 622px; }
     @media only screen and (min-width: 700px) {
@@ -1798,6 +1799,8 @@ img.alignright,
           color: #ffeae1;
           font-size: 1.4rem;
           text-transform: capitalize; }
+          .fat-footer__menus .widget li a:hover {
+            color: #b5afa0; }
 
 body {
   position: absolute;
@@ -1821,6 +1824,9 @@ body {
 
 .black {
   color: #21232b; }
+
+.grey {
+  color: #b5afa0; }
 
 .light-grey {
   color: #dcd8cb; }
@@ -1855,6 +1861,7 @@ body {
   right: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  z-index: 100;
   width: 100%;
   padding: 50px;
   -webkit-transition: all 0.4s ease-in-out;
@@ -1886,4 +1893,41 @@ body {
       margin-right: 25px; }
       .slide-menu__social .fa:hover {
         color: #246fc9; }
+
+.button {
+  padding: 18px 30px;
+  font-family: 'Avenir';
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #ffeae1;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border-bottom: 5px solid;
+  letter-spacing: 2.4px; }
+  .button:hover {
+    color: #ffeae1; }
+  .button--blue {
+    background: #246fc9;
+    border-color: #132d7f; }
+    .button--blue:hover {
+      background: #2d7bd9; }
+  .button--salmon {
+    background: #dd6052;
+    border-color: #b14437; }
+    .button--salmon:hover {
+      background: #e17467; }
+  .button--dark {
+    background: #292929;
+    border-color: #21232b; }
+    .button--dark:hover {
+      background: #2e2e2e; }
+
+.hero {
+  padding: 90px 0; }
+  .hero__content {
+    margin: 14px 0 50px; }
+  .hero__buttons .button {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px; }
 /*# sourceMappingURL=style.css.map */

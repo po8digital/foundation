@@ -21,7 +21,7 @@
 		background-position-x: 573px;
 	}
 	@include max-screen(700px) {
-		background-position-x: 100px;
+		// background-position-x: 100px;
 		background-position-y: 750px;
 	}
 	@include min-screen(700px) {
@@ -55,6 +55,9 @@
 		.fa {
 			font-size: 4.5rem;
 			margin-bottom: 30px;
+			&:hover {
+				color: $light-pink;
+			}
 		}
 	}
 	&__menus {
@@ -79,6 +82,9 @@
 					color: $light-pink;
 					font-size: 1.4rem;
 					text-transform: capitalize;
+					&:hover {
+						color: $grey;
+					}
 				}
 			}
 		}

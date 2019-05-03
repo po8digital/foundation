@@ -1,0 +1,35 @@
+.button {
+	padding: 18px 30px;
+	font-family: 'Avenir';
+	font-weight: 500;
+	font-size: 1.6rem;
+	color: $light-pink;
+	text-transform: uppercase;
+	border-radius: 4px;
+	border-bottom: 5px solid;
+	letter-spacing: 2.4px;
+	&:hover {
+		color: $light-pink;
+	}
+	&--blue {
+		background: $blue;
+		border-color: $dark-blue;
+		&:hover {
+			background: lighten($blue, 5%);
+		}
+	}
+	&--salmon {
+		background: $salmon;
+		border-color: $brown;
+		&:hover {
+			background: lighten($salmon, 5%);
+		}
+	}
+	&--dark {
+		background: $darkest-grey;
+		border-color: $black;
+		&:hover {
+			background: lighten($darkest-grey, 2%);
+		}
+	}
+}
