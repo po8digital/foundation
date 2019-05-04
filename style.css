@@ -2039,4 +2039,51 @@ body {
   .post-meta__icon {
     position: relative;
     top: -1px; }
+
+.pagination {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: start;
+          justify-content: start;
+  margin-top: 140px;
+  padding-left: 0; }
+  .pagination li {
+    color: #fff;
+    font-size: 2.4rem;
+    padding-right: 100px; }
+    .pagination li:nth-last-child(2), .pagination li:nth-last-child(3) {
+      display: none; }
+    .pagination li.current span {
+      background: #246fc9;
+      height: 70px;
+      width: 70px;
+      border-radius: 50%;
+      display: inline-block;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+      margin-top: -15px; }
+    .pagination li.last {
+      text-transform: uppercase;
+      letter-spacing: 4.8px; }
+      .pagination li.last.disabled {
+        color: #dcd8cb; }
+    .pagination li a {
+      color: #b5afa0; }
 /*# sourceMappingURL=style.css.map */

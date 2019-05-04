@@ -2,13 +2,15 @@
 
 {% block content %}
     {% if post.get_thumbnail %}
-        <div class="tease-post__media">
-            {% set badgeTitle = post.is_premium ? 'Premium Content': 'Free Content' %}
-            {% set badgeColor = post.is_premium ? 'bg-blue': 'bg-green' %}
-            <div class="tease-post__badge {{ badgeColor }}">{{ badgeTitle }}</div>
-            <img src="{{post.thumbnail.src}}"/>
-        {% endif %}
-    </div>
+        <a href="{{ post.link }}">
+            <div class="tease-post__media">
+                {% set badgeTitle = post.is_premium ? 'Premium Content': 'Free Content' %}
+                {% set badgeColor = post.is_premium ? 'bg-blue': 'bg-green' %}
+                <div class="tease-post__badge {{ badgeColor }}">{{ badgeTitle }}</div>
+                <img src="{{post.thumbnail.src}}"/>
+            {% endif %}
+        </div>
+    </a>
     <div class="tease-post__content">
         {% set cat = post.categories[0] %}
         <div class="tease-post__content--top">

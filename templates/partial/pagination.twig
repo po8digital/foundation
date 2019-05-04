@@ -4,11 +4,11 @@
 
             {% for page in pagination.pages %}
                 {% if page.link %}
-                    <li>
+                    <li class="bold">
                         <a href="{{ page.link }}" class="{{ page.class }}">{{ page.title }}</a>
                     </li>
                 {% else %}
-                    <li class="current">
+                    <li class="current bold">
                         <span class="{{ page.class }}">{{ page.title }}</span>
                     </li>
                 {% endif %}
@@ -16,12 +16,12 @@
 
 
             {% if pagination.pages|last and pagination.pages|last.current != true %}
-                <li class="last btn">
+                <li class="last bold">
                     <a href="{{ pagination.pages|last.link }}">Last</a>
                 </li>
             {% else %}
-                <li class="last btn disabled">
-                    <button disabled>Last</button>
+                <li class="last bold disabled">
+                    Last
                 </li>
             {% endif %}
         </ul>
