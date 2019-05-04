@@ -6,3 +6,13 @@ body {
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 }
+
+.lab {
+	background: url('./assets/img/lab-bg.svg') no-repeat -10px 0;
+	background-size: 101% auto;
+	padding-top: 60px;
+	.wrapper {
+		padding: 60px 55px;
+		background: $light-white;
+	}
+}

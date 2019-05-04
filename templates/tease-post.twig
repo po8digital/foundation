@@ -10,17 +10,28 @@
         {% endif %}
     </div>
     <div class="tease-post__content">
-        <h4 class="tease-post__cat bold uppercase">{{ post.categories[0].name  | e('esc_html')}}</h4>
-        <h3 class="h3-font32 bold">
-            <a href="{{post.link}}">{{post.title}}</a>
-        </h3>
-        <div class="tease-post__read-more uppercase text-small">
-            <a href="{{post.link}}">
-                <i class="fa fa-chevron-right">Read more</i>
-
-            </a>
+        {% set cat = post.categories[0] %}
+        <div class="tease-post__content--top">
+            <h4 class="tease-post__cat bold uppercase no-margin">
+                <a href="/categories/{{ cat.slug }}">{{ cat.name  | e('esc_html')}}</a>
+                {# TODO: set the right cat link #}
+            </h4>
+            <h3 class="tease-post__title h3-font32 bold no-margin">
+                <a href="{{post.link}}">{{post.title}}</a>
+            </h3>
         </div>
-        {% include "partial/post-meta.twig" %}
+        <div class="tease-post__content--bottom">
+            <div class="tease-post__read-more uppercase text-small">
+                <a href="{{post.link}}">
+                    <div class="tease-post__read-more--icon"><img src="{{theme.path}}/assets/img/arrow-right.svg" alt=""></div>
+                    <div class="tease-post__read-more--text">
+                        Read more
+                    </div>
+
+                </a>
+            </div>
+            {% include "partial/post-meta.twig" %}
+        </div>
     </div>
 
 {% endblock %}
