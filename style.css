@@ -1834,8 +1834,11 @@ body {
 .bg-black {
   background-color: #21232b; }
 
-.bg-primary {
+.bg-blue {
   background: #246fc9; }
+
+.bg-green {
+  background: #3ea576; }
 
 .bg-light {
   background: #faf5ef; }

@@ -194,11 +194,31 @@
 		"oAP": "/assets/fonts/Avenir-Medium.woff2",
 		"oF": 0
 		},
+	"/assets/img/clock.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/clock.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/close.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/img/close.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/comment.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/comment.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -234,6 +254,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/lab-bg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/lab-bg.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/lens.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -254,11 +284,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/raw/clock.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/assets/img/clock.svg",
+		"oF": 3,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/raw/close.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 0,
 		"oAP": "/assets/img/close.svg",
+		"oF": 3,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/raw/comment.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/assets/img/comment.svg",
 		"oF": 3,
 		"opt": 1,
 		"plM": 3758088159,
@@ -294,6 +344,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/raw/lab-bg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/assets/img/lab-bg.svg",
+		"oF": 3,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/raw/lens.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -311,6 +371,26 @@
 		"oAP": "/assets/img/logo.svg",
 		"oF": 3,
 		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/raw/user.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/assets/img/user.svg",
+		"oF": 3,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/user.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/user.svg",
+		"oF": 0,
+		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
@@ -332,6 +412,17 @@
 		"oA": 0,
 		"oAP": "/assets/js/custom.min.js.map",
 		"oF": 0
+		},
+	"/assets/js/custom/_lab.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/assets/js/custom/_lab-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"/assets/js/custom/_slide-menu.js": {
 		"bF": 0,
@@ -802,12 +893,12 @@
 		"oAP": "/header.php",
 		"oF": 0
 		},
-	"/home.php": {
+	"/home-bu.php": {
 		"cB": 0,
 		"ft": 8192,
 		"hM": 0,
 		"oA": 0,
-		"oAP": "/home.php",
+		"oAP": "/home-bu.php",
 		"oF": 0
 		},
 	"/humans.txt": {
@@ -1029,14 +1120,6 @@
 		"oAP": "/templates/index.twig",
 		"oF": 0
 		},
-	"/templates/lab.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/lab.twig",
-		"oF": 0
-		},
 	"/templates/menu.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -1075,6 +1158,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/partial/pagination.twig",
+		"oF": 0
+		},
+	"/templates/partial/post-meta.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/partial/post-meta.twig",
 		"oF": 0
 		},
 	"/templates/partial/search.twig": {

@@ -1,9 +1,30 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	{% for post in posts %}
-		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-	{% endfor %}
+    {% include "partial/hero.twig" %}
+    <section class="lab">
+        <div class="wrapper">
+            {% for post in posts %}
+                {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+            {% endfor %}
+            {# <div class="two-first">
+                                                    {% for post in posts | slice(0,2) %}
+                                                        {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+                                                    {% endfor %}
+                                                </div>
+                                                <div class="three-next">
+                                                    {% for post in posts | slice(3,4) %}
+                                                        {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+                                                    {% endfor %}
+                                                </div>
+                                                <div class="two-last">
+                                                    {% for post in posts | slice(6,8) %}
+                                                        {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+                                                    {% endfor %}
+                                                </div> #}
 
-	{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
+
+            {% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3}) } %}
+        </div>
+    </section>
 {% endblock %}

@@ -1,9 +1,26 @@
 {% extends "tease.twig" %}
 
 {% block content %}
-	<h2 class="h2"><a href="{{post.link}}">{{post.title}}</a></h2>
-		<p>{{post.preview.length(25)}}</p>
-		{% if post.thumbnail.src %}
-			<img src="{{post.thumbnail.src}}" />
-		{% endif %}
+    {% if post.get_thumbnail %}
+        <div class="tease-post__media">
+            {% set badgeTitle = post.is_premium ? 'Premium Content': 'Free Content' %}
+            {% set badgeColor = post.is_premium ? 'bg-blue': 'bg-green' %}
+            <div class="tease-post__badge {{ badgeColor }}">{{ badgeTitle }}</div>
+            <img src="{{post.thumbnail.src}}"/>
+        {% endif %}
+    </div>
+    <div class="tease-post__content">
+        <h4 class="tease-post__cat bold uppercase">{{ post.categories[0].name  | e('esc_html')}}</h4>
+        <h3 class="h3-font32 bold">
+            <a href="{{post.link}}">{{post.title}}</a>
+        </h3>
+        <div class="tease-post__read-more uppercase text-small">
+            <a href="{{post.link}}">
+                <i class="fa fa-chevron-right">Read more</i>
+
+            </a>
+        </div>
+        {% include "partial/post-meta.twig" %}
+    </div>
+
 {% endblock %}
