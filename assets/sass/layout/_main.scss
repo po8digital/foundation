@@ -11,8 +11,46 @@ body {
 	background: url('./assets/img/lab-bg.svg') no-repeat -10px 0;
 	background-size: 101% auto;
 	padding-top: 60px;
-	.wrapper {
+	.posts-wrapper {
 		padding: 60px 55px;
 		background: $light-white;
+	}
+	&__dd {
+		@include flexbox;
+		padding: 0 60px 60px;
+		> div {
+			span {
+				color: $light-pink;
+				font-size: 1.6rem;
+				letter-spacing: 1.4px;
+			}
+		}
+		select {
+			background: $light-white;
+			border: none;
+			text-transform: uppercase;
+			font-size: 1.2rem;
+			color: $black;
+			height: 32px;
+			font-family: 'Avenir';
+			font-weight: 900;
+		}
+		//TODO: align dd labels to the left and make the filters work
+		&--cats {
+			select {
+				width: 100%;
+				@include min-screen($s) {
+					// width: 360px;
+				}
+			}
+		}
+		&--sort {
+			select {
+				width: 100%;
+			}
+			@include min-screen($s) {
+				// width: 250px;
+			}
+		}
 	}
 }

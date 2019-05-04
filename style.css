@@ -1814,9 +1814,38 @@ body {
   background: url("./assets/img/lab-bg.svg") no-repeat -10px 0;
   background-size: 101% auto;
   padding-top: 60px; }
-  .lab .wrapper {
+  .lab .posts-wrapper {
     padding: 60px 55px;
     background: #faf5ef; }
+  .lab__dd {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+    padding: 0 60px 60px; }
+    .lab__dd > div span {
+      color: #ffeae1;
+      font-size: 1.6rem;
+      letter-spacing: 1.4px; }
+    .lab__dd select {
+      background: #faf5ef;
+      border: none;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      color: #21232b;
+      height: 32px;
+      font-family: 'Avenir';
+      font-weight: 900; }
+    .lab__dd--cats select {
+      width: 100%; }
+    .lab__dd--sort select {
+      width: 100%; }
 
 .dark-green {
   color: #0b354c; }

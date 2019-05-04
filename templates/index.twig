@@ -4,24 +4,48 @@
     {% include "partial/hero.twig" %}
     <section class="lab">
         <div class="wrapper">
+            <div class="lab__dd">
+                <div class="lab__dd--cats">
+                    <span class="bold uppercase">Category:
+                    </span>
+                    <select id="cat-select">
+                        <option value="All">View All</option>
+                        <option value="cat 1">Cat 1</option>
+                        <option value="cat 2">Cat 2</option>
+                    </select>
+                </div>
+                <div class="lab__dd--sort">
+                    <span class="bold uppercase">Sort By:
+                    </span>
+                    <select id="sort-select">
+                        <option value="Recent">Most Recent</option>
+                        <option value="cat 1">Cat 1</option>
+                        <option value="cat 2">Cat 2</option>
+                    </select>
+
+                </div>
+            </div>
+        </div>
+        <div class="wrapper posts-wrapper">
+
             {% for post in posts %}
                 {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
             {% endfor %}
             {# <div class="two-first">
-                                                    {% for post in posts | slice(0,2) %}
-                                                        {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-                                                    {% endfor %}
-                                                </div>
-                                                <div class="three-next">
-                                                    {% for post in posts | slice(3,4) %}
-                                                        {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-                                                    {% endfor %}
-                                                </div>
-                                                <div class="two-last">
-                                                    {% for post in posts | slice(6,8) %}
-                                                        {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-                                                    {% endfor %}
-                                                </div> #}
+                                                                                        {% for post in posts | slice(0,2) %}
+                                                                                            {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+                                                                                        {% endfor %}
+                                                                                    </div>
+                                                                                    <div class="three-next">
+                                                                                        {% for post in posts | slice(3,4) %}
+                                                                                            {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+                                                                                        {% endfor %}
+                                                                                    </div>
+                                                                                    <div class="two-last">
+                                                                                        {% for post in posts | slice(6,8) %}
+                                                                                            {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+                                                                                        {% endfor %}
+                                                                                    </div> #}
 
 
             {% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3}) } %}
