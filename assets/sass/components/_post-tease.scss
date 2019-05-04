@@ -1,11 +1,15 @@
 .tease-post {
 	// TODO: hover colors
+	// TODO: responsive to discuss with Tim
 	margin-bottom: 77px;
-	@include flexbox;
+	@include min-screen($l) {
+		@include flexbox;
+	}
+
 	* {
-		flex-basis: 50%;
 	}
 	&__media {
+		flex-basis: 45%;
 		padding-right: 15px;
 		position: relative;
 		img {
@@ -26,6 +30,7 @@
 		left: 20px;
 	}
 	&__content {
+		flex-basis: 55%;
 		position: relative;
 		&--bottom {
 			position: absolute;
