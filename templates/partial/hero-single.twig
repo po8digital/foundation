@@ -1,0 +1,20 @@
+<section class="hero-single">
+    <div class="gradient-overlay"></div>
+    <div class="wrapper">
+        {% include "partial/hero-meta.twig" %}
+
+        <h1 class="h1-font42 text-center light-pink bold no-margin">{{ post.title }}</h1>
+
+        {% if post.is_premium %}
+            <div class="hero__buttons text-center">
+                <a class="button button--blue" href="#">Become a client</a>
+                <a class="button button--dark" href="#">Login</a>
+            </div>
+        {% endif %}
+    </div>
+</section>
+<style>
+    .hero-single {
+        background: linear-gradient(180deg, #21232b 0%, #21232b 9%, rgba(33, 35, 43, 0) 50%), url('{{post.thumbnail}}') no-repeat center center/cover;
+    }
+</style>

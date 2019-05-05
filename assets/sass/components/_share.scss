@@ -1,0 +1,101 @@
+.fixed-social {
+	position: absolute;
+	top: 0;
+	left: -100px;
+	//TODO:fixed position
+	// width: 100px;
+	.wpfai-list {
+		// width: 100px;
+		// position: fixed;
+		li {
+			display: block;
+			margin-left: 0;
+		}
+		.fa-stack {
+			color: $light-white;
+			background: $grey;
+			height: 34px;
+			width: 34px;
+			margin-bottom: 15px;
+			border-radius: 50%;
+		}
+	}
+}
+
+.share-bottom {
+	margin-bottom: 40px;
+	@include min-screen(500px) {
+		box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
+	}
+
+	@include min-screen(500px) {
+		@include flexbox(start, row nowrap);
+	}
+	@include max-screen(500px) {
+		display: block;
+	}
+
+	margin-top: 50px;
+
+	.button {
+		border-radius: 4px;
+
+		@include min-screen(500px) {
+			border-radius: 4px 0 0 4px;
+			width: 400px;
+		}
+
+		text-align: center;
+		&:hover {
+			background: $salmon;
+		}
+		@include max-screen(500px) {
+			margin-bottom: 15px;
+		}
+	}
+	.share-bar {
+		@include flexbox(center, row nowrap);
+		background: $light-grey;
+		border-bottom: 5px solid $dark-grey;
+		border-radius: 4px;
+		padding: 12px 30px;
+		width: 100%;
+		@include min-screen(500px) {
+			border-radius: 0 4px 4px 0;
+		}
+
+		padding-left: 35px;
+		padding-right: 50px;
+		display: flex;
+		align-items: center;
+
+		.wpfai-list {
+			margin: 0;
+		}
+		.fa-stack {
+			color: $light-grey;
+			background: $blue;
+			height: 34px;
+			width: 34px;
+			border-radius: 50%;
+		}
+	}
+	@include min-screen($m) {
+		.wpfai-list-item:after {
+			font-size: 1.2rem;
+			color: $blue;
+			text-transform: uppercase;
+			font-family: 'Avenir';
+			font-weight: 500;
+		}
+		.facebook:after {
+			content: 'FACEBOOK';
+		}
+		.twitter:after {
+			content: 'twitter';
+		}
+		.linkedin:after {
+			content: 'linkedin';
+		}
+	}
+}

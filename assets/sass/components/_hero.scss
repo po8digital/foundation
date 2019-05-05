@@ -10,4 +10,37 @@
 			margin-bottom: 10px;
 		}
 	}
+	.wrapper {
+		z-index: 10;
+	}
+}
+
+.hero-single {
+	height: 800px;
+	position: relative;
+	padding: 50px 0;
+	z-index: -2;
+	background-image: linear-gradient(
+		180deg,
+		$black 0%,
+		$black 9%,
+		rgba(33, 35, 43, 0) 100%
+	);
+	.wrapper {
+		max-width: 880px;
+		margin: 0 auto;
+	}
+}
+
+.hero-meta {
+	@include flexbox;
+	a {
+		color: $grey;
+	}
+	padding-bottom: 10px;
+	border-bottom: 1px solid darken($dark-grey, 25%);
+	margin-bottom: 15px;
+	.article-body & {
+		border: none;
+	}
 }

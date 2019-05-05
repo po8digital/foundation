@@ -1,0 +1,28 @@
+.single-post {
+	.article-content {
+		// background: $white;
+		position: relative;
+		.wrapper {
+			position: relative;
+			top: -120px;
+			background: $light-white;
+			padding-top: 15px;
+		}
+	}
+	.article-body {
+		max-width: 700px;
+		margin: 0 auto;
+		z-index: 10;
+		position: relative;
+		img {
+			margin: 50px 0;
+			//TODO: make the image bleed outside of the container to the wrapper width
+		}
+	}
+}
+.blog-wave {
+	position: absolute;
+	left: 0;
+	top: -166px;
+	z-index: -1;
+}
