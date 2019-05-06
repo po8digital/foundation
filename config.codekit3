@@ -1270,6 +1270,70 @@
 		"oAP": "/templates/base.twig",
 		"oF": 0
 		},
+	"/templates/blocks/_benefits.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_benefits.twig",
+		"oF": 0
+		},
+	"/templates/blocks/_content.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_content.twig",
+		"oF": 0
+		},
+	"/templates/blocks/_decorated-title.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_decorated-title.twig",
+		"oF": 0
+		},
+	"/templates/blocks/_featured-posts.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_featured-posts.twig",
+		"oF": 0
+		},
+	"/templates/blocks/_image.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_image.twig",
+		"oF": 0
+		},
+	"/templates/blocks/_openings.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_openings.twig",
+		"oF": 0
+		},
+	"/templates/blocks/_title-text-list.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_title-text-list.twig",
+		"oF": 0
+		},
+	"/templates/blocks/block-logic.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/blocks/block-logic.twig",
+		"oF": 0
+		},
 	"/templates/comment-form.twig": {
 		"cB": 0,
 		"ft": 8192,

@@ -1,0 +1,17 @@
+{% for block in post.get_field('content_blocks') %}
+    {% set block_class = block.acf_fc_layout  %}
+    {% if block_class == 'block_content' %}
+        {% include 'blocks/_content.twig' %}
+    {% elseif block_class == 'block_title_text_list' %}
+        {% include 'blocks/_title-text-list.twig' %}
+    {% elseif block_class == 'block_decorated_title' %}
+        {% include 'blocks/_decorated-title.twig' %}
+    {% elseif block_class == 'block_featured_posts' %}
+        {% include 'blocks/_featured-posts.twig' %}
+    {% elseif block_class == 'block_openings' %}
+        {% include 'blocks/_openings.twig' %}
+    {% elseif block_class == 'block_benefits' %}
+        {% include 'blocks/_benefits.twig' %}
+    {% endif %}
+
+{% endfor %}
