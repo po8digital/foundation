@@ -1,0 +1,64 @@
+.related-posts {
+	@include min-screen($m) {
+		@include flexbox(space-between, row nowrap);
+	}
+	max-width: 1070px;
+	margin: 80px auto;
+	&__next {
+		flex-basis: 45%;
+		.tease-post {
+			display: block;
+			padding-right: 40px;
+			&__badge {
+				right: initial;
+				left: 20px;
+			}
+			&__cat {
+				margin-top: 10px;
+			}
+			&__title {
+				font-size: 2.1rem;
+			}
+			&__read-more {
+				top: 50px;
+			}
+		}
+	}
+	&__same-cat {
+		flex-basis: 55%;
+		.tease-post__read-more {
+			margin-top: 30px;
+			@include min-screen($m) {
+				margin-left: 40px;
+			}
+
+			width: 80%;
+			&--text {
+				text-transform: none;
+				font-family: 'Avenir';
+			}
+		}
+	}
+	&__posts-container {
+		background: $light-grey;
+		padding: 45px 40px 60px;
+	}
+	&__post {
+		h4 {
+			border-bottom: 2px solid lighten($grey, 10%);
+			margin: 0;
+			padding: 20px 0;
+		}
+		&:first-child {
+			h4 {
+				padding-top: 0;
+			}
+		}
+		&:last-child {
+			h4 {
+				border-bottom: 0;
+				padding-bottom: 0;
+			}
+		}
+	}
+}

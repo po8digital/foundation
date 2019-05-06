@@ -60,6 +60,15 @@
 	}
 	&__read-more {
 		position: relative;
+		a:hover {
+			&--icon {
+				background: $dark-blue;
+			}
+			&--text {
+				color: $dark-blue;
+			}
+		}
+		//TODO: fix hover effect read more
 		&--icon {
 			display: inline-block;
 			background: $blue;
@@ -70,12 +79,20 @@
 			align-items: center;
 			float: left;
 			margin-right: 10px;
+			transition: all 0.4s ease-in-out;
+			&:hover {
+				background: $dark-blue;
+			}
 		}
 		&--text {
 			display: inline-block;
 			float: left;
 			margin-top: 10px;
 			color: $blue;
+			transition: all 0.4s ease-in-out;
+			&:hover {
+				color: $dark-blue;
+			}
 		}
 		&:after {
 			content: '';

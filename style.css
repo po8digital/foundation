@@ -1928,6 +1928,9 @@ body {
 .light-grey {
   color: #dcd8cb; }
 
+.dark-green {
+  color: #0b354c; }
+
 .bg-black {
   background-color: #21232b; }
 
@@ -2131,6 +2134,10 @@ body {
       font-size: 1.2rem; }
   .tease-post__read-more {
     position: relative; }
+    .tease-post__read-more a:hover--icon {
+      background: #132d7f; }
+    .tease-post__read-more a:hover--text {
+      color: #132d7f; }
     .tease-post__read-more--icon {
       display: inline-block;
       background: #246fc9;
@@ -2151,12 +2158,20 @@ body {
       -webkit-align-items: center;
               align-items: center;
       float: left;
-      margin-right: 10px; }
+      margin-right: 10px;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+      .tease-post__read-more--icon:hover {
+        background: #132d7f; }
     .tease-post__read-more--text {
       display: inline-block;
       float: left;
       margin-top: 10px;
-      color: #246fc9; }
+      color: #246fc9;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out; }
+      .tease-post__read-more--text:hover {
+        color: #132d7f; }
     .tease-post__read-more:after {
       content: '';
       width: 100%;
@@ -2336,4 +2351,59 @@ body {
     color: #b8c4d2;
     font-size: 1.8rem;
     margin-bottom: 70px; }
+
+.related-posts {
+  max-width: 1070px;
+  margin: 80px auto; }
+  @media only screen and (min-width: 768px) {
+    .related-posts {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+              justify-content: space-between; } }
+  .related-posts__next {
+    -webkit-flex-basis: 45%;
+            flex-basis: 45%; }
+    .related-posts__next .tease-post {
+      display: block;
+      padding-right: 40px; }
+      .related-posts__next .tease-post__badge {
+        right: initial;
+        left: 20px; }
+      .related-posts__next .tease-post__cat {
+        margin-top: 10px; }
+      .related-posts__next .tease-post__title {
+        font-size: 2.1rem; }
+      .related-posts__next .tease-post__read-more {
+        top: 50px; }
+  .related-posts__same-cat {
+    -webkit-flex-basis: 55%;
+            flex-basis: 55%; }
+    .related-posts__same-cat .tease-post__read-more {
+      margin-top: 30px;
+      width: 80%; }
+      @media only screen and (min-width: 768px) {
+        .related-posts__same-cat .tease-post__read-more {
+          margin-left: 40px; } }
+      .related-posts__same-cat .tease-post__read-more--text {
+        text-transform: none;
+        font-family: 'Avenir'; }
+  .related-posts__posts-container {
+    background: #dcd8cb;
+    padding: 45px 40px 60px; }
+  .related-posts__post h4 {
+    border-bottom: 2px solid #cbc7bd;
+    margin: 0;
+    padding: 20px 0; }
+  .related-posts__post:first-child h4 {
+    padding-top: 0; }
+  .related-posts__post:last-child h4 {
+    border-bottom: 0;
+    padding-bottom: 0; }
 /*# sourceMappingURL=style.css.map */

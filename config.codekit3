@@ -733,6 +733,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/sass/components/_related-posts.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/components/_related-posts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/sass/components/_share.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1391,6 +1404,22 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/partial/post-meta.twig",
+		"oF": 0
+		},
+	"/templates/partial/read-more-icon.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/partial/read-more-icon.twig",
+		"oF": 0
+		},
+	"/templates/partial/related-posts.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/partial/related-posts.twig",
 		"oF": 0
 		},
 	"/templates/partial/search.twig": {

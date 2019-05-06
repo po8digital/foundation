@@ -1,0 +1,41 @@
+<div class="related-posts">
+    <div class="related-posts__next">
+        {% for post in post.get_field('read_next') %}
+            <h3 class="h3-font32 bold grey">Read this next</h3>
+            {% include "tease-post.twig" %}
+        {% endfor %}
+    </div>
+    <div class="related-posts__same-cat">
+        <h3 class="h3-font32 bold grey">Other Reads on This Topic</h3>
+        <div class="related-posts__posts-container">
+            {% for post in same_cat %}
+                <div class="related-posts__post">
+                    <h4 class="h4-font21 bold dark-green">
+                        <a class="dark-green" href="{{ post.link | e('esc_url')}}">{{ post.title | e('esc_html')}}</a>
+                    </h4>
+                </div>
+
+            {% endfor %}
+
+        </div>
+        <div class="tease-post__read-more uppercase text-small">
+            {% set length = post.categories | length  %}
+
+            {# {% if length > 1} #}
+            <a href="#">
+                {% include "partial/read-more-icon.twig" %}
+                <div class="tease-post__read-more--text">
+                    See all
+                    <strong>{{length}}
+                        articles</strong>
+                    on this topic
+                </div>
+            </a>
+            {# //TODO: get the number of posts of the cat and the link #}
+
+            {# {% endif %} #}
+
+        </div>
+
+    </div>
+</div>
