@@ -454,6 +454,26 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/raw/star-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/assets/img/star-icon.svg",
+		"oF": 3,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/raw/stars.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 0,
+		"oAP": "/assets/img/stars.svg",
+		"oF": 3,
+		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/raw/user.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -461,6 +481,26 @@
 		"oAP": "/assets/img/user.svg",
 		"oF": 3,
 		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/star-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/star-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/stars.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/stars.svg",
+		"oF": 0,
+		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
@@ -638,6 +678,19 @@
 		"oA": 1,
 		"oAP": "/assets/sass/components/_components.css",
 		"oF": 1,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/sass/components/_cta.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/components/_cta.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
@@ -1274,6 +1327,30 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/page.twig",
+		"oF": 0
+		},
+	"/templates/partial/badge.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/partial/badge.twig",
+		"oF": 0
+		},
+	"/templates/partial/client-button.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/partial/client-button.twig",
+		"oF": 0
+		},
+	"/templates/partial/CTA.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/partial/CTA.twig",
 		"oF": 0
 		},
 	"/templates/partial/hero-meta.twig": {

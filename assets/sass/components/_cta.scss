@@ -1,0 +1,19 @@
+.cta {
+	background: $medium-blue;
+	color: $light-white;
+	padding: 75px 20px 90px;
+	@include min-screen($s) {
+		padding: 75px 40px 90px;
+	}
+
+	border-radius: 4px;
+	margin-top: 45px;
+	img {
+		margin: 0;
+	}
+	&__content {
+		color: #b8c4d2;
+		font-size: 1.8rem;
+		margin-bottom: 70px;
+	}
+}

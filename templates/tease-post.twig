@@ -1,41 +1,37 @@
-{% extends "tease.twig" %}
+{% extends "tease.twig" %} {% block content %} {% if post.get_thumbnail %}
 
-{% block content %}
-    {% if post.get_thumbnail %}
+<div class="tease-post__media">
+	<a href="{{ post.link }}">
+		{% include "partial/badge.twig" %}
+		<img src="{{post.thumbnail.src | resize(500, 312)}}" />
+		{% endif %}
+	</a>
+</div>
 
-        <div class="tease-post__media">
-            <a href="{{ post.link }}">
-                {% set badgeTitle = post.is_premium ? 'Premium Content': 'Free Content' %}
-                {% set badgeColor = post.is_premium ? 'bg-blue': 'bg-green' %}
-                <div class="tease-post__badge {{ badgeColor }}">{{ badgeTitle }}</div>
-                <img src="{{post.thumbnail.src | resize(500, 312)}}"/>
-            {% endif %}
-        </a>
-    </div>
-
-    <div class="tease-post__content">
-        {% set cat = post.categories[0] %}
-        <div class="tease-post__content--top">
-            <h4 class="tease-post__cat bold uppercase no-margin">
-                <a href="/categories/{{ cat.slug }}">{{ cat.name  | e('esc_html')}}</a>
-                {# TODO: set the right cat link #}
-            </h4>
-            <h3 class="tease-post__title h3-font32 bold no-margin">
-                <a href="{{post.link}}">{{post.title}}</a>
-            </h3>
-        </div>
-        <div class="tease-post__content--bottom">
-            <div class="tease-post__read-more uppercase text-small">
-                <a href="{{post.link}}">
-                    <div class="tease-post__read-more--icon"><img src="{{theme.path}}/assets/img/arrow-right.svg" alt=""></div>
-                    <div class="tease-post__read-more--text">
-                        Read more
-                    </div>
-
-                </a>
-            </div>
-            {% include "partial/post-meta.twig" %}
-        </div>
-    </div>
+<div class="tease-post__content">
+	{% set cat = post.categories[0] %}
+	<div class="tease-post__content--top">
+		<h4 class="tease-post__cat bold uppercase no-margin">
+			<a href="/categories/{{ cat.slug }}">{{ cat.name  | e('esc_html')}}</a>
+			{# TODO: set the right cat link #}
+		</h4>
+		<h3 class="tease-post__title h3-font32 bold no-margin">
+			<a href="{{ post.link }}">{{ post.title }}</a>
+		</h3>
+	</div>
+	<div class="tease-post__content--bottom">
+		<div class="tease-post__read-more uppercase text-small">
+			<a href="{{ post.link }}">
+				<div class="tease-post__read-more--icon">
+					<img src="{{ theme.path }}/assets/img/arrow-right.svg" alt="" />
+				</div>
+				<div class="tease-post__read-more--text">
+					Read more
+				</div>
+			</a>
+		</div>
+		{% include "partial/post-meta.twig" %}
+	</div>
+</div>
 
 {% endblock %}

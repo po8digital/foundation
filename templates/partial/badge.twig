@@ -1,0 +1,3 @@
+{% set badgeTitle = post.is_premium ? 'Premium Content': 'Free Content' %}
+{% set badgeColor = post.is_premium ? 'bg-blue': 'bg-green' %}
+<div class="tease-post__badge {{ badgeColor }}">{{ badgeTitle }}</div>

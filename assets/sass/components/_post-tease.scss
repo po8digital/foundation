@@ -28,6 +28,10 @@
 		position: absolute;
 		top: -12px;
 		left: 20px;
+		.article-content & {
+			left: initial;
+			right: 150px;
+		}
 	}
 	&__content {
 		flex-basis: 55%;

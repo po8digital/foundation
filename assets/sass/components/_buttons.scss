@@ -1,8 +1,15 @@
 .button {
-	padding: 18px 30px;
+	padding: 18px 15px;
+	@include min-screen($xs) {
+		padding: 18px 30px;
+	}
+
 	font-family: 'Avenir';
 	font-weight: 500;
+	font-size: 1.4rem;
+
 	font-size: 1.6rem;
+
 	color: $light-pink;
 	text-transform: uppercase;
 	border-radius: 4px;
@@ -30,6 +37,15 @@
 		border-color: $black;
 		&:hover {
 			background: lighten($darkest-grey, 2%);
+		}
+	}
+	img {
+		display: none;
+		@include min-screen($xs) {
+			display: inline;
+		}
+		@include min-screen($s) {
+			margin-left: 40px !important;
 		}
 	}
 }
