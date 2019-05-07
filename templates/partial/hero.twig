@@ -1,16 +1,35 @@
-<section class="hero bg-black">
-	<div class="wrapper">
-		{% set title = post.hero_title ? post.hero_title | e('esc_html') :
+<section class="hero bg-black ">
+    <div class="wrapper">
+        {% set title = post.hero_title ? post.hero_title | e('esc_html') :
 		post.title | e('esc_html') %}
-		<h1 class="h1-font42 text-center light-pink bold no-margin">{{ title }}</h1>
-		{% if post.hero_content %}
-		<div class="hero__content text-center grey">
-			{{ post.hero_content | e('wp_kses_post') |wpautop}}
-		</div>
-		{% endif %}
-		<div class="hero__buttons text-center">
+        <h1 class="h1-font42 text-center light-pink bold no-margin">{{ title }}</h1>
+        {% if post.hero_content %}
+            <div class="hero__content text-center grey">
+                {{ post.hero_content | e('wp_kses_post') |wpautop}}
+            </div>
+        {% endif %}
+
+        <div class="hero__buttons text-center">
 			{% include "partial/client-button.twig" %}
-			<a class="button button--dark" href="#">Login</a>
-		</div>
-	</div>
+			{% if post.custom_button == false %}
+            <a class="button button--dark" href="#">Login</a>
+            {% endif %}
+        </div>
+
+    </div>
 </section>
+
+{% if post.thumbnail %}
+<style>
+	.hero {
+		background: linear-gradient(
+				180deg,
+				#21232b 0%,
+				#21232b 9%,
+				rgba(33, 35, 43, 0) 50%
+			),
+			url('{{post.thumbnail}}') no-repeat center center/cover;
+	}
+</style>
+{% endif %}
+

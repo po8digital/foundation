@@ -1,3 +1,7 @@
-<a href="#" class="button button--blue"
-	>Become a client <img src="{{ theme.path }}/assets/img/star-icon.svg" alt=""
-/></a>
+{% set customButton = post.custom_button %}
+{% set text = customButton ? customButton['title'] : 'become a client' %}
+{% set icon = customButton ? 'arrow-right-dark' : 'star-icon' %}
+
+{% set link = customButton ? customButton['link'] : '#' %}
+<a href="{{ link }}" class="button button--blue">{{text}}
+    <img src="{{ theme.path }}/assets/img/{{icon}}.svg" alt=""/></a>
