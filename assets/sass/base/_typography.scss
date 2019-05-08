@@ -86,8 +86,10 @@ h4,
 h5,
 h6 {
 	font-weight: 900;
+	font-family: 'Avenir';
 	a {
 		font-family: 'Avenir';
+		font-weight: 900;
 	}
 }
 
@@ -161,7 +163,7 @@ blockquote {
 	font-weight: 900;
 	font-size: 2.4rem;
 	line-height: 3.2rem;
-	margin: 0;
+	margin: 0 auto;
 	position: relative;
 	padding-left: 20px;
 	max-width: 500px;

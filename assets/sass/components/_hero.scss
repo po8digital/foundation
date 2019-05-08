@@ -1,5 +1,6 @@
 .hero {
 	padding: 90px 0;
+	height: 500px;
 	&__content {
 		margin: 14px 0 50px;
 	}
@@ -17,9 +18,9 @@
 
 .hero-single {
 	height: 800px;
-	position: relative;
 	padding: 50px 0;
 	z-index: -2;
+	position: relative;
 	background-image: linear-gradient(
 		180deg,
 		$black 0%,
@@ -42,5 +43,26 @@
 	margin-bottom: 15px;
 	.article-body & {
 		border: none;
+	}
+}
+.hero,
+.hero-single {
+	position: relative;
+	&:after {
+		content: url('./assets/img/curve-beige-2500.svg');
+		// background:  no-repeat;
+		width: 100%;
+		height: 314px;
+		position: absolute;
+		left: 0;
+		bottom: -90px;
+	}
+}
+
+.blog{
+	.hero{
+		&:after{
+			content: none;
+		}
 	}
 }

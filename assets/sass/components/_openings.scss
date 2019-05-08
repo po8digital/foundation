@@ -1,0 +1,13 @@
+.openings {
+	&__header {
+		@include flexbox;
+		border-bottom: 5px solid #dcd8cb;
+		font-size: 1.4rem;
+		padding: 8px 0;
+		margin-bottom: 20px;
+	}
+	&__item {
+		@include flexbox;
+		margin-bottom: 20px;
+	}
+}

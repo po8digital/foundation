@@ -11,7 +11,11 @@
     {% elseif block_class == 'block_openings' %}
         {% include 'blocks/_openings.twig' %}
     {% elseif block_class == 'block_benefits' %}
-        {% include 'blocks/_benefits.twig' %}
-    {% endif %}
+		{% include 'blocks/_benefits.twig' %}
+		
+		{% elseif block_class == 'block_image' %}
+    {% include 'blocks/_image.twig' %}
+	{% endif %}
+	
 
 {% endfor %}

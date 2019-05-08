@@ -1,0 +1,8 @@
+<div class="benefits">
+    {% for item in block.benefits %}
+        <h4 class="h4-font21 brown bold benefits__title">{{ item.title | e('esc_html')}}</h4>
+        <div class="benefits__content">{{ item.content | e('esc_html')}}</div>
+    {% endfor %}
+
+
+</div>

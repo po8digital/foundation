@@ -11,6 +11,7 @@ body {
 	background: url('./assets/img/lab-bg.svg') no-repeat -10px 0;
 	background-size: 101% auto;
 	padding-top: 60px;
+
 	.posts-wrapper {
 		padding: 60px 55px;
 		background: $light-white;
@@ -50,6 +51,21 @@ body {
 			}
 			@include min-screen($s) {
 				// width: 250px;
+			}
+		}
+	}
+}
+
+.page {
+	.article-body {
+		.wrapper {
+			max-width: 1170px;
+			position: relative;
+			top: -120px;
+			background: $light-white;
+			padding: 0 30px;
+			@include min-screen($m) {
+				padding: 0 53px;
 			}
 		}
 	}

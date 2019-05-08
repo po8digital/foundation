@@ -1,0 +1,13 @@
+<div class="openings">
+    <div class="openings__header">
+        <div class="bold uppercase black">Positions</div>
+        <div class="bold uppercase black">Status</div>
+    </div>
+    {% for item in block.openings %}
+        <div class="openings__item">
+            <div class="brown bold">{{ item.position | e('esc_html')}}</div>
+            <div class="brown bold">{{ item.status | e('esc_html')}}</div>
+        </div>
+    {% endfor %}
+
+</div>
