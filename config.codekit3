@@ -412,6 +412,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/quote2.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/quote2.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/raw/arrow-right-dark.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -702,6 +712,17 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/js/animation.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/animation.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/assets/js/custom.min.js": {
 		"bF": 0,
 		"ft": 64,
@@ -753,6 +774,17 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"/assets/js/custom/animation.js": {
+		"bF": 2,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/animation.min.js",
+		"oF": 3,
+		"sC": 3,
+		"tS": 1
 		},
 	"/assets/js/custom/index.js": {
 		"bF": 2,
@@ -911,6 +943,19 @@
 		"oA": 1,
 		"oAP": "/assets/sass/base/_wordpress.css",
 		"oF": 1,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/sass/components/_animated-text.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/components/_animated-text.css",
+		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},

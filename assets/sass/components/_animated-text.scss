@@ -1,0 +1,38 @@
+.animated-text {
+	padding: 74px 0 108px;
+	.page-template-services & {
+		margin-top: -50px; //TODO: find why this 50px space is there
+		background-image: linear-gradient(180deg, $black 0%, #793834 100%);
+		.animated-text__title {
+			color: $light-grey;
+		}
+		.animated-text__item {
+			color: $salmon;
+			opacity: 0;
+		}
+	}
+	&__top {
+		margin-bottom: 100px;
+	}
+	&__bottom {
+		padding-top: 150px;
+	}
+	&__animation {
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			height: 79px;
+			width: 100%;
+			background: $brown;
+			opacity: 0.15;
+		}
+	}
+	&__item {
+		font-size: 12rem;
+		position: absolute;
+		left: 80px;
+		top: -85px;
+		z-index: 10;
+	}
+}

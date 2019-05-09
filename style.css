@@ -2694,4 +2694,35 @@ body {
     .featured-sites__item {
       -webkit-flex-basis: 20%;
               flex-basis: 20%; } }
+
+.animated-text {
+  padding: 74px 0 108px; }
+  .page-template-services .animated-text {
+    margin-top: -50px;
+    background-image: -webkit-linear-gradient(top, #21232b 0%, #793834 100%);
+    background-image: linear-gradient(180deg, #21232b 0%, #793834 100%); }
+    .page-template-services .animated-text .animated-text__title {
+      color: #dcd8cb; }
+    .page-template-services .animated-text .animated-text__item {
+      color: #dd6052;
+      opacity: 0; }
+  .animated-text__top {
+    margin-bottom: 100px; }
+  .animated-text__bottom {
+    padding-top: 150px; }
+  .animated-text__animation {
+    position: relative; }
+    .animated-text__animation:after {
+      content: '';
+      position: absolute;
+      height: 79px;
+      width: 100%;
+      background: #b14437;
+      opacity: 0.15; }
+  .animated-text__item {
+    font-size: 12rem;
+    position: absolute;
+    left: 80px;
+    top: -85px;
+    z-index: 10; }
 /*# sourceMappingURL=style.css.map */
