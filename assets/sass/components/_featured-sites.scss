@@ -1,0 +1,20 @@
+.featured-sites {
+	&__title {
+		max-width: 880px;
+		margin: 0 auto 50px;
+	}
+	&__container {
+		@include flexbox(space-around, row wrap);
+	}
+	&__item {
+		flex-basis: 50%;
+		font-size: 2.6rem;
+		margin-bottom: 20px;
+		@include min-screen($s) {
+			flex-basis: 33%;
+		}
+		@include min-screen($m) {
+			flex-basis: 20%;
+		}
+	}
+}

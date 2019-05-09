@@ -1,8 +1,12 @@
 {% set customButton = post.custom_button %}
 {% set text = customButton ? customButton['title'] : 'become a client' %}
-{% set icon = customButton ? 'arrow-right-dark' : 'star-icon' %}
-{% set color = customButton ? 'salmon' : 'blue' %}
+{% set iconChoice = post.custom_button_icon == 'star' ? 'star-icon' : post.custom_button_icon == 'thumb'? 'thumb-icon': 'arrow-right-dark' %}
+{% set colorChoice = post.custom_button_color == 'dark' ? 'dark' : post.custom_button_icon == 'blue'? 'blue': 'salmon' %}
+{% set icon = customButton ? iconChoice : 'star-icon' %}
+{% set color = customButton ? colorChoice : 'blue' %}
 
 {% set link = customButton ? customButton['link'] : '#' %}
 <a href="{{ link }}" class="button button--{{color}}">{{text}}
     <img src="{{ theme.path }}/assets/img/{{icon}}.svg" alt=""/></a>
+
+{# TODO:fix icons and colors #}

@@ -1,3 +1,6 @@
-<div class="image-block">
-    <img src="{{ TimberImage(block.image) | e('esc_url')}}" alt="">
-</div>
+{% extends "blocks/_block-base.twig" %}
+{% block contentBlock %}
+    <div class="image-block {{ class }}">
+        <img src="{{ TimberImage(block.image) | e('esc_url')}}" alt="">
+    </div>
+{% endblock %}

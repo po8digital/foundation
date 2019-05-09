@@ -1,0 +1,9 @@
+{% extends "blocks/_block-base.twig" %}
+{% block contentBlock %}
+    <div class="blockquote2 {{ class }}">
+        <div class="wrapper">
+            <div class="blockquote2__content bold">{{ block.content | e('esc_html')}}</div>
+            <div class="blockquote2__author bold">{{ block.author | e('esc_html')}}</div>
+        </div>
+    </div>
+{% endblock %}

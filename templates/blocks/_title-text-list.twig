@@ -1,13 +1,16 @@
-<div class="ttl">
-    <h4 class="h4-font21 brown ttl__title">{{ block.title | e('esc_html')}}</h4>
-    <div class="ttl__text">
-        {{ block.text | e('esc_html')}}
+{% extends "blocks/_block-base.twig" %}
+{% block contentBlock %}
+    <div class="ttl {{ class }}">
+        <h4 class="font21 brown ttl__title">{{ block.title | e('esc_html')}}</h4>
+        <div class="ttl__text">
+            {{ block.text | e('esc_html')}}
+        </div>
+        <ul class="ttl__list">
+            {% for item in block.list %}
+                <li>{{ item.list_item | e('esc_html')}}</li>
+
+            {% endfor %}
+        </ul>
+
     </div>
-    <ul class="ttl__list">
-        {% for item in block.list %}
-            <li>{{ item.list_item | e('esc_html')}}</li>
-
-        {% endfor %}
-    </ul>
-
-</div>
+{% endblock %}

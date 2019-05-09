@@ -1,0 +1,166 @@
+{
+    "key": "group_5ccbea3866c87",
+    "title": "Hero",
+    "fields": [
+        {
+            "key": "field_5ccbea4084431",
+            "label": "Title",
+            "name": "hero_title",
+            "type": "text",
+            "instructions": "write here if you want a different title than the page title\r\nif left blank, it will display the page title",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5ccbea4c84432",
+            "label": "Subtitle",
+            "name": "hero_content",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
+        },
+        {
+            "key": "field_5cd11be449760",
+            "label": "Custom Button",
+            "name": "custom_button",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_validate": "",
+            "acfe_update": "",
+            "acfe_permissions": "",
+            "return_format": "array"
+        },
+        {
+            "key": "field_5cd29c473e007",
+            "label": "Custom Button Icon",
+            "name": "custom_button_icon",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cd11be449760",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_validate": "",
+            "acfe_update": "",
+            "acfe_permissions": "",
+            "choices": {
+                "thumb: thumb": "thumb: thumb",
+                "arrow: arrow": "arrow: arrow",
+                "star: star": "star: star"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        },
+        {
+            "key": "field_5cd29caa3e008",
+            "label": "Custom Button Color",
+            "name": "custom_button_color",
+            "type": "select",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5cd11be449760",
+                        "operator": "!=empty"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_validate": "",
+            "acfe_update": "",
+            "acfe_permissions": "",
+            "choices": {
+                "blue: blue": "blue: blue",
+                "red: red": "red: red",
+                "dark: dark": "dark: dark"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 0,
+            "return_format": "value",
+            "ajax": 0,
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "service"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "acfe_display_title": "",
+    "acfe_autosync": [
+        "json"
+    ],
+    "acfe_permissions": "",
+    "acfe_note": "",
+    "acfe_meta": "",
+    "modified": 1557310449
+}

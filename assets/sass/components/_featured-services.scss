@@ -1,0 +1,52 @@
+.featured-services {
+	background: $black;
+	@include min-screen($l) {
+		background: linear-gradient(180deg, transparent 15%, $black 15%);
+	}
+
+	.page-template-services & {
+		@include min-screen($l) {
+			position: relative;
+			top: -50px;
+		}
+	}
+	.wrapper {
+		max-width: 1170px;
+		@include flexbox(start, row wrap);
+	}
+	&__item {
+		@include max-screen($xl) {
+			max-width: 250px;
+		}
+		@include min-screen($s) {
+			flex-basis: 50%;
+		}
+		@include min-screen($xl) {
+			flex-basis: 25%;
+		}
+
+		padding-right: 10px;
+		margin-bottom: 10px;
+
+		&--wrap {
+			padding: 54px 0 10px 12px;
+			border-radius: 4px;
+			box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+		}
+		&--content {
+			background: $light-white;
+			box-shadow: -9px 10px 15px rgba(0, 0, 0, 0.4);
+			border-radius: 4px 0 0 4px;
+			padding: 25px 25px 30px;
+			margin-bottom: 10px;
+		}
+		&--title {
+			font-size: 1.7rem;
+			margin: 0 0 10px;
+		}
+		&--teaser {
+			font-size: 1.4rem;
+			color: $medium-grey;
+		}
+	}
+}

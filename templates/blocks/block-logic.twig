@@ -11,11 +11,20 @@
     {% elseif block_class == 'block_openings' %}
         {% include 'blocks/_openings.twig' %}
     {% elseif block_class == 'block_benefits' %}
-		{% include 'blocks/_benefits.twig' %}
-		
-		{% elseif block_class == 'block_image' %}
-    {% include 'blocks/_image.twig' %}
-	{% endif %}
-	
+        {% include 'blocks/_benefits.twig' %}
+    {% elseif block_class == 'block_image' %}
+        {% include 'blocks/_image.twig' %}
+    {% elseif block_class == 'block_featured_services' %}
+        {% include 'blocks/_featured-services.twig' %}
+    {% elseif block_class == 'block_text_image' %}
+        {% include 'blocks/_text-image.twig' %}
+    {% elseif block_class == 'block_animated_text' %}
+        {% include 'blocks/_animated-text.twig' %}
+    {% elseif block_class == 'block_featured_sites' %}
+        {% include 'blocks/_featured-sites.twig' %}
+    {% elseif block_class == 'block_blockquote_2' %}
+        {% include 'blocks/_blockquote2.twig' %}
+    {% endif %}
+
 
 {% endfor %}

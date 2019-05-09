@@ -1,3 +1,6 @@
-<div class="decorated-title">
-    <h2 class="h2-font56 salmon">{{  block.title| e('esc_html')}}</h2>
-</div>
+{% extends "blocks/_block-base.twig" %}
+{% block contentBlock %}
+    <div class="decorated-title {{ class }}">
+        <h2 class="font56 salmon">{{  block.title| e('esc_html')}}</h2>
+    </div>
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends "blocks/_block-base.twig" %}
+{% block contentBlock %}
+    <div class="featured-services {{ class }}">
+        <div class="wrapper">
+            {% if block.title %}
+                <h2 class="featured-services__title font32 bold">{{ block.title | e('esc_html')}}</h2>
+            {% endif %}
+            {% for item in block.services %}
+
+                <div class="featured-services__item">
+                    <div class="featured-services__item--wrap">
+                        <div class="featured-services__item--content">
+                            <h3 class="featured-services__item--title blod dark-green uppercase">{{ item.title }}</h3>
+                            <div class="featured-services__item--teaser">{{ item.post_excerpt }}</div>
+                        </div>
+                        <a href="{{ item.link }}"><img src="{{ theme.path }}/assets/img/arrow-thin.svg" alt=""></a>
+                    </div>
+                </div>
+                <style>
+                    .featured-services__item--wrap {
+                        background: url({{ TimberImage(item.services_background) | e('esc_url')}}) no-repeat;
+                        background-size: cover;
+                    }
+                </style>
+
+            {% endfor %}
+
+
+        </div>
+    </div>
+{% endblock %}

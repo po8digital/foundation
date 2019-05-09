@@ -1,0 +1,14 @@
+{% extends "blocks/_block-base.twig" %}
+{% block contentBlock %}
+    <div class="featured-sites {{ class }}">
+        <div class="wrapper">
+            <div class="featured-sites__title font42 bold salmon text-center">{{ block.title | e('esc_html')}}</div>
+            <div class="featured-sites__container">
+                {% for item in block.sites %}
+                    <div class="featured-sites__item bold grey">{{ item.title | e('esc_html')}}</div>
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
