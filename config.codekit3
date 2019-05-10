@@ -1790,6 +1790,14 @@
 		"oAP": "/templates/blocks/_blockquote2.twig",
 		"oF": 0
 		},
+	"/templates/blocks/_booking-form.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_booking-form.twig",
+		"oF": 0
+		},
 	"/templates/blocks/_content.twig": {
 		"cB": 0,
 		"ft": 8192,

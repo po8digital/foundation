@@ -1,0 +1,18 @@
+{% extends "blocks/_block-base.twig" %}
+{% block contentBlock %}
+    <div class="booking-form bg-black {{ class }}">
+        <div class="wrapper">
+            <div class="booking-form__text">
+                <h3 class="booking-form__title font32 bold light-pink">{{ block.title | e('esc_html')}}</h3>
+                <div class="booking-form__content">{{ block.content | e('esc_html')}}</div>
+            </div>
+            <div class="booking-form__form">
+                {{ fn('do_shortcode','[gravityform id=1 title=false description=false ajax=true]') }}
+            </div>
+
+            <div class="booking-form__form"></div>
+
+        </div>
+    </div>
+
+{% endblock %}
