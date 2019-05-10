@@ -2573,6 +2573,18 @@ body {
       .text-image.services-first .text-image__item img {
         position: relative;
         right: -16px; }
+  .text-image.inverse-order {
+    padding-bottom: 0; }
+    .text-image.inverse-order .text-image__text {
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+              order: 2; }
+    @media only screen and (min-width: 768px) {
+      .text-image.inverse-order .text-image__image {
+        margin-left: -50vw;
+        left: 50%; } }
+    .text-image.inverse-order .text-image__item {
+      margin-bottom: 0; }
   .text-image .wrapper {
     max-width: 1170px; }
   .text-image__item {
@@ -2677,6 +2689,25 @@ body {
     .featured-services__item--teaser {
       font-size: 1.4rem;
       color: #707070; }
+
+.featured-sites.curve-black {
+  position: relative;
+  margin-top: 150px; }
+  .featured-sites.curve-black .featured-sites__title {
+    margin-bottom: 0;
+    max-width: 600px; }
+  .featured-sites.curve-black:before {
+    content: url("./assets/img/curve-black-1200.svg");
+    top: -240px;
+    position: absolute;
+    left: 0; }
+    @media only screen and (min-width: 1920px) {
+      .featured-sites.curve-black:before {
+        content: url("./assets/img/curve-black-3000.svg");
+        top: -375px; } }
+  @media only screen and (min-width: 1920px) {
+    .featured-sites.curve-black {
+      margin-top: 250px; } }
 
 .featured-sites__title {
   max-width: 880px;

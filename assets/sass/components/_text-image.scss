@@ -10,6 +10,21 @@
 			}
 		}
 	}
+	&.inverse-order {
+		padding-bottom: 0;
+		.text-image__text {
+			order: 2;
+		}
+		.text-image__image {
+			@include min-screen($m) {
+				margin-left: -50vw;
+				left: 50%;
+			}
+		}
+		.text-image__item {
+			margin-bottom: 0;
+		}
+	}
 	.wrapper {
 		max-width: 1170px;
 	}
@@ -35,9 +50,6 @@
 				.text-image__image {
 					margin-left: -50vw;
 					left: 50%;
-					img {
-						// left: -16px;
-					}
 				}
 			}
 		}
