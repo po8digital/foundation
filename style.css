@@ -2459,7 +2459,8 @@ body {
   .decorated-title h2 {
     position: relative;
     margin: 0;
-    margin-left: 30px; }
+    margin-left: 30px;
+    max-width: 750px; }
     .decorated-title h2:before {
       content: '';
       background: url("./assets/img/blue-triangle.svg");
@@ -2789,4 +2790,27 @@ body {
     font-size: 1.2rem;
     border-left: 5px solid #dd6052;
     padding-left: 10px; }
+
+.title-cols {
+  padding: 50px 0 100px; }
+  .title-cols__intro {
+    margin-top: 25px; }
+  .title-cols__cols-wrap {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: start;
+            justify-content: start; }
+  .title-cols__item {
+    -webkit-flex-basis: 50%;
+            flex-basis: 50%; }
+    @media only screen and (min-width: 768px) {
+      .title-cols__item {
+        -webkit-flex-basis: 33%;
+                flex-basis: 33%; } }
 /*# sourceMappingURL=style.css.map */

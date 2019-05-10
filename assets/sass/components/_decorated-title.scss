@@ -4,6 +4,7 @@
 		position: relative;
 		margin: 0;
 		margin-left: 30px;
+		max-width: 750px;
 		&:before {
 			content: '';
 			background: url('./assets/img/blue-triangle.svg');

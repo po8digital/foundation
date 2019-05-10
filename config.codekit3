@@ -1206,6 +1206,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/sass/components/_title-cols.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/components/_title-cols.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/sass/components/_title-text-list.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1819,6 +1832,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/templates/blocks/_text-image.twig",
+		"oF": 0
+		},
+	"/templates/blocks/_title-cols.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_title-cols.twig",
 		"oF": 0
 		},
 	"/templates/blocks/_title-text-list.twig": {

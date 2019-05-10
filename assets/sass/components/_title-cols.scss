@@ -1,0 +1,15 @@
+.title-cols {
+	padding: 50px 0 100px;
+	&__intro {
+		margin-top: 25px;
+	}
+	&__cols-wrap {
+		@include flexbox(start, row wrap);
+	}
+	&__item {
+		flex-basis: 50%;
+		@include min-screen($m) {
+			flex-basis: 33%;
+		}
+	}
+}
