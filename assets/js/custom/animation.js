@@ -3,7 +3,11 @@ import { $, $$ } from './_utilities';
 // AnimatedText
 const texts = $$('.animated-text__item');
 
-const animTextTl = new TimelineMax({ repeat: -1, repeatDelay: 1 });
+const animTextTl = new TimelineMax({
+	repeat: -1,
+	repeatDelay: 1,
+	paused: false,
+});
 
 texts.forEach(textItem => {
 	animTextTl

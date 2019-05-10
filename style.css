@@ -2702,27 +2702,55 @@ body {
     background-image: -webkit-linear-gradient(top, #21232b 0%, #793834 100%);
     background-image: linear-gradient(180deg, #21232b 0%, #793834 100%); }
     .page-template-services .animated-text .animated-text__title {
-      color: #dcd8cb; }
+      color: #dcd8cb;
+      font-size: 3rem;
+      line-height: 1.2; }
+      @media only screen and (min-width: 768px) {
+        .page-template-services .animated-text .animated-text__title {
+          font-size: 5.6rem; } }
     .page-template-services .animated-text .animated-text__item {
       color: #dd6052;
       opacity: 0; }
   .animated-text__top {
-    margin-bottom: 100px; }
+    margin-bottom: 50px; }
+    @media only screen and (min-width: 768px) {
+      .animated-text__top {
+        margin-bottom: 100px; } }
   .animated-text__bottom {
-    padding-top: 150px; }
+    padding-top: 100px; }
+    @media only screen and (min-width: 768px) {
+      .animated-text__bottom {
+        padding-top: 150px; } }
   .animated-text__animation {
     position: relative; }
     .animated-text__animation:after {
       content: '';
       position: absolute;
-      height: 79px;
+      height: 40px;
       width: 100%;
       background: #b14437;
       opacity: 0.15; }
+      @media only screen and (min-width: 480px) {
+        .animated-text__animation:after {
+          height: 79px; } }
   .animated-text__item {
-    font-size: 12rem;
+    font-size: 3.2rem;
     position: absolute;
-    left: 80px;
-    top: -85px;
-    z-index: 10; }
+    left: 20px;
+    top: -18px; }
+    @media only screen and (min-width: 480px) {
+      .animated-text__item {
+        font-size: 7rem; } }
+    @media only screen and (min-width: 1024px) {
+      .animated-text__item {
+        font-size: 12rem; } }
+    @media only screen and (min-width: 600px) {
+      .animated-text__item {
+        left: 80px; } }
+    @media only screen and (min-width: 480px) {
+      .animated-text__item {
+        top: -55px; } }
+    @media only screen and (min-width: 1024px) {
+      .animated-text__item {
+        top: -85px; } }
 /*# sourceMappingURL=style.css.map */
