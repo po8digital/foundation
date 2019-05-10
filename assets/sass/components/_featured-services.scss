@@ -12,17 +12,23 @@
 	}
 	.wrapper {
 		max-width: 1170px;
-		@include flexbox(start, row wrap);
+
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		@include min-screen($xl) {
+			flex-wrap: nowrap;
+		}
 	}
 	&__item {
-		@include max-screen($xl) {
-			max-width: 250px;
-		}
-		@include min-screen($s) {
+		@include min-screen(500px) {
 			flex-basis: 50%;
 		}
-		@include min-screen($xl) {
+		@include min-screen(810px) {
 			flex-basis: 25%;
+		}
+		@include max-screen($xl) {
+			max-width: 250px;
 		}
 
 		padding-right: 10px;

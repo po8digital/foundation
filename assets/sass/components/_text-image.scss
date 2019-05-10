@@ -1,9 +1,13 @@
 .text-image {
-	padding: 100px 0;
+	padding: 100px 0 50px;
 	&.services-first {
 		padding: 0;
 		.text-image__item {
 			margin-bottom: 0;
+			img {
+				position: relative;
+				right: -16px;
+			}
 		}
 	}
 	.wrapper {
@@ -15,26 +19,25 @@
 			@include flexbox(space-between, row nowrap);
 			align-items: center;
 		}
-		&:nth-child(odd) {
-			.text-image__text {
-			}
-			.text-image__image {
-				margin-right: -50vw;
-				right: 50%;
-				img {
-					// right: -16px;
+		@include min-screen($m) {
+			&:nth-child(odd) {
+				.text-image__text {
+				}
+				.text-image__image {
+					margin-right: -50vw;
+					right: 50%;
 				}
 			}
-		}
-		&:nth-child(even) {
-			.text-image__text {
-				order: 2;
-			}
-			.text-image__image {
-				margin-left: -50vw;
-				left: 50%;
-				img {
-					// left: -16px;
+			&:nth-child(even) {
+				.text-image__text {
+					order: 2;
+				}
+				.text-image__image {
+					margin-left: -50vw;
+					left: 50%;
+					img {
+						// left: -16px;
+					}
 				}
 			}
 		}
@@ -43,6 +46,9 @@
 	&__text {
 		max-width: 450px;
 		flex-basis: 45%;
+		@include max-screen($m) {
+			margin-bottom: 50px;
+		}
 
 		h2 {
 			margin: 0 0 20px;

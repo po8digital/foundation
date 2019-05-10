@@ -1,5 +1,8 @@
 .hero {
 	padding: 90px 0;
+	.page-template-services & {
+		height: 430px;
+	}
 	height: 500px;
 	&__content {
 		margin: 14px 0 0;
