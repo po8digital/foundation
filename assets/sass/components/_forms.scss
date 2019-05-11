@@ -1,0 +1,41 @@
+input[type='submit'] {
+	padding: 18px 15px;
+	background: $salmon;
+	@include min-screen($xs) {
+		padding: 18px 30px;
+	}
+	border: none;
+	border-bottom: 5px solid $brown;
+	width: 97% !important;
+	transition: all 0.4s ease-in-out;
+	cursor: pointer;
+	&:hover {
+		background: lighten($salmon, 5%);
+	}
+	margin-top: 20px !important;
+}
+input[type='text'],
+textarea {
+	background: transparent;
+	border: none;
+	border-bottom: 4px solid $grey;
+	color: $grey;
+	padding-left: 15px !important;
+}
+textarea {
+	height: 140px;
+}
+label {
+	color: $grey;
+	font-size: 1.6rem;
+	margin-left: 15px;
+	transform: translateY(30px);
+	transition: all 0.4s ease-in-out;
+	&.is-active {
+		transform: translateY(0);
+		font-size: 1.2rem !important;
+	}
+}
+.gfield_required {
+	color: $salmon !important;
+}

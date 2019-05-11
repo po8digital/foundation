@@ -762,6 +762,17 @@
 		"oAP": "/assets/js/custom.min.js.map",
 		"oF": 0
 		},
+	"/assets/js/custom/_formLabel.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/assets/js/custom/_formLabel-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/assets/js/custom/_lab.js": {
 		"bF": 0,
 		"ft": 64,
@@ -992,6 +1003,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/sass/components/_booking-form.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/components/_booking-form.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/sass/components/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1092,6 +1116,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/sass/components/_featured-sites.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/sass/components/_forms.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/components/_forms.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

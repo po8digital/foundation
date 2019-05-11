@@ -2844,4 +2844,76 @@ body {
       .title-cols__item {
         -webkit-flex-basis: 33%;
                 flex-basis: 33%; } }
+
+.booking-form {
+  padding: 100px 0 150px; }
+  .booking-form .wrapper {
+    max-width: 900px; }
+    @media only screen and (min-width: 768px) {
+      .booking-form .wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: row wrap;
+                flex-flow: row wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+                justify-content: space-between; } }
+    .booking-form .wrapper > * {
+      -webkit-flex-basis: 50%;
+              flex-basis: 50%; }
+  @media only screen and (min-width: 768px) {
+    .booking-form__text {
+      padding-right: 100px;
+      text-align: right; } }
+  .booking-form__content {
+    color: #ffeae1;
+    font-size: 1.8rem; }
+  .booking-form__title {
+    margin: 0 0 25px; }
+
+input[type='submit'] {
+  padding: 18px 15px;
+  background: #dd6052;
+  border: none;
+  border-bottom: 5px solid #b14437;
+  width: 97% !important;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  margin-top: 20px !important; }
+  @media only screen and (min-width: 360px) {
+    input[type='submit'] {
+      padding: 18px 30px; } }
+  input[type='submit']:hover {
+    background: #e17467; }
+
+input[type='text'],
+textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid #b5afa0;
+  color: #b5afa0;
+  padding-left: 15px !important; }
+
+textarea {
+  height: 140px; }
+
+label {
+  color: #b5afa0;
+  font-size: 1.6rem;
+  margin-left: 15px;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+  label.is-active {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    font-size: 1.2rem !important; }
+
+.gfield_required {
+  color: #dd6052 !important; }
 /*# sourceMappingURL=style.css.map */

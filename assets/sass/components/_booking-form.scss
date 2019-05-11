@@ -1,0 +1,29 @@
+.booking-form {
+	.wrapper {
+		max-width: 900px;
+		@include min-screen($m) {
+			@include flexbox;
+		}
+
+		> * {
+			flex-basis: 50%;
+		}
+	}
+
+	&__text {
+		@include min-screen($m) {
+			padding-right: 100px;
+			text-align: right;
+		}
+	}
+	&__form {
+	}
+	&__content {
+		color: $light-pink;
+		font-size: 1.8rem;
+	}
+	&__title {
+		margin: 0 0 25px;
+	}
+	padding: 100px 0 150px;
+}

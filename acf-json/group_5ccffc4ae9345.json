@@ -1202,10 +1202,10 @@
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5cd543f217d50",
-                            "label": "Title",
-                            "name": "title",
-                            "type": "text",
+                            "key": "field_5cd67e737f4e6",
+                            "label": "Left Content",
+                            "name": "left_content",
+                            "type": "repeater",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -1217,33 +1217,57 @@
                             "acfe_validate": "",
                             "acfe_update": "",
                             "acfe_permissions": "",
-                            "default_value": "BOOK A 30-MINUTE CONSULTATION",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_5cd5440d17d51",
-                            "label": "Content",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "acfe_validate": "",
-                            "acfe_update": "",
-                            "acfe_permissions": "",
-                            "default_value": "Do you have a content marketing problem? Do you have a lead gen problem?\r\nLet us give you an honest perspective on the situation and whether it’s \r\nsomething we could help with.",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": 5,
-                            "new_lines": ""
+                            "collapsed": "",
+                            "min": 0,
+                            "max": 0,
+                            "layout": "table",
+                            "button_label": "",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5cd67e9b7f4e7",
+                                    "label": "Title",
+                                    "name": "title",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_validate": "",
+                                    "acfe_update": "",
+                                    "acfe_permissions": "",
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5cd67ea47f4e8",
+                                    "label": "Content",
+                                    "name": "content",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "acfe_validate": "",
+                                    "acfe_update": "",
+                                    "acfe_permissions": "",
+                                    "default_value": 3,
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": ""
+                                }
+                            ]
                         },
                         {
                             "key": "field_5cd5442e17d52",
@@ -1323,5 +1347,5 @@
     "acfe_permissions": "",
     "acfe_note": "",
     "acfe_meta": "",
-    "modified": 1557480722
+    "modified": 1557561430
 }
