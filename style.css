@@ -1857,8 +1857,11 @@ body {
   background-size: 101% auto;
   padding-top: 60px; }
   .lab .posts-wrapper {
-    padding: 60px 55px;
+    padding: 60px 30px;
     background: #faf5ef; }
+    @media only screen and (min-width: 480px) {
+      .lab .posts-wrapper {
+        padding: 60px 55px; } }
   .lab__dd {
     display: -webkit-box;
     display: -webkit-flex;
@@ -2120,7 +2123,7 @@ body {
 
 .tease-post {
   margin-bottom: 77px; }
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1010px) {
     .tease-post {
       display: -webkit-box;
       display: -webkit-flex;
@@ -2158,17 +2161,21 @@ body {
     -webkit-flex-basis: 55%;
             flex-basis: 55%;
     position: relative; }
-    .tease-post__content--bottom {
-      position: absolute;
-      bottom: 0; }
+    @media only screen and (min-width: 1010px) {
+      .tease-post__content--bottom {
+        position: absolute;
+        bottom: 0; } }
   .tease-post__title {
     line-height: 1.4;
     margin-bottom: 50px; }
     .tease-post__title a {
       color: #0b354c; }
   .tease-post__cat {
-    margin-top: -8px;
-    margin-bottom: 15px; }
+    margin-top: 10px; }
+    @media only screen and (min-width: 1010px) {
+      .tease-post__cat {
+        margin-top: -8px;
+        margin-bottom: 15px; } }
     .tease-post__cat a {
       color: #246fc9;
       font-size: 1.2rem; }
@@ -2236,6 +2243,31 @@ body {
   .post-meta__icon {
     position: relative;
     top: -1px; }
+
+@media only screen and (min-width: 1010px) {
+  .small-posts-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+            justify-content: space-between; } }
+
+.tease-post--small {
+  -webkit-flex-basis: 33%;
+          flex-basis: 33%;
+  display: block; }
+  .tease-post--small .tease-post__cat {
+    margin-top: 10px; }
+  .tease-post--small .tease-post__content--bottom {
+    position: relative;
+    margin-top: 30px; }
+  .tease-post--small .tease-post-title {
+    margin-bottom: 30px; }
 
 .pagination {
   display: -webkit-box;

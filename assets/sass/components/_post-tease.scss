@@ -1,13 +1,10 @@
 .tease-post {
 	// TODO: hover colors
-	// TODO: responsive to discuss with Tim
 	margin-bottom: 77px;
-	@include min-screen($l) {
+	@include min-screen(1010px) {
 		@include flexbox;
 	}
 
-	* {
-	}
 	&__media {
 		flex-basis: 45%;
 		padding-right: 15px;
@@ -37,8 +34,10 @@
 		flex-basis: 55%;
 		position: relative;
 		&--bottom {
-			position: absolute;
-			bottom: 0;
+			@include min-screen(1010px) {
+				position: absolute;
+				bottom: 0;
+			}
 		}
 	}
 
@@ -51,8 +50,12 @@
 	}
 
 	&__cat {
-		margin-top: -8px;
-		margin-bottom: 15px;
+		margin-top: 10px;
+		@include min-screen(1010px) {
+			margin-top: -8px;
+			margin-bottom: 15px;
+		}
+
 		a {
 			color: $blue;
 			font-size: 1.2rem;
@@ -98,15 +101,6 @@
 				color: $dark-blue;
 			}
 		}
-		// &:after {
-		// 	content: '';
-		// 	width: 100%;
-		// 	height: 1px;
-		// 	background-color: $light-grey;
-		// 	position: absolute;
-		// 	bottom: -37px;
-		// 	left: 38px;
-		// }
 	}
 }
 .post-meta {
@@ -123,5 +117,27 @@
 	&__icon {
 		position: relative;
 		top: -1px;
+	}
+}
+
+//inner posts
+
+.small-posts-wrapper {
+	@include min-screen(1010px) {
+		@include flexbox;
+	}
+}
+.tease-post--small {
+	flex-basis: 33%;
+	display: block;
+	.tease-post__cat {
+		margin-top: 10px;
+	}
+	.tease-post__content--bottom {
+		position: relative;
+		margin-top: 30px;
+	}
+	.tease-post-title {
+		margin-bottom: 30px;
 	}
 }
