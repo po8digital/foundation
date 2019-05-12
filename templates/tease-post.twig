@@ -8,6 +8,9 @@
                 <img src="{{post.thumbnail.src | resize(500, 312)}}"/>
             {% endif %}
         </a>
+        {% if post.post_video %}
+            {% include "partial/video-duration.twig" %}
+        {% endif %}
     </div>
 
     <div class="tease-post__content">

@@ -432,6 +432,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/play-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/play-icon.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/quote.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -1354,6 +1364,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/sass/components/_video-duration.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/components/_video-duration.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/sass/flexgrid/_grid.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2204,6 +2227,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/partial/social.twig",
+		"oF": 0
+		},
+	"/templates/partial/video-duration.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/partial/video-duration.twig",
 		"oF": 0
 		},
 	"/templates/search.twig": {

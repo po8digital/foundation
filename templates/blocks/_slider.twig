@@ -2,9 +2,16 @@
 {% block contentBlock %}
     <div class="block-slider {{ class }}">
         <div class="wrap700">
+
             <div class="slider">
                 {% for slide in block.slides %}
-                    <div class="slide" style="background:url({{ TimberImage(slide.image) | e('esc_url')}}) no-repeat center center/cover; height: 405px"></div>
+                    <div class="slide" style="background:url({{ TimberImage(slide.image) | e('esc_url')}}) no-repeat center center/cover; height: 405px">
+                        {% if slide.video %}
+                            {% include "partial/video-duration.twig" %}
+
+                        {% endif %}
+
+                    </div>
 
                 {% endfor %}
             </div>

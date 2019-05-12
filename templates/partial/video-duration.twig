@@ -1,0 +1,10 @@
+{% set video = fn('is_archive') or fn('is_home') ? post.post_video : slide.video  %}
+{% set duration = fn('is_archive') or fn('is_home') ? post.post_video_duration : slide.video_duration %}
+<a class="video-duration" data-fancybox href="{{ video | e('esc_url')}}">
+    <div class="video-duration__button ">
+        <img alt="play video" class="video-duration__icon" src="{{theme.path}}/assets/img/play-icon.svg">
+        <div class="video-duration__time bold">
+            {{ duration | e('esc_html')}}
+        </div>
+    </div>
+</a>
