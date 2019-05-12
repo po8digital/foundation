@@ -10,10 +10,11 @@
     {% endblock %}
 </header>
 
-<section class="content-wrapper" id="content" role="main">
-    {% if title %}
-        <h1>{{title}}</h1>
-    {% endif %}
+<section
+    class="content-wrapper" id="content" role="main">
+    {# {% if title %}
+            <h1>{{title}}</h1>
+        {% endif %} #}
     <div class=" {{sidebar_class}}">
         {% block content %}
             Sorry, no content

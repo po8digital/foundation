@@ -122,12 +122,14 @@
 
 //inner posts
 
-.small-posts-wrapper {
+.small-posts-wrapper,
+.category .posts-wrapper {
 	@include min-screen(1010px) {
 		@include flexbox;
 	}
 }
-.tease-post--small {
+.tease-post--small,
+.category .tease-post {
 	flex-basis: 33%;
 	display: block;
 	.tease-post__cat {

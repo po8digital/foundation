@@ -14,8 +14,7 @@
         {% set cat = post.categories[0] %}
         <div class="tease-post__content--top">
             <h4 class="tease-post__cat bold uppercase no-margin">
-                <a href="/categories/{{ cat.slug }}">{{ cat.name  | e('esc_html')}}</a>
-                {# TODO: set the right cat link #}
+                <a href="/category/{{ cat.slug }}">{{ cat.name  | e('esc_html')}}</a>
             </h4>
             <h3 class="tease-post__title font32 bold no-margin">
                 <a href="{{ post.link }}">{{ post.title }}</a>

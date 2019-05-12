@@ -1,7 +1,7 @@
 <div class="hero-meta text-small">
     <div class="hero-meta__cat uppercase bold">
-        <a href="#">{{ post.categories[0].name }}</a>
+        <a href="/category/{{post.categories[0].slug}}">{{ post.categories[0].name }}</a>
     </div>
-    {# TODO:add cat link #}
+    {# TODO:find why the cat link is not clickable #}
     {% include "partial/post-meta.twig" %}
 </div>

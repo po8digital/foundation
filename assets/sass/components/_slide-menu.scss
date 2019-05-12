@@ -29,6 +29,16 @@
 				padding: 10px 0;
 				font-size: 4.2rem;
 			}
+			.menu-item-has-children {
+				position: relative;
+				&:after {
+					content: url('./assets/img/menu-arrow.svg');
+					position: absolute;
+					top: 5px;
+					right: 20px;
+					cursor: pointer;
+				}
+			}
 			ul {
 				display: none;
 			}

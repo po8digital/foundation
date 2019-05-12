@@ -1,13 +1,21 @@
 <section class="hero bg-black ">
     <div class="wrapper">
-        {% set title = post.hero_title ? post.hero_title | e('esc_html') :
-		post.title | e('esc_html') %}
-        <h1 class="font42 text-center light-pink bold no-margin">{{ title }}</h1>
-        {% if post.hero_content %}
+        {% set heroTitle = post.hero_title ? post.hero_title | e('esc_html') :
+		title | e('esc_html') %}
+        {% set title_prefix = (fn('is_archive')) ? 'The Lab :' : '' %}
+        <h1 class="font42 text-center light-pink bold no-margin">{{ title_prefix }}
+            {{ heroTitle }}</h1>
+        {% if post.hero_content or fn('is_archive') %}
             <div class="hero__content text-center grey">
                 {{ post.hero_content | e('wp_kses_post') |wpautop}}
+
+                {% if fn('is_archive') %}
+                    {{ cat_subtitle | e('esc_html')}}
+                {% endif %}
+
             </div>
         {% endif %}
+
 
         <div class="hero__buttons text-center">
             {% include "partial/client-button.twig" %}
