@@ -857,6 +857,17 @@
 		"oAP": "/assets/js/matchHeight.min.js.map",
 		"oF": 0
 		},
+	"/assets/js/slick.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/slick.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"/assets/js/vendors/matchHeight/index.js": {
 		"bF": 2,
 		"ft": 64,
@@ -907,6 +918,50 @@
 		"oAP": "/assets/js/vendors/matchHeight/matchHeight.init-min.js",
 		"oF": 0,
 		"sC": 3,
+		"tS": 0
+		},
+	"/assets/js/vendors/slick/index.js": {
+		"bF": 2,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/slick.min.js",
+		"oF": 2,
+		"sC": 3,
+		"tS": 1
+		},
+	"/assets/js/vendors/slick/slick-init.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/assets/js/vendors/slick/slick-init.min.js",
+		"oF": 3,
+		"sC": 1,
+		"tS": 0
+		},
+	"/assets/js/vendors/slick/slick-init.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/assets/js/vendors/slick/slick-init.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"/assets/js/vendors/slick/slick.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "/assets/js/vendors/slick/slick-min.js",
+		"oF": 0,
+		"sC": 1,
 		"tS": 0
 		},
 	"/assets/sass/_helper-classes.scss": {
@@ -1533,6 +1588,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/sass/vendors/_slick-theme.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/vendors/_slick-theme.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/sass/vendors/_slick.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/vendors/_slick.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/sass/vendors/_vendors.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1899,6 +1980,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/templates/blocks/_openings.twig",
+		"oF": 0
+		},
+	"/templates/blocks/_slider.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_slider.twig",
 		"oF": 0
 		},
 	"/templates/blocks/_text-image.twig": {

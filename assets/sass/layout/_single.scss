@@ -10,14 +10,12 @@
 		}
 	}
 	.article-body {
-		max-width: 700px;
-		margin: 0 auto;
 		z-index: 10;
 		position: relative;
-		img {
-			// margin: 50px 0;
-			//TODO: make the image bleed outside of the container to the wrapper width
-		}
+	}
+	.content-block {
+		max-width: 700px;
+		margin: 0 auto;
 	}
 }
 .blog-wave {
@@ -25,4 +23,8 @@
 	left: 0;
 	top: -166px;
 	z-index: -1;
+}
+.wrap700 {
+	max-width: 700px;
+	margin: 0 auto;
 }

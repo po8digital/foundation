@@ -3,34 +3,33 @@
 
     <article class="post-type-{{ post.post_type }}" id="post-{{ post.ID }}">
         {% include "partial/hero-single.twig" %}
-        <section
-            class="article-content">
-            {#
-                                                                                                                                    		<div class="blog-wave">
-                                                                                                                                    			<img src="{{ theme.path }}/assets/img/blog-wave.svg" alt="" />
-                                                                                                                                    		</div>
-                                                                                                                                    		#}
+        <section class="article-content">
             <div class="wrapper">
                 {% include "partial/badge.twig" %}
 
                 <div class="article-body">
-                    <div class="fixed-social">
-                        {{ fn('wpfai_social') }}
-                    </div>
-                    {% if post.post_intro %}
-                        <div class="blog-intro bold">
-                            <div class="text">{{ post.post_intro | e('esc_html')}}</div>
+                    <div class="wrap700">
+                        <div class="fixed-social">
+                            {{ fn('wpfai_social') }}
                         </div>
-                    {% endif %}
-                    {{ post.content }}
-                    <div class="share-bottom">
-                        <div class="button button--salmon">Share this post</div>
-                        <div class="share-bar">{{ fn('wpfai_social') }}</div>
+                        {% if post.post_intro %}
+                            <div class="blog-intro bold">
+                                <div class="text">{{ post.post_intro | e('esc_html')}}</div>
+                            </div>
+                        {% endif %}
+                        {{ post.content }}
                     </div>
-                    {% include "partial/hero-meta.twig" %}
-                    {% if post.is_premium == false %}
-                        {% include "partial/CTA.twig" %}
-                    {% endif %}
+                    {% include "blocks/block-logic.twig" %}
+                    <div class="wrap700">
+                        <div class="share-bottom">
+                            <div class="button button--salmon">Share this post</div>
+                            <div class="share-bar">{{ fn('wpfai_social') }}</div>
+                        </div>
+                        {% include "partial/hero-meta.twig" %}
+                        {% if post.is_premium == false %}
+                            {% include "partial/CTA.twig" %}
+                        {% endif %}
+                    </div>
 
                 </div>
                 {% include "partial/related-posts.twig" %}
