@@ -2,10 +2,13 @@
     <div class="lab__dd--cats">
         <span class="bold uppercase">Category:
         </span>
-        <select id="cat-select">
-            <option value="All">View All</option>
-            <option value="cat 1">Cat 1</option>
-            <option value="cat 2">Cat 2</option>
+        <select id="cat-select" onchange="location=this.value;">
+            <option value="title">Select Category</option>
+            <option value="/the-lab">View All</option>
+            {% for cat in cats %}
+                <option value="/category/{{ cat.slug }}">{{ cat.name }}</option>
+            {% endfor %}
+
         </select>
     </div>
     <div class="lab__dd--sort">
@@ -16,6 +19,7 @@
             <option value="cat 1">Cat 1</option>
             <option value="cat 2">Cat 2</option>
         </select>
+
 
     </div>
 </div>

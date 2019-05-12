@@ -36,6 +36,7 @@ if (is_day()) {
 }
 $term = get_queried_object();
 $context['cat_subtitle'] = get_field('category_subtitle', $term);
+$context['cats'] = get_categories();
 
 $context['posts'] = new Timber\PostQuery();
 
