@@ -1,7 +1,13 @@
 {% extends "blocks/_block-base.twig" %}
 {% block contentBlock %}
     <div class="text-image bg-black {{ class }}">
+        {% if block.title %}
+            <div class="wrapper">
+                <h2 class="text-image__title font42 salmon text-center">{{ block.title | e('esc_html')}}</h2>
+            </div>
+        {% endif %}
         <div class="wrapper">
+
             {% for item in block.text_image %}
                 <div class="text-image__item">
                     <div class="text-image__text">

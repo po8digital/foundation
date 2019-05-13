@@ -1,5 +1,9 @@
 .text-image {
 	padding: 100px 0 50px;
+	&__title {
+		margin-top: 0;
+		margin-bottom: 80px;
+	}
 	&.services-first {
 		padding: 0;
 		.text-image__item {
@@ -78,5 +82,15 @@
 	&__subtext {
 		color: $grey;
 		font-size: 2rem;
+	}
+}
+.full-service {
+	padding-top: 0;
+	.text-image__item:first-child {
+		.text-image__image {
+			@include min-screen($m) {
+				transform: translateX(50px);
+			}
+		}
 	}
 }

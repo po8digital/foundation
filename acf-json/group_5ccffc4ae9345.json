@@ -652,6 +652,28 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5cd94fcae0010",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_5cd3b9c9567b8",
                             "label": "Text Image",
                             "name": "text_image",
@@ -1837,5 +1859,5 @@
     "acfe_permissions": "",
     "acfe_note": "",
     "acfe_meta": "",
-    "modified": 1557733893
+    "modified": 1557745635
 }
