@@ -82,9 +82,9 @@
             "acfe_update": "",
             "acfe_permissions": "",
             "choices": {
-                "thumb: thumb": "thumb: thumb",
-                "arrow: arrow": "arrow: arrow",
-                "star: star": "star: star"
+                "thumb": "thumb",
+                "arrow": "arrow",
+                "star": "star"
             },
             "default_value": [],
             "allow_null": 0,
@@ -118,9 +118,9 @@
             "acfe_update": "",
             "acfe_permissions": "",
             "choices": {
-                "blue: blue": "blue: blue",
-                "red: red": "red: red",
-                "dark: dark": "dark: dark"
+                "blue": "blue",
+                "red": "red",
+                "dark": "dark"
             },
             "default_value": [],
             "allow_null": 0,
@@ -162,5 +162,5 @@
     "acfe_permissions": "",
     "acfe_note": "",
     "acfe_meta": "",
-    "modified": 1557310449
+    "modified": 1557727131
 }

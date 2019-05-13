@@ -1,7 +1,10 @@
 {% set customButton = post.custom_button %}
 {% set text = customButton ? customButton['title'] : 'become a client' %}
 {% set iconChoice = post.custom_button_icon == 'star' ? 'star-icon' : post.custom_button_icon == 'thumb'? 'thumb-icon': 'arrow-right-dark' %}
-{% set colorChoice = post.custom_button_color == 'dark' ? 'dark' : post.custom_button_icon == 'blue'? 'blue': 'salmon' %}
+
+
+{% set colorChoice = post.custom_button_color == 'dark' ? 'dark' : post.custom_button_color == 'blue'? 'blue': 'salmon' %}
+
 {% set icon = customButton ? iconChoice : 'star-icon' %}
 {% set color = customButton ? colorChoice : 'blue' %}
 
