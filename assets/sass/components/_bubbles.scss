@@ -1,0 +1,83 @@
+.bubbles {
+	.wrapper {
+		max-width: 1100px;
+	}
+	&__top {
+		@include min-screen(868px) {
+			@include flexbox;
+		}
+
+		align-items: center;
+	}
+	&__text {
+		flex-basis: 50%;
+	}
+	&__title {
+		margin-top: 0;
+	}
+	&__bottom {
+	}
+	&__bubble {
+		border-radius: 100%;
+		border: 10px solid $light-white;
+		background-color: $salmon;
+		color: $white;
+		@include max-screen($xs) {
+			width: 250px;
+			height: 259px;
+			padding: 0 20px;
+		}
+		width: 300px;
+		height: 300px;
+
+		padding: 0 30px;
+		display: flex;
+		align-items: center;
+		// justify-content: center;
+		text-align: center;
+		@include max-screen($m) {
+			margin: 50px auto;
+		}
+
+		&.one {
+			@include min-screen($m) {
+				margin-top: 50px;
+				margin-right: 50px;
+			}
+		}
+		&.two {
+			width: 280px;
+			height: 280px;
+			background-image: linear-gradient(160deg, $blue 0%, $dark-blue 100%);
+
+			@include min-screen($m) {
+				margin: 30px auto 0;
+				transform: translateX(50px);
+			}
+		}
+		&.three {
+			background: $brown;
+			@include min-screen($m) {
+				transform: translateY(-30px);
+			}
+
+			width: 295px;
+			height: 295px;
+		}
+		&.four {
+			@include min-screen($m) {
+				width: 345px;
+				height: 345px;
+			}
+
+			background: $blue;
+			@include min-screen($m) {
+				transform: translate(330px, -250px);
+			}
+
+			@include min-screen(868px) {
+				transform: translate(485px, -250px);
+			}
+		}
+	}
+}

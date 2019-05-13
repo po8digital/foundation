@@ -1,0 +1,30 @@
+{% extends "blocks/_block-base.twig" %}
+{% block contentBlock %}
+    <div class="bubbles bg-black {{ class }}">
+        <div class="wrapper">
+            <div class="bubbles__top">
+                <div class="bubbles__text">
+                    <h2 class="font42 light-pink bold bubbles__title">{{ block.title | e('esc_html')}}</h2>
+                    <div class="bubbles__content grey">
+                        {{ block.content | e('esc_html')}}
+                    </div>
+                </div>
+                <div class="bubbles__bubble one">
+                    <div>{{ block.bubble_1 | e('wp_kses_post')}}
+                    </div>
+                </div>
+            </div>
+            <div class="bubbles__bottom">
+                <div class="bubbles__bubble two">
+                    <div>{{ block.bubble_2 | e('wp_kses_post')}}</div>
+                </div>
+                <div class="bubbles__bubble three">
+                    <div>{{ block.bubble_3 | e('wp_kses_post')}}</div>
+                </div>
+                <div class="bubbles__bubble four">
+                    <div>{{ block.bubble_4 | e('wp_kses_post')}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends "blocks/_block-base.twig" %}
+{% block contentBlock %}
+    <div class="steps bg-black {{ class }}">
+        <div class="wrapper">
+            <h2 class="font42 salmon bold text-center no-margin steps__title">
+                {{ block.title | e('wp_kses_post')}}
+            </h2>
+            {% if block.content %}
+                <div class="steps__intro text-center">{{ block.content | e('esc_html')}}</div>
+            {% endif %}
+            {% if block.brick %}
+                <div class="steps__brick">
+                    <div class="brick-word">
+                        <span>B:</span>Branding</div>
+                    <div class="brick-word">
+                        <span>R:</span>Rich Content</div>
+                    <div class="brick-word">
+                        <span>I:</span>Interactions</div>
+                    <div class="brick-word">
+                        <span>C:</span>Commerce</div>
+                    <div class="brick-word">
+                        <span>K:</span>Karma</div>
+                </div>
+            {% endif %}
+            <div class="steps__steps">
+                {% for item in block.steps %}
+                    <div class="steps__item">
+                        <div class="steps__icon">
+                            <img src="{{ TimberImage(item.icon) | e('esc_url')}}" alt="">
+                        </div>
+                        <div class="steps__item-content">
+                            <h4 class="font21 bold steps__item-title no-margin light">
+                                {{ item.title | e('esc_html')}}</h4>
+                            <div class="steps__item-content grey">
+                                {{ item.content | e('esc_html')}}
+                            </div>
+
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
