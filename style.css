@@ -1903,6 +1903,9 @@ body {
     .page .article-body .wrapper {
       padding: 0 53px; } }
 
+.page-template-become-a-client footer {
+  display: none; }
+
 .single-post .article-content {
   position: relative; }
   .single-post .article-content .wrapper {
@@ -3079,6 +3082,11 @@ body {
 .booking-form {
   position: relative;
   padding: 100px 0 150px; }
+  .booking-form.no-content {
+    padding-top: 0;
+    margin-top: -70px; }
+    .booking-form.no-content .wrapper {
+      display: block; }
   .booking-form.form-bottom {
     margin-top: 75px; }
     .booking-form.form-bottom:before {
@@ -3114,6 +3122,9 @@ body {
     .booking-form__text {
       padding-right: 100px;
       text-align: right; } }
+  .booking-form__form {
+    max-width: 400px;
+    margin: 0 auto; }
   .booking-form__content {
     color: #ffeae1;
     font-size: 1.8rem; }
@@ -3142,7 +3153,8 @@ textarea {
   border: none;
   border-bottom: 4px solid #b5afa0;
   color: #b5afa0;
-  padding-left: 15px !important; }
+  padding-left: 15px !important;
+  padding-right: 0; }
 
 textarea {
   height: 140px; }

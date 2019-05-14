@@ -1714,6 +1714,14 @@
 		"oAP": "/author.php",
 		"oF": 0
 		},
+	"/become-a-client.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/become-a-client.php",
+		"oF": 0
+		},
 	"/bin/install-wp-tests.sh": {
 		"cB": 0,
 		"ft": 8192,
@@ -1963,6 +1971,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/base.twig",
+		"oF": 0
+		},
+	"/templates/become-a-client.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/become-a-client.twig",
 		"oF": 0
 		},
 	"/templates/blocks/_animated-text.twig": {

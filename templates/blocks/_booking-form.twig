@@ -2,14 +2,14 @@
 {% block contentBlock %}
     <div class="booking-form bg-black {{ class }}">
         <div class="wrapper">
-            <div class="booking-form__text">
-                {% for item in block.left_content %}
-                    <h3 class="booking-form__title font32 bold light-pink">{{ item.title | e('esc_html')}}</h3>
-                    <div class="booking-form__content">{{ item.content | e('esc_html')}}</div>
-                {% endfor %}
-
-
-            </div>
+            {% if block.left_content %}
+                <div class="booking-form__text">
+                    {% for item in block.left_content %}
+                        <h3 class="booking-form__title font32 bold light-pink">{{ item.title | e('esc_html')}}</h3>
+                        <div class="booking-form__content">{{ item.content | e('esc_html')}}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
             <div class="booking-form__form">
                 {% set form =  block.form | e('esc_html') %}
                 {{ fn('do_shortcode','[gravityform id='~ form ~ ' title=false description=false ajax=true]') }}
