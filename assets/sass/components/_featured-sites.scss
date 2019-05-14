@@ -1,5 +1,5 @@
 .featured-sites {
-	padding: 100px 0;
+	padding: 25px 0 100px;
 	&.curve-black {
 		.featured-sites__title {
 			margin-bottom: 0;
@@ -7,17 +7,17 @@
 		}
 		position: relative;
 		&:before {
-			content: url('./assets/img/curve-black-1200.svg');
-			top: -240px;
-			@include min-screen(1920px) {
+			content: url('./assets/img/curve-black-1440.svg');
+			top: -180px;
+			@include min-screen(1441px) {
 				content: url('./assets/img/curve-black-3000.svg');
 				top: -375px;
 			}
 			position: absolute;
 			left: 0;
 		}
-		margin-top: 150px;
-		@include min-screen(1920px) {
+		margin-top: 100px;
+		@include min-screen(1441px) {
 			margin-top: 250px;
 		}
 	}

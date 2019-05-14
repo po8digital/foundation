@@ -1,15 +1,17 @@
 .featured-services {
+	padding-bottom: 100px;
 	background: $black;
 	@include min-screen($l) {
 		background: linear-gradient(180deg, transparent 15%, $black 15%);
 	}
 
-	.page-template-services & {
-		@include min-screen($l) {
-			position: relative;
-			top: -50px;
+	@include min-screen($l) {
+		transform: translateY(-62px);
+		&.no-padding {
+			transform: translateY(-50px);
 		}
 	}
+
 	.wrapper {
 		max-width: 1170px;
 

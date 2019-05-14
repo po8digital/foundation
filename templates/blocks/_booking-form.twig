@@ -11,7 +11,8 @@
 
             </div>
             <div class="booking-form__form">
-                {{ fn('do_shortcode','[gravityform id=1 title=false description=false ajax=true]') }}
+                {% set form =  block.form | e('esc_html') %}
+                {{ fn('do_shortcode','[gravityform id='~ form ~ ' title=false description=false ajax=true]') }}
             </div>
 
 

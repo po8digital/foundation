@@ -322,11 +322,31 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/curve-beige-1440.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/curve-beige-1440.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/curve-beige-2500.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/img/curve-beige-2500.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/curve-beige-3000.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/curve-beige-3000.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -347,6 +367,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/img/curve-black-1200.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/curve-black-1440.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/curve-black-1440.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

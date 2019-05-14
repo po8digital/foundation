@@ -1,4 +1,21 @@
 .booking-form {
+	position: relative;
+	&.form-bottom {
+		&:before {
+			content: url('./assets/img/curve-black-1440.svg');
+			top: -180px;
+			@include min-screen(1441px) {
+				content: url('./assets/img/curve-black-3000.svg');
+				top: -375px;
+			}
+			position: absolute;
+			left: 0;
+		}
+		margin-top: 75px;
+		@include min-screen(1441px) {
+			margin-top: 200px;
+		}
+	}
 	.wrapper {
 		max-width: 900px;
 		@include min-screen($m) {
