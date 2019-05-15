@@ -14,11 +14,16 @@
     </div>
 
     <div class="tease-post__content">
-        {% set cat = post.categories[0] %}
+        {% set cats = post.categories %}
         <div class="tease-post__content--top">
-            <h4 class="tease-post__cat bold uppercase no-margin">
-                <a href="/category/{{ cat.slug }}">{{ cat.name  | e('esc_html')}}</a>
-            </h4>
+            <div class="tease-post__cats">
+                {% for cat in cats %}
+                    <h4 class="tease-post__cat bold uppercase no-margin">
+                        <a href="/category/{{ cat.slug }}">{{ cat.name  | e('esc_html')}}</a>
+                    </h4>
+                {% endfor %}
+            </div>
+
             <h3 class="tease-post__title font32 bold no-margin">
                 <a href="{{ post.link }}">{{ post.title }}</a>
             </h3>

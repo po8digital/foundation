@@ -48,6 +48,20 @@
 	.article-body & {
 		border: none;
 	}
+	&__cat {
+		a {
+			margin-right: 2px;
+			&:after {
+				content: ',';
+				margin-right: 3px;
+			}
+			&:last-child {
+				&:after {
+					content: none;
+				}
+			}
+		}
+	}
 }
 .hero,
 .hero-single {

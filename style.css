@@ -2277,6 +2277,13 @@ body {
     color: #b5afa0; }
   .article-body .hero-meta {
     border: none; }
+  .hero-meta__cat a {
+    margin-right: 2px; }
+    .hero-meta__cat a:after {
+      content: ',';
+      margin-right: 3px; }
+    .hero-meta__cat a:last-child:after {
+      content: none; }
 
 .hero,
 .hero-single {
@@ -2352,7 +2359,15 @@ body {
     .tease-post__title a {
       color: #0b354c; }
   .tease-post__cat {
-    margin-top: 10px; }
+    margin-top: 10px;
+    display: inline-block; }
+    .tease-post__cat:after {
+      content: ',';
+      color: #246fc9;
+      margin-right: 7px; }
+    .tease-post__cat:last-child:after {
+      content: none;
+      margin-right: 0; }
     @media only screen and (min-width: 1010px) {
       .tease-post__cat {
         margin-top: -8px;

@@ -51,6 +51,17 @@
 
 	&__cat {
 		margin-top: 10px;
+		display: inline-block;
+		&:after {
+			content: ',';
+			color: $blue;
+			margin-right: 7px;
+		}
+		&:last-child:after {
+			content: none;
+			margin-right: 0;
+		}
+
 		@include min-screen(1010px) {
 			margin-top: -8px;
 			margin-bottom: 15px;
