@@ -8,7 +8,7 @@
 {% set icon = customButton ? iconChoice : 'star-icon' %}
 {% set color = customButton ? colorChoice : 'blue' %}
 
-{% set link = customButton ? customButton['link'] : '#' %}
+{% set link = customButton ? customButton['link'] : '/become-a-client' %}
 <a href="{{ link }}" class="button button--{{color}}">{{text}}
     <img src="{{ theme.path }}/assets/img/{{icon}}.svg" alt=""/></a>
 
