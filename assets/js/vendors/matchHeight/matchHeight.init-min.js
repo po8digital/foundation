@@ -1,2 +1,2 @@
-!function(t){t(".featured-posts__item--wrap").matchHeight(),t(".featured-services__item--content").matchHeight(),t(".tease-post--small .tease-post__content--top").matchHeight(),t(".archive .tease-post__content--top").matchHeight(),t(".select-plan__content").matchHeight()}(jQuery);
+!function(t){t(".featured-posts__item--wrap").matchHeight(),t(".featured-services__item--content").matchHeight(),t(".tease-post--small .tease-post__content--top").matchHeight(),t(".archive .tease-post__content--top").matchHeight(),t(".select-plan__content").matchHeight(),t(".home-2cols__content").matchHeight()}(jQuery);
 //# sourceMappingURL=matchHeight.init-min.js.map

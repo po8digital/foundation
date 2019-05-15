@@ -1,0 +1,17 @@
+.home-search {
+	max-width: 832px;
+	margin: 50px auto;
+	form {
+		width: 100%;
+	}
+	input {
+		width: 50%;
+		margin: 0 auto;
+		display: block;
+		transform: translateY(25px);
+		border: none;
+		&:focus {
+			outline: none;
+		}
+	}
+}

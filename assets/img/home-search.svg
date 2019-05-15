@@ -1,0 +1,15 @@
+<svg width="832" height="43">
+  <path fill="none" stroke="#5d6367" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" d="M129 40h-22"/>
+  <path fill="none" stroke="#dd6052" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" d="M223 40h549M195 40h-49M59 40h10"/>
+  <path fill="none" stroke="#5d6367" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" d="M3 40h14"/>
+  <path fill="#b14437" d="M781.5 3.5h32.465C822.268 3.5 829 8.503 829 14.675V40h-48z"/>
+  <path fill="none" stroke="#dd6052" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" d="M781.5 3.5h32.465C822.268 3.5 829 8.503 829 14.675V40h-48z"/>
+  <path fill="#dd6052" d="M804 40V14.472C804 8.136 798.864 3 792.528 3h-67.056C719.136 3 714 8.136 714 14.472V40"/>
+  <path fill="none" stroke="#dd6052" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" d="M804 40V14.472C804 8.136 798.864 3 792.528 3h-67.056C719.136 3 714 8.136 714 14.472V40"/>
+  <g>
+    <path fill="none" stroke="#ffeae1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" d="M737 11h-14"/>
+  </g>
+  <g>
+    <path fill="none" stroke="#ffeae1" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" d="M754 11h-6"/>
+  </g>
+</svg>

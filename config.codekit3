@@ -272,6 +272,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/asteroid.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/asteroid.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/blog-wave.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -412,11 +422,51 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/glasses.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/glasses.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/hamburger.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/img/hamburger.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/home-image.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/home-image.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/home-search.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/home-search.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/home-triangle.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/home-triangle.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1264,6 +1314,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/sass/components/_home-search.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/components/_home-search.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/sass/components/_image.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1615,6 +1678,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/sass/layout/_home.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/layout/_home.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/sass/layout/_layout.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -1759,6 +1835,14 @@
 		"oAP": "/footer.php",
 		"oF": 0
 		},
+	"/front-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/front-page.php",
+		"oF": 0
+		},
 	"/functions.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1891,6 +1975,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/search.php",
+		"oF": 0
+		},
+	"/searchform.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/searchform.php",
 		"oF": 0
 		},
 	"/select-plan.php": {
@@ -2186,6 +2278,14 @@
 		"oAP": "/templates/footer.twig",
 		"oF": 0
 		},
+	"/templates/front-page.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/front-page.twig",
+		"oF": 0
+		},
 	"/templates/header.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -2336,6 +2436,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/partial/search.twig",
+		"oF": 0
+		},
+	"/templates/partial/searchform.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/partial/searchform.twig",
 		"oF": 0
 		},
 	"/templates/partial/social.twig": {

@@ -1,6 +1,6 @@
 <section class="hero bg-black ">
     <div class="wrapper">
-        {% set heroTitle = post.hero_title ? post.hero_title | e('esc_html') :
+        {% set heroTitle = post.hero_title ? post.hero_title | e('wp_kses_post') :
 		title | e('esc_html') %}
         {% set title_prefix = (fn('is_archive')) ? 'The Lab :' : '' %}
         <h1 class="font42 text-center light-pink bold no-margin">{{ title_prefix }}
@@ -15,14 +15,48 @@
 
             </div>
         {% endif %}
+        {% if fn('is_front_page') %}
+            <div class="home-search">
+                {% include "partial/searchform.twig" %}
+                <div class="home-search__svg">
+                    <svg height="43" width="832">
+                        <path d="M129 40h-22" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" stroke="#5d6367"/>
+                        <path d="M223 40h549M195 40h-49M59 40h10"  fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" stroke="#dd6052"/>
+						<path id="grey-last" d="M3 40h14" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" stroke="#5d6367"/>
+						<g id="searchButton">
+                        <path d="M781.5 3.5h32.465C822.268 3.5 829 8.503 829 14.675V40h-48z" fill="#b14437"/>
+                        <path d="M781.5 3.5h32.465C822.268 3.5 829 8.503 829 14.675V40h-48z" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" stroke="#dd6052"/>
+                        <path d="M804 40V14.472C804 8.136 798.864 3 792.528 3h-67.056C719.136 3 714 8.136 714 14.472V40" fill="#dd6052"/>
+                        <path d="M804 40V14.472C804 8.136 798.864 3 792.528 3h-67.056C719.136 3 714 8.136 714 14.472V40" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" stroke="#dd6052"/>
+
+                            <path d="M737 11h-14" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" stroke="#ffeae1"/>
+
+
+                            <path d="M754 11h-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="50" stroke-width="5" stroke="#ffeae1"/>
+
+					</g>
+                    </svg>
+                </div>
+
+            </div>
+        {% endif %}
 
 
         <div class="hero__buttons text-center">
-            {% include "partial/client-button.twig" %}
-            {% if post.custom_button == false %}
-                <a class="button button--dark" href="#">Login</a>
+            {% if fn('is_front_page') %}
+                <a class="button button--salmon" href="#bottom-form">get a Proposal</a>
+                <a class="button button--blue" href="/research">OR GET OUR RESEARCH</a>
+            {% else %}
+
+                {% include "partial/client-button.twig" %}
+                {% if post.custom_button == false %}
+                    <a class="button button--dark" href="#">Login</a>
+                {% endif %}
+
             {% endif %}
-        </div>
+		</div>
+
+
 
     </div>
 </section>

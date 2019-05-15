@@ -1,9 +1,12 @@
 .hero {
 	padding: 90px 0;
 	.page-template-services & {
-		height: 430px;
+		min-height: 430px;
 	}
-	height: 500px;
+	.home & {
+		min-heigt: 700px;
+	}
+	min-height: 500px;
 	&__content {
 		margin: 14px 0 0;
 	}
@@ -21,7 +24,7 @@
 }
 
 .hero-single {
-	height: 800px;
+	min-height: 800px;
 	padding: 50px 0;
 	z-index: -2;
 	position: relative;

@@ -1,0 +1,36 @@
+{% extends "base.twig" %}
+{% block content %}
+    {% include "partial/hero.twig" %}
+    <div class="home-dark bg-black">
+        <div class="home-animated-image bg-black">
+            <img class="glasses" src="{{theme.path}}/assets/img/glasses.svg" alt="">
+            <img class="big-image" src="{{theme.path}}/assets/img/home-image.svg" alt="">
+            <img class="home-triangle" src="{{theme.path}}/assets/img/home-triangle.svg" alt="">
+        </div>
+        <div class="home-2cols bg-black">
+            <div class="wrapper">
+                {% for item in post.get_field('home_2_columns') %}
+                    <div class="home-2cols__item">
+                        <h3 class="font32 light-pink">{{ item.title | e('esc_html')}}</h3>
+                        <div class="home-2cols__content grey">
+                            {{ item.content | e('esc_html')}}
+                        </div>
+                        <a href="{{ item.button['url'] | e('esc_url')}}" class="button button--{{item.class_button}}">{{ item.button['title'] | e('esc_html')}}</a>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="home-asteroid">
+            <div class="wrapper">
+                <img src="{{ theme.path }}/assets/img/asteroid.svg" alt="">
+                <div class="home-asteroid__text">
+                    <h3 class="font32 light-pink">{{ post.hb2_title | e('esc_html')}}</h3>
+                    <div class="home-asteroid__content grey">{{ post.hb2_content | e('esc_html')}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
