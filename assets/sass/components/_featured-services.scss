@@ -14,7 +14,8 @@
 
 	.wrapper {
 		max-width: 1170px;
-
+	}
+	&__container {
 		display: flex;
 		justify-content: flex-start;
 		flex-wrap: wrap;
@@ -55,6 +56,16 @@
 		&--teaser {
 			font-size: 1.4rem;
 			color: $medium-grey;
+		}
+	}
+	&__link {
+		font-size: 1.2rem;
+		color: $dark-green;
+		text-transform: uppercase;
+		font-family: 'Avenir';
+		font-weight: 500;
+		img {
+			margin-right: 10px;
 		}
 	}
 }

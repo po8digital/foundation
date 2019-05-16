@@ -46,34 +46,151 @@
 	}
 }
 .home-asteroid {
-	padding-bottom: 100px;
 	position: relative;
+	margin-bottom: -200px;
 	.wrapper {
 		@include min-screen($l) {
 			display: flex;
 		}
+	}
+	&__bg {
+		width: 800px;
+		height: 800px;
+		background: rgba(0, 0, 0, 0.2);
+		border-radius: 50%;
 
-		img {
-			// flex-basis: 50%;
-			max-width: 750px;
-			// margin-left: -50vw;
-			// left: 50%;
-			// position: absolute;
-			// left: -20px;
-			// top: -50px;
-			transform: translate(-180px, -120px);
+		transform: translate(-50px, 80px);
+		z-index: -10;
+		position: relative;
+		display: none;
+		@include min-screen($l) {
+			display: block;
 		}
+	}
+	&__image {
+		transform: translate(-180px, -120px);
+		position: relative;
 	}
 
 	&__text {
 		max-width: 600px;
 		margin: 0 auto 100px;
 		flex-basis: 80%;
-		transform: translateX(-100px);
 
+		@include min-screen($l) {
+			max-width: 360px;
+			margin-bottom: 0;
+			transform: translateX(-100px);
+		}
+	}
+}
+.asteroid {
+	z-index: 10;
+	position: absolute;
+	top: -111px;
+	left: -200px;
+}
+.home-blue-section {
+	background: $light-blue;
+	padding-bottom: 200px;
+	position: relative;
+	// transform: translateY(-300px);
+	&:before {
+		content: url('./assets/img/curve-blue-top.svg');
+		position: absolute;
+		top: -100px;
+		left: 0;
+		@include min-screen(1450px) {
+			content: url('./assets/img/curve-blue-top-3000.svg');
+			top: -150px;
+		}
+	}
+
+	.wrapper {
+		@include min-screen($l) {
+			display: flex;
+		}
+	}
+	&__content {
+		max-width: 600px;
+		margin: 0 auto;
+		flex-basis: 80%;
+		transform: translateY(100px);
 		@include min-screen($m) {
 			max-width: 360px;
 			margin-bottom: 0;
+		}
+	}
+	&__image {
+		transform: translateX(200px);
+	}
+	.button {
+		background: $black;
+		border-color: $salmon;
+		&:hover {
+			background: $dark-green;
+		}
+	}
+}
+
+.home {
+	.featured-posts {
+		margin: 0;
+		background: $light-white;
+		position: relative;
+		z-index: 1;
+		&:after {
+			content: url(./assets/img/curve-beige-bottom.svg);
+			position: absolute;
+			left: 0;
+			bottom: -145px;
+			z-index: -1;
+			@include min-screen(1450px) {
+				content: url(./assets/img/curve-beige-bottom-3000.svg);
+				bottom: -294px;
+			}
+		}
+		&:before {
+			content: url(assets/img/curve-beige-top.svg);
+			position: absolute;
+			top: -374px;
+			left: -62px;
+			z-index: -1;
+			@include min-screen(1450px) {
+				content: url(assets/img/curve-beige-top-3500.svg);
+				top: -755px;
+			}
+		}
+
+		&__container,
+		&__title {
+			max-width: 1125px;
+			padding: 0 30px;
+			margin: 0 auto;
+			position: relative;
+			top: -140px;
+		}
+		&__title {
+			margin-bottom: 20px;
+		}
+	}
+	.animated-text {
+		background: $salmon;
+		position: relative;
+		padding-top: 200px;
+		@include min-screen(1450px) {
+			padding-top: 270px;
+		}
+
+		&__title {
+			color: $brown;
+		}
+	}
+	.featured-services {
+		padding: 30px 0 100px;
+		background-image: linear-gradient(#e47a70 50%, $light-white 50%);
+		&__container {
+			padding-bottom: 80px;
 		}
 	}
 }

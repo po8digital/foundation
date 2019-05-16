@@ -242,11 +242,31 @@
 		"oAP": "/assets/fonts/Avenir-Medium.woff2",
 		"oF": 0
 		},
+	"/assets/img/2hands.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/2hands.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/arrow-right-dark.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/img/arrow-right-dark.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/arrow-right-round-red.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/arrow-right-round-red.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -362,6 +382,46 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/curve-beige-bottom-3000.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/curve-beige-bottom-3000.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/curve-beige-bottom.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/curve-beige-bottom.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/curve-beige-top-3500.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/curve-beige-top-3500.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/curve-beige-top.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/curve-beige-top.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/curve-beige.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -399,6 +459,26 @@
 		"oAP": "/assets/img/curve-black-3000.svg",
 		"oF": 1,
 		"opt": 1,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/curve-blue-top-3000.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/curve-blue-top-3000.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/curve-blue-top.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/curve-blue-top.svg",
+		"oF": 0,
+		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
@@ -787,6 +867,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/img/services3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/star-icon-light.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/star-icon-light.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,

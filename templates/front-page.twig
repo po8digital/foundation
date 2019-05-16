@@ -24,13 +24,32 @@
 
         <div class="home-asteroid">
             <div class="wrapper">
-                <img src="{{ theme.path }}/assets/img/asteroid.svg" alt="">
+                <div class="home-asteroid__image">
+                    <div class="home-asteroid__bg"></div>
+
+                </div>
+                <img class="asteroid" src="{{ theme.path }}/assets/img/asteroid.svg" alt="">
                 <div class="home-asteroid__text">
                     <h3 class="font32 light-pink">{{ post.hb2_title | e('esc_html')}}</h3>
                     <div class="home-asteroid__content grey">{{ post.hb2_content | e('esc_html')}}</div>
                 </div>
             </div>
         </div>
+        <div class="home-blue-section">
+
+            <div class="wrapper">
+                <div class="home-blue-section__content">
+                    <h3 class="font32">Want to access our proprietory library of data & research for B2B Brands?</h3>
+                    <a class="button" href="#">Become a Client
+                        <img src="{{ theme.path }}/assets/img/star-icon-light.svg" alt=""/></a>
+                </div>
+                <div class="home-blue-section__image">
+                    <img src="{{theme.path}}/assets/img/2hands.svg" alt="">
+                </div>
+
+            </div>
+        </div>
+        {% include "blocks/block-logic.twig" %}
     </div>
 
 {% endblock %}

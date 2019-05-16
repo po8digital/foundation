@@ -5,22 +5,29 @@
             {% if block.title %}
                 <h2 class="featured-services__title font32 bold">{{ block.title | e('esc_html')}}</h2>
             {% endif %}
-            {% for item in block.services %}
+            <div class="featured-services__container">
+                {% for item in block.services %}
 
-                <div class="featured-services__item">
-                    <div class="featured-services__item--wrap" style="background:url({{ TimberImage(item.services_background) | e('esc_url')}}) no-repeat left top/cover;">
-                        <div class="featured-services__item--content">
-                            <h3 class="featured-services__item--title blod uppercase">
-                                <a class="dark-green" href="{{ item.link }}">{{ item.title }}</a>
-                            </h3>
-                            <div class="featured-services__item--teaser">{{ item.post_excerpt }}</div>
+                    <div class="featured-services__item">
+                        <div class="featured-services__item--wrap" style="background:url({{ TimberImage(item.services_background) | e('esc_url')}}) no-repeat left top/cover;">
+                            <div class="featured-services__item--content">
+                                <h3 class="featured-services__item--title blod uppercase">
+                                    <a class="dark-green" href="{{ item.link }}">{{ item.title }}</a>
+                                </h3>
+                                <div class="featured-services__item--teaser">{{ item.post_excerpt }}</div>
+                            </div>
+                            <a href="{{ item.link }}"><img src="{{ theme.path }}/assets/img/arrow-thin.svg" alt=""></a>
                         </div>
-                        <a href="{{ item.link }}"><img src="{{ theme.path }}/assets/img/arrow-thin.svg" alt=""></a>
                     </div>
-                </div>
 
 
-            {% endfor %}
+                {% endfor %}
+
+            </div>
+            {% if block.link %}
+                <a class="featured-services__link" href="{{ block.link['url'] | e('esc_url')}}"><img src="{{theme.path}}/assets/img/arrow-right-round-red.svg" alt="">{{ block.link['title'] | e('wp_kses_post')}}</a>
+
+            {% endif %}
 
 
         </div>

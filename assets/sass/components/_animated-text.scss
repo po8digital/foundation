@@ -13,8 +13,10 @@
 		}
 		.animated-text__item {
 			color: $salmon;
-			opacity: 0;
 		}
+	}
+	&__item {
+		opacity: 0;
 	}
 	&__top {
 		margin-bottom: 50px;

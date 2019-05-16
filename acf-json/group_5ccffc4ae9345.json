@@ -640,6 +640,24 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_5cdd63c434fd2",
+                            "label": "Link",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "return_format": "array"
                         }
                     ],
                     "min": "",
@@ -1985,5 +2003,5 @@
     "acfe_permissions": "",
     "acfe_note": "",
     "acfe_meta": "",
-    "modified": 1557828545
+    "modified": 1558012926
 }
