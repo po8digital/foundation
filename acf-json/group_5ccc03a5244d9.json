@@ -158,6 +158,62 @@
             "min": "",
             "max": "",
             "step": ""
+        },
+        {
+            "key": "field_5cde47fd9e6de",
+            "label": "Resources Background",
+            "name": "resources_background",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_validate": "",
+            "acfe_update": "",
+            "acfe_permissions": "",
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "acfe_thumbnail": 0
+        },
+        {
+            "key": "field_5cde5441ff911",
+            "label": "Resource Download",
+            "name": "resource_download",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "acfe_validate": "",
+            "acfe_update": "",
+            "acfe_permissions": "",
+            "return_format": "id",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "acfe_thumbnail": 0
         }
     ],
     "location": [
@@ -184,5 +240,5 @@
     "acfe_permissions": "",
     "acfe_note": "",
     "acfe_meta": "",
-    "modified": 1557309680
+    "modified": 1558074468
 }

@@ -262,6 +262,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/arrow-right-round-blue.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/arrow-right-round-blue.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/arrow-right-round-red.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -477,6 +487,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/img/curve-blue-top.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/dl-icon.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/dl-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -852,6 +872,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/resources-bg.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/resources-bg.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/service1-1.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -867,6 +897,26 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/img/services3.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/slider-arrow-left.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/slider-arrow-left.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/slider-arrow-right.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/slider-arrow-right.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1491,6 +1541,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/assets/sass/components/_related-posts.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/assets/sass/components/_resources.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/components/_resources.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -2286,6 +2349,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/templates/blocks/_openings.twig",
+		"oF": 0
+		},
+	"/templates/blocks/_resources.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_resources.twig",
 		"oF": 0
 		},
 	"/templates/blocks/_select-plan.twig": {

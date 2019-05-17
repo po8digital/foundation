@@ -1972,6 +1972,137 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5cde46948c69f": {
+                    "key": "layout_5cde46948c69f",
+                    "name": "block_resources",
+                    "label": "Block Resources",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cde46a38c6a0",
+                            "label": "Title",
+                            "name": "title",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "default_value": "DOWNLOAD OUR FREE RESOURCES",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5cde46c28c6a1",
+                            "label": "Subtitle",
+                            "name": "subtitle",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "default_value": "More than 50,000 people have already downloaded our guides & resources.",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5cde46e98c6a2",
+                            "label": "Resources",
+                            "name": "resources",
+                            "type": "relationship",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "post_type": [
+                                "post"
+                            ],
+                            "taxonomy": [
+                                "category:resources"
+                            ],
+                            "filters": [
+                                "search",
+                                "post_type",
+                                "taxonomy"
+                            ],
+                            "elements": [
+                                "featured_image"
+                            ],
+                            "min": "",
+                            "max": "",
+                            "return_format": "object",
+                            "acfe_bidirectional": {
+                                "acfe_bidirectional_enabled": "0"
+                            }
+                        },
+                        {
+                            "key": "field_5cde47138c6a3",
+                            "label": "Link",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_5cde472b8c6a4",
+                            "label": "Class",
+                            "name": "class",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -2003,5 +2134,5 @@
     "acfe_permissions": "",
     "acfe_note": "",
     "acfe_meta": "",
-    "modified": 1558012926
+    "modified": 1558071098
 }

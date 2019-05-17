@@ -1,5 +1,8 @@
 .animated-text {
 	padding: 74px 0 108px;
+	.wrapper {
+		max-width: 1124px;
+	}
 	.page-template-services & {
 		margin-top: -50px; //TODO: find why this 50px space is there
 		background-image: linear-gradient(180deg, $black 0%, #793834 100%);
