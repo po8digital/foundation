@@ -2502,7 +2502,7 @@ body {
 .home .hero:after,
 .archive .hero:after,
 .single-service .hero:after,
-.page-template-services .hero:after {
+.page-template-default .hero:after {
   content: none; }
 
 .tease-post {
@@ -3209,18 +3209,18 @@ body {
   padding: 74px 0 108px; }
   .animated-text .wrapper {
     max-width: 1124px; }
-  .page-template-services .animated-text {
+  .page-template-default:not(.home) .animated-text {
     margin-top: -50px;
     background-image: -webkit-linear-gradient(top, #21232b 0%, #793834 100%);
     background-image: linear-gradient(180deg, #21232b 0%, #793834 100%); }
-    .page-template-services .animated-text .animated-text__title {
+    .page-template-default:not(.home) .animated-text .animated-text__title {
       color: #dcd8cb;
       font-size: 3rem;
       line-height: 1.2; }
       @media only screen and (min-width: 768px) {
-        .page-template-services .animated-text .animated-text__title {
+        .page-template-default:not(.home) .animated-text .animated-text__title {
           font-size: 5.6rem; } }
-    .page-template-services .animated-text .animated-text__item {
+    .page-template-default:not(.home) .animated-text .animated-text__item {
       color: #dd6052; }
   .animated-text__item {
     opacity: 0; }

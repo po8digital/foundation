@@ -1,17 +1,5 @@
 {% extends "base.twig" %}
-
 {% block content %}
-
-    <article class="post-type-{{post.post_type}}" id="post-{{post.ID}}">
-        {% include "partial/hero.twig" %}
-        <section class="article-content">
-
-            <div class="article-body">
-                <div class="wrapper">
-                    {% include "blocks/block-logic.twig" %}
-                </div>
-            </div>
-        </section>
-    </article>
-
+    {% include "partial/hero.twig" %}
+    {% include "blocks/block-logic.twig" %}
 {% endblock %}

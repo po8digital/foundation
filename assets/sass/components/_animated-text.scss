@@ -3,7 +3,7 @@
 	.wrapper {
 		max-width: 1124px;
 	}
-	.page-template-services & {
+	.page-template-default:not(.home) & {
 		margin-top: -50px; //TODO: find why this 50px space is there
 		background-image: linear-gradient(180deg, $black 0%, #793834 100%);
 		.animated-text__title {

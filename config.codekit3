@@ -2076,6 +2076,14 @@
 		"oAP": "/LICENSE",
 		"oF": 0
 		},
+	"/light-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/light-page.php",
+		"oF": 0
+		},
 	"/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2144,14 +2152,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/select-plan.php",
-		"oF": 0
-		},
-	"/services.php": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/services.php",
 		"oF": 0
 		},
 	"/sidebar.php": {
@@ -2471,6 +2471,14 @@
 		"oAP": "/templates/index.twig",
 		"oF": 0
 		},
+	"/templates/light-page.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/light-page.twig",
+		"oF": 0
+		},
 	"/templates/menu.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -2637,14 +2645,6 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/select-plan.twig",
-		"oF": 0
-		},
-	"/templates/services.twig": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/templates/services.twig",
 		"oF": 0
 		},
 	"/templates/sidebar.twig": {

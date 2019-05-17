@@ -1,6 +1,6 @@
 <?php
-//Template name: Services
+//Template name: Light page
 
 $context   = Timber::get_context();
-$templates = array('services.twig');
+$templates = array('light-page.twig');
 Timber::render($templates, $context);
