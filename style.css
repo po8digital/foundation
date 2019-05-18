@@ -2141,11 +2141,12 @@ body {
 
 .home .resources {
   position: relative; }
-  .home .resources:before {
-    content: url(./assets/img/resources-bg.svg);
-    position: absolute;
-    top: -124px;
-    right: -65px; }
+  @media only screen and (min-width: 480px) {
+    .home .resources:before {
+      content: url(./assets/img/resources-bg.svg);
+      position: absolute;
+      top: -124px;
+      right: -65px; } }
 
 .home .booking-form.form-bottom {
   margin-top: 0; }
@@ -3837,8 +3838,14 @@ label {
   .home .resources {
     margin-top: -62px; }
   .resources__slider {
-    max-width: 800px;
+    max-width: 260px;
     margin-bottom: 30px; }
+    @media only screen and (min-width: 768px) {
+      .resources__slider {
+        max-width: 510px; } }
+    @media only screen and (min-width: 1024px) {
+      .resources__slider {
+        max-width: 800px; } }
   .resources .slick-prev {
     right: -100px;
     left: initial;

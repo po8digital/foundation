@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
 		slidesToScroll: 3,
 		responsive: [
 			{
-				breakpoint: 768,
+				breakpoint: 1024,
 				settings: {
 					slidesToShow: 2,
 					slidesToScroll: 2,
