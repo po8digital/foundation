@@ -2,7 +2,10 @@
 {% block contentBlock %}
     <div class="cta-button {{class}}">
         <a href="{{ block.link['url'] | e('esc_url')}}" class="button button--{{block.color  | e('esc_html')}} ">{{ block.link['title'] | e('esc_html')}}
-            <img src="{{theme.path}}/assets/img/{{block.icon | e('esc_html')}}-icon.svg" alt=""></a>
+            {% if block.icon %}
+                <img src="{{theme.path}}/assets/img/{{block.icon | e('esc_html')}}-icon.svg" alt="">
+            {% endif %}
+        </a>
     </div>
 
 {% endblock %}

@@ -38,4 +38,12 @@
 	footer {
 		margin-top: -65px;
 	}
+	@include min-screen(1440px) {
+		.booking-form.form-bottom {
+			margin-top: 30px;
+		}
+		.resources {
+			padding-bottom: 250px;
+		}
+	}
 }

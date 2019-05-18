@@ -2158,6 +2158,40 @@ body {
 .research-page footer {
   margin-top: -65px; }
 
+@media only screen and (min-width: 1440px) {
+  .research-page .booking-form.form-bottom {
+    margin-top: 30px; }
+  .research-page .resources {
+    padding-bottom: 250px; } }
+
+.agency-page .hero {
+  min-height: 200px;
+  padding-bottom: 0; }
+
+.agency-page .steps {
+  margin-top: -80px; }
+  .agency-page .steps__intro {
+    color: #b5afa0;
+    margin-top: 30px; }
+
+.agency-page .agency-first .text-image__item {
+  margin-bottom: 50px; }
+
+.agency-page .cta-button {
+  margin-top: -50px; }
+
+.agency-page .image-block {
+  padding-bottom: 180px; }
+
+.agency-page .featured-sites {
+  padding-top: 100px; }
+  @media only screen and (max-width: 1440px) {
+    .agency-page .featured-sites {
+      padding-bottom: 200px; } }
+
+.agency-page footer {
+  margin-top: -62px; }
+
 /* Slider */
 .slick-slider {
   position: relative;
