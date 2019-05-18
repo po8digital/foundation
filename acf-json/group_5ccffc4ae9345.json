@@ -1208,10 +1208,10 @@
                                     ]
                                 },
                                 {
-                                    "key": "field_5cd53299748de",
-                                    "label": "class",
-                                    "name": "class",
-                                    "type": "text",
+                                    "key": "field_5cde8e0eef446",
+                                    "label": "CTA",
+                                    "name": "cta",
+                                    "type": "link",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -1223,13 +1223,31 @@
                                     "acfe_validate": "",
                                     "acfe_update": "",
                                     "acfe_permissions": "",
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
+                                    "return_format": "array"
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_5cde984e5104a",
+                            "label": "Class",
+                            "name": "class",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
                         }
                     ],
                     "min": "",
@@ -2103,6 +2121,100 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5cdfb59a13a0b": {
+                    "key": "layout_5cdfb59a13a0b",
+                    "name": "block_cta_button",
+                    "label": "Block CTA button",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cdfb5a613a0c",
+                            "label": "Link",
+                            "name": "link",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "return_format": "array"
+                        },
+                        {
+                            "key": "field_5cdfb5cd13a0d",
+                            "label": "Color",
+                            "name": "color",
+                            "type": "text",
+                            "instructions": "3 possible colors: salmon, blue, dark",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5cdfb5fd13a0e",
+                            "label": "Icon",
+                            "name": "icon",
+                            "type": "text",
+                            "instructions": "3 possibles icons\r\nstar\r\nthumb\r\narrow",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5cdfb81a343a8",
+                            "label": "Class",
+                            "name": "class",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -2134,5 +2246,5 @@
     "acfe_permissions": "",
     "acfe_note": "",
     "acfe_meta": "",
-    "modified": 1558071098
+    "modified": 1558165537
 }

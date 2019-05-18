@@ -2126,6 +2126,38 @@ body {
 .home .booking-form.form-bottom {
   margin-top: 0; }
 
+.research-page .hero {
+  padding-bottom: 0;
+  min-height: 200px; }
+
+.research-page .text-image__item {
+  margin-bottom: 0; }
+
+.research-page .title-cols {
+  padding-top: 0; }
+  .research-page .title-cols__item {
+    color: #ffeae1; }
+  .research-page .title-cols__small-title {
+    margin-top: 0; }
+
+.research-page .image-block {
+  padding-bottom: 100px; }
+
+.research-page .steps__intro {
+  color: #b5afa0;
+  max-width: 800px;
+  margin: 25px auto 0; }
+
+.research-page .steps__brick {
+  max-width: 850px;
+  margin: 25px auto 0; }
+
+.research-page .cta-button {
+  margin-top: -100px; }
+
+.research-page footer {
+  margin-top: -65px; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -2390,7 +2422,8 @@ body {
         color: #246fc9; }
 
 .button {
-  padding: 18px 15px;
+  display: inline-block;
+  padding: 15px 15px;
   font-family: 'Avenir';
   font-weight: 500;
   font-size: 1.4rem;
@@ -2402,7 +2435,7 @@ body {
   letter-spacing: 2.4px; }
   @media only screen and (min-width: 360px) {
     .button {
-      padding: 18px 30px; } }
+      padding: 15px 30px; } }
   .button:hover {
     color: #ffeae1; }
   .button--blue {
@@ -2428,6 +2461,9 @@ body {
     @media only screen and (min-width: 480px) {
       .button img {
         margin-left: 40px !important; } }
+
+.cta-button {
+  padding-bottom: 100px; }
 
 .hero {
   padding: 90px 0;
@@ -3294,24 +3330,29 @@ body {
   padding: 50px 0 100px; }
   .title-cols__intro {
     margin-top: 25px; }
-  .title-cols__cols-wrap {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: start;
-    -webkit-justify-content: start;
-            justify-content: start; }
+  @media only screen and (min-width: 600px) {
+    .title-cols__cols-wrap {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: start;
+      -webkit-justify-content: start;
+              justify-content: start; } }
   .title-cols__item {
     -webkit-flex-basis: 50%;
-            flex-basis: 50%; }
-    @media only screen and (min-width: 768px) {
+            flex-basis: 50%;
+    padding-right: 25px; }
+    @media only screen and (min-width: 1024px) {
       .title-cols__item {
         -webkit-flex-basis: 33%;
                 flex-basis: 33%; } }
+  .title-cols__cta {
+    margin: 50px 0;
+    display: inline-block; }
 
 .booking-form {
   position: relative;
@@ -3321,20 +3362,20 @@ body {
     margin-top: -70px; }
     .booking-form.no-content .wrapper {
       display: block; }
-  .booking-form.form-bottom {
-    margin-top: 75px; }
-    .booking-form.form-bottom:before {
-      content: url("./assets/img/curve-black-1440.svg");
-      top: -180px;
-      position: absolute;
-      left: 0; }
-      @media only screen and (min-width: 1441px) {
-        .booking-form.form-bottom:before {
-          content: url("./assets/img/curve-black-3000.svg");
-          top: -375px; } }
+  .booking-form.form-bottom:before {
+    content: url("./assets/img/curve-black-1440.svg");
+    top: -180px;
+    position: absolute;
+    left: -2px; }
     @media only screen and (min-width: 1441px) {
-      .booking-form.form-bottom {
-        margin-top: 200px; } }
+      .booking-form.form-bottom:before {
+        content: url("./assets/img/curve-black-3000.svg");
+        top: -375px; } }
+  .single-service .booking-form.form-bottom {
+    margin-top: 75px; }
+  @media only screen and (min-width: 1441px) {
+    .booking-form.form-bottom {
+      margin-top: 200px; } }
   .booking-form .wrapper {
     max-width: 900px; }
     @media only screen and (min-width: 768px) {
@@ -3691,8 +3732,8 @@ label {
 
 .resources {
   padding-bottom: 170px;
-  background-image: -webkit-linear-gradient(#70a5d9 65%, #7db6ef 50%);
-  background-image: linear-gradient(#70a5d9 65%, #7db6ef 50%);
+  background-image: -webkit-linear-gradient(#70a5d9 52%, #7db6ef 50%);
+  background-image: linear-gradient(#70a5d9 52%, #7db6ef 50%);
   padding-top: 100px; }
   .home .resources {
     margin-top: -62px; }

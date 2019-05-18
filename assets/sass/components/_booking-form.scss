@@ -16,9 +16,12 @@
 				top: -375px;
 			}
 			position: absolute;
-			left: 0;
+			left: -2px;
 		}
-		margin-top: 75px;
+		.single-service & {
+			margin-top: 75px;
+		}
+
 		@include min-screen(1441px) {
 			margin-top: 200px;
 		}

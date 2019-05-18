@@ -252,11 +252,11 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"/assets/img/arrow-right-dark.svg": {
+	"/assets/img/arrow-icon.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "/assets/img/arrow-right-dark.svg",
+		"oAP": "/assets/img/arrow-icon.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1883,6 +1883,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/sass/layout/_research.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/layout/_research.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/sass/layout/_single.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2301,6 +2314,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/templates/blocks/_content.twig",
+		"oF": 0
+		},
+	"/templates/blocks/_cta-button.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_cta-button.twig",
 		"oF": 0
 		},
 	"/templates/blocks/_decorated-title.twig": {

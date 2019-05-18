@@ -1,0 +1,41 @@
+.research-page {
+	.hero {
+		padding-bottom: 0;
+		min-height: 200px;
+	}
+	.text-image {
+		&__item {
+			margin-bottom: 0;
+		}
+	}
+	.title-cols {
+		padding-top: 0;
+		&__item {
+			color: $light-pink;
+		}
+		&__small-title {
+			margin-top: 0;
+		}
+	}
+
+	.image-block {
+		padding-bottom: 100px;
+	}
+	.steps {
+		&__intro {
+			color: $grey;
+			max-width: 800px;
+			margin: 25px auto 0;
+		}
+		&__brick {
+			max-width: 850px;
+			margin: 25px auto 0;
+		}
+	}
+	.cta-button {
+		margin-top: -100px;
+	}
+	footer {
+		margin-top: -65px;
+	}
+}

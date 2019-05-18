@@ -3,17 +3,26 @@
     <div class="title-cols {{class}}">
         <div class="wrapper">
             {% for item in block.title_cols %}
-                <div class="decorated-title {{ class }}">
-                    <h2 class="font56 salmon">{{  item.big_title| e('esc_html')}}</h2>
-                </div>
-                <div class="title-cols__intro">{{ item.content | e('wp_kses_post')}}</div>
+                {% if item.big_title %}
+                    <div class="decorated-title {{ class }}">
+                        <h2 class="font56 salmon">{{  item.big_title| e('esc_html')}}</h2>
+                    </div>
+                {% endif %}
+                {% if item.content %}
+                    <div class="title-cols__intro">{{ item.content | e('wp_kses_post')}}</div>
+                {% endif %}
                 <h3 class="brown bold font21 title-cols__small-title">{{ item.small_title | e('esc_html')}}</h3>
-                <div class="title-cols__cols-wrap">
-                    {% for item in item.columns_items %}
-                        <div class="title-cols__item">{{ item.item | e('esc_html')}}</div>
+                {% if item.columns_items %}
+                    <div class="title-cols__cols-wrap">
+                        {% for item in item.columns_items %}
+                            <div class="title-cols__item">{{ item.item | e('esc_html')}}</div>
 
-                    {% endfor %}
-                </div>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                {% if item.cta %}
+                    <a href="{{ item.cta['url'] | e('esc_url')}}" class=" title-cols__cta button button--salmon">{{ item.cta['title'] | e('esc_html')}}</a>
+                {% endif %}
 
             {% endfor %}
         </div>

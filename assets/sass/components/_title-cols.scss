@@ -4,12 +4,19 @@
 		margin-top: 25px;
 	}
 	&__cols-wrap {
-		@include flexbox(start, row wrap);
+		@include min-screen(600px) {
+			@include flexbox(start, row wrap);
+		}
 	}
 	&__item {
 		flex-basis: 50%;
-		@include min-screen($m) {
+		padding-right: 25px;
+		@include min-screen($l) {
 			flex-basis: 33%;
 		}
+	}
+	&__cta {
+		margin: 50px 0;
+		display: inline-block;
 	}
 }
