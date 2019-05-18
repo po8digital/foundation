@@ -24,15 +24,16 @@
 
         <div class="home-asteroid">
             <div class="wrapper">
-                <div class="home-asteroid__image">
-                    <div class="home-asteroid__bg"></div>
 
-                </div>
-                <img class="asteroid" src="{{ theme.path }}/assets/img/asteroid.svg" alt="">
+
                 <div class="home-asteroid__text">
                     <h3 class="font32 light-pink">{{ post.hb2_title | e('esc_html')}}</h3>
                     <div class="home-asteroid__content grey">{{ post.hb2_content | e('esc_html')}}</div>
                 </div>
+                <div class="home-asteroid__image">
+                    <div class="home-asteroid__bg"></div>
+                </div>
+                <img class="asteroid" src="{{ theme.path }}/assets/img/asteroid.svg" alt="">
             </div>
         </div>
         <div class="home-blue-section">
