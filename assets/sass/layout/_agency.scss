@@ -1,4 +1,5 @@
-.agency-page {
+.agency-page,
+.industries-page {
 	.hero {
 		min-height: 200px;
 		padding-bottom: 0;
@@ -29,5 +30,51 @@
 	}
 	footer {
 		margin-top: -62px;
+	}
+}
+
+.work-page {
+	.hero {
+		min-height: 200px;
+	}
+	.text-image {
+		padding-top: 0;
+	}
+	.title-cols {
+		&__entity {
+			&:last-child {
+				@include max-screen(1440px) {
+					padding-bottom: 100px;
+				}
+			}
+		}
+	}
+}
+.industries-page {
+	.decorated-title,
+	.decorated-title h2,
+	.content-block,
+	.benefits {
+		max-width: 1125px;
+		margin: 0 auto;
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.decorated-title {
+		margin-top: 50px;
+	}
+	.benefits {
+		&__item {
+			&:last-child {
+				margin-bottom: 200px;
+				@include min-screen(1440px) {
+					margin-bottom: 350px;
+				}
+			}
+		}
+	}
+	.font21 {
+		font-family: 'Avenir';
+		font-weight: 500;
 	}
 }

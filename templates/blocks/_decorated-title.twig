@@ -1,6 +1,7 @@
 {% extends "blocks/_block-base.twig" %}
 {% block contentBlock %}
     <div class="decorated-title {{ class }}">
-        <h2 class="font56 salmon">{{  block.title| e('esc_html')}}</h2>
+        <h2 class="font56 salmon">{{  block.title| e('wp_kses_post')}}</h2>
     </div>
+
 {% endblock %}

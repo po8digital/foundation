@@ -2164,33 +2164,74 @@ body {
   .research-page .resources {
     padding-bottom: 250px; } }
 
-.agency-page .hero {
+.agency-page .hero,
+.industries-page .hero {
   min-height: 200px;
   padding-bottom: 0; }
 
-.agency-page .steps {
+.agency-page .steps,
+.industries-page .steps {
   margin-top: -80px; }
-  .agency-page .steps__intro {
+  .agency-page .steps__intro,
+  .industries-page .steps__intro {
     color: #b5afa0;
     margin-top: 30px; }
 
-.agency-page .agency-first .text-image__item {
+.agency-page .agency-first .text-image__item,
+.industries-page .agency-first .text-image__item {
   margin-bottom: 50px; }
 
-.agency-page .cta-button {
+.agency-page .cta-button,
+.industries-page .cta-button {
   margin-top: -50px; }
 
-.agency-page .image-block {
+.agency-page .image-block,
+.industries-page .image-block {
   padding-bottom: 180px; }
 
-.agency-page .featured-sites {
+.agency-page .featured-sites,
+.industries-page .featured-sites {
   padding-top: 100px; }
   @media only screen and (max-width: 1440px) {
-    .agency-page .featured-sites {
+    .agency-page .featured-sites,
+    .industries-page .featured-sites {
       padding-bottom: 200px; } }
 
-.agency-page footer {
+.agency-page footer,
+.industries-page footer {
   margin-top: -62px; }
+
+.work-page .hero {
+  min-height: 200px; }
+
+.work-page .text-image {
+  padding-top: 0; }
+
+@media only screen and (max-width: 1440px) {
+  .work-page .title-cols__entity:last-child {
+    padding-bottom: 100px; } }
+
+.industries-page .decorated-title,
+.industries-page .decorated-title h2,
+.industries-page .content-block,
+.industries-page .benefits {
+  max-width: 1125px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px; }
+
+.industries-page .decorated-title {
+  margin-top: 50px; }
+
+.industries-page .benefits__item:last-child {
+  margin-bottom: 200px; }
+  @media only screen and (min-width: 1440px) {
+    .industries-page .benefits__item:last-child {
+      margin-bottom: 350px; } }
+
+.industries-page .font21 {
+  font-family: 'Avenir';
+  font-weight: 500; }
 
 /* Slider */
 .slick-slider {

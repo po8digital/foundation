@@ -2,8 +2,10 @@
 {% block contentBlock %}
     <div class="benefits {{ class }}">
         {% for item in block.benefits %}
-            <h4 class="font21 brown bold benefits__title">{{ item.title | e('esc_html')}}</h4>
-            <div class="benefits__content">{{ item.content | e('esc_html')}}</div>
+            <div class="benefits__item">
+                <h4 class="font21 brown bold benefits__title">{{ item.title | e('esc_html')}}</h4>
+                <div class="benefits__content">{{ item.content | e('esc_html')}}</div>
+            </div>
         {% endfor %}
 
 
