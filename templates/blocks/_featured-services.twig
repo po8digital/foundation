@@ -7,7 +7,6 @@
             {% endif %}
             <div class="featured-services__container">
                 {% for item in block.services %}
-
                     <div class="featured-services__item">
                         <div class="featured-services__item--wrap" style="background:url({{ TimberImage(item.services_background) | e('esc_url')}}) no-repeat left top/cover;">
                             <div class="featured-services__item--content">

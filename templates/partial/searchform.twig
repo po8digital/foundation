@@ -1,6 +1,11 @@
+{% set placeholder = fn('is_search')? fn('the_search_query'): '' %}
 <form role="search" method="get" id="searchform" class="searchform" action="{{site.link}}">
     <div>
         <label class="screen-reader-text" for="s">Search for:</label>
-        <input type="text" value="{{ function('get_search_query') }}" name="s" id="s"/>
+        <input type="text" value="{{ function('get_search_query') }}" name="s" placeholder="{{placeholder}}" id="s"/>
+        {% if fn('is_search') %}
+            <input class="button button--salmon" type="submit" value="search">
+
+        {% endif %}
     </div>
 </form>

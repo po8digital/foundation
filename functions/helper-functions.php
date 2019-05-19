@@ -1,4 +1,5 @@
 <?php
+
 function wst_search_form($form)
 {
 	$form = '<section class="search"><form role="search" method="get" id="search-form" action="' . home_url('/') . '" >
@@ -11,7 +12,9 @@ function wst_search_form($form)
 
 add_filter('get_search_form', 'wst_search_form');
 
-add_filter('body_class', 'wst_add_slug_body_class');
+
+
+
 /**
  * Adds a css class to the body element
  *
@@ -24,3 +27,30 @@ function wst_add_slug_body_class($class)
 	$class[] = $post->post_name . '-page';
 	return $class;
 }
+add_filter('body_class', 'wst_add_slug_body_class');
+
+//Filter search results
+
+function searchfilter($query)
+{
+
+	if ($query->is_search && !is_admin()) {
+		$query->set('post_type', array('post', 'service'));
+	}
+
+	return $query;
+}
+
+// add_filter('pre_get_posts', 'searchfilter');
+
+
+//Number of posts in search results
+function change_wp_search_size($query)
+{
+	if ($query->is_search) // Make sure it is a search page
+		$query->query_vars['posts_per_page'] = -1;
+
+
+	return $query; // Return our modified query variables
+}
+add_filter('pre_get_posts', 'change_wp_search_size'); // Hook our custom function onto the request filter

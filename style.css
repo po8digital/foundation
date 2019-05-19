@@ -2285,6 +2285,9 @@ body {
   font-family: 'Avenir';
   font-weight: 500; }
 
+.search {
+  background: #21232b; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -3594,6 +3597,9 @@ label {
 
 .gfield_required {
   color: #dd6052 !important; }
+
+input {
+  outline: none; }
 
 .slide {
   position: relative; }
