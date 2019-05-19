@@ -117,15 +117,22 @@
 	background: $light-blue;
 	padding-bottom: 100px;
 	position: relative;
-	// transform: translateY(-300px);
 	&:before {
-		content: url('./assets/img/curve-blue-top.svg');
+		content: '';
+		background: url('./assets/img/curve-blue-top.svg');
+		background-size: cover;
 		position: absolute;
-		top: -100px;
 		left: 0;
-		@include min-screen(1450px) {
-			content: url('./assets/img/curve-blue-top-3000.svg');
-			top: -150px;
+		width: 100%;
+		height: 68px;
+		top: -28px;
+		@include min-screen($m) {
+			height: 205px;
+			top: -117px;
+		}
+		@include min-screen(1600px) {
+			height: 202px;
+			top: -201px;
 		}
 	}
 
@@ -163,14 +170,30 @@
 		position: relative;
 		z-index: 1;
 		&:after {
-			content: url(./assets/img/curve-beige-bottom.svg);
+			content: '';
+			background: url(./assets/img/curve-beige-bottom.svg);
+			background-size: cover;
 			position: absolute;
 			left: 0;
-			bottom: -145px;
+			width: 100%;
+			height: 77px;
+			bottom: -68px;
 			z-index: -1;
-			@include min-screen(1450px) {
-				content: url(./assets/img/curve-beige-bottom-3000.svg);
-				bottom: -294px;
+			@include min-screen($s) {
+				height: 136px;
+				bottom: -87px;
+			}
+			@include min-screen($m) {
+				height: 189px;
+				bottom: -113px;
+			}
+			@include min-screen($l) {
+				height: 265px;
+				bottom: -139px;
+			}
+			@include min-screen(1600px) {
+				height: 460px;
+				bottom: -243px;
 			}
 		}
 		&:before {
@@ -226,6 +249,9 @@
 				top: -124px;
 				right: -65px;
 			}
+		}
+		@include min-screen(1440px) {
+			padding-bottom: 300px;
 		}
 	}
 	.booking-form.form-bottom {

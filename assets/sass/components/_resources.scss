@@ -7,7 +7,7 @@
 	padding-top: 100px;
 	&__slider {
 		max-width: 260px;
-		@include min-screen($m) {
+		@include min-screen($s) {
 			max-width: 510px;
 		}
 
@@ -54,5 +54,10 @@
 	img {
 		margin-bottom: 10px;
 		margin-left: 15px;
+	}
+	.featured-services__link {
+		&:hover {
+			color: $black;
+		}
 	}
 }

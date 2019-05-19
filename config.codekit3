@@ -572,6 +572,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/icon-login-arrow.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/icon-login-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/lab-bg.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -2353,6 +2363,14 @@
 		"hM": 0,
 		"oA": 1,
 		"oAP": "/templates/blocks/_decorated-title.twig",
+		"oF": 0
+		},
+	"/templates/blocks/_download.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_download.twig",
 		"oF": 0
 		},
 	"/templates/blocks/_featured-posts.twig": {

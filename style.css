@@ -2055,14 +2055,22 @@ body {
   padding-bottom: 100px;
   position: relative; }
   .home-blue-section:before {
-    content: url("./assets/img/curve-blue-top.svg");
+    content: '';
+    background: url("./assets/img/curve-blue-top.svg");
+    background-size: cover;
     position: absolute;
-    top: -100px;
-    left: 0; }
-    @media only screen and (min-width: 1450px) {
+    left: 0;
+    width: 100%;
+    height: 68px;
+    top: -28px; }
+    @media only screen and (min-width: 768px) {
       .home-blue-section:before {
-        content: url("./assets/img/curve-blue-top-3000.svg");
-        top: -150px; } }
+        height: 205px;
+        top: -117px; } }
+    @media only screen and (min-width: 1600px) {
+      .home-blue-section:before {
+        height: 202px;
+        top: -201px; } }
   @media only screen and (min-width: 1024px) {
     .home-blue-section .wrapper {
       display: -webkit-box;
@@ -2094,15 +2102,31 @@ body {
   position: relative;
   z-index: 1; }
   .home .featured-posts:after {
-    content: url(./assets/img/curve-beige-bottom.svg);
+    content: '';
+    background: url(./assets/img/curve-beige-bottom.svg);
+    background-size: cover;
     position: absolute;
     left: 0;
-    bottom: -145px;
+    width: 100%;
+    height: 77px;
+    bottom: -68px;
     z-index: -1; }
-    @media only screen and (min-width: 1450px) {
+    @media only screen and (min-width: 480px) {
       .home .featured-posts:after {
-        content: url(./assets/img/curve-beige-bottom-3000.svg);
-        bottom: -294px; } }
+        height: 136px;
+        bottom: -87px; } }
+    @media only screen and (min-width: 768px) {
+      .home .featured-posts:after {
+        height: 189px;
+        bottom: -113px; } }
+    @media only screen and (min-width: 1024px) {
+      .home .featured-posts:after {
+        height: 265px;
+        bottom: -139px; } }
+    @media only screen and (min-width: 1600px) {
+      .home .featured-posts:after {
+        height: 460px;
+        bottom: -243px; } }
   .home .featured-posts:before {
     content: url(assets/img/curve-beige-top.svg);
     position: absolute;
@@ -2141,12 +2165,15 @@ body {
 
 .home .resources {
   position: relative; }
-  @media only screen and (min-width: 480px) {
+  @media only screen and (min-width: 768px) {
     .home .resources:before {
       content: url(./assets/img/resources-bg.svg);
       position: absolute;
       top: -124px;
       right: -65px; } }
+  @media only screen and (min-width: 1440px) {
+    .home .resources {
+      padding-bottom: 300px; } }
 
 .home .booking-form.form-bottom {
   margin-top: 0; }
@@ -2561,6 +2588,9 @@ body {
     @media only screen and (min-width: 480px) {
       .button img {
         margin-left: 40px !important; } }
+
+.button--login img {
+  margin-left: 10px !important; }
 
 .cta-button {
   padding-bottom: 100px; }
@@ -3463,14 +3493,29 @@ body {
     .booking-form.no-content .wrapper {
       display: block; }
   .booking-form.form-bottom:before {
-    content: url("./assets/img/curve-black-1440.svg");
-    top: -180px;
+    content: '';
+    background: url("./assets/img/curve-black-1440.svg");
+    width: 100%;
+    background-size: cover;
     position: absolute;
-    left: -2px; }
-    @media only screen and (min-width: 1441px) {
+    top: -47px;
+    height: 48px; }
+    @media only screen and (min-width: 450px) {
       .booking-form.form-bottom:before {
-        content: url("./assets/img/curve-black-3000.svg");
-        top: -375px; } }
+        top: -75px;
+        height: 76px; } }
+    @media only screen and (min-width: 768px) {
+      .booking-form.form-bottom:before {
+        top: -125px;
+        height: 126px; } }
+    @media only screen and (min-width: 1024px) {
+      .booking-form.form-bottom:before {
+        top: -180px;
+        height: 181px; } }
+    @media only screen and (min-width: 1440px) {
+      .booking-form.form-bottom:before {
+        top: -300px;
+        height: 301px; } }
   .single-service .booking-form.form-bottom {
     margin-top: 75px; }
   @media only screen and (min-width: 1441px) {
@@ -3840,7 +3885,7 @@ label {
   .resources__slider {
     max-width: 260px;
     margin-bottom: 30px; }
-    @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 480px) {
       .resources__slider {
         max-width: 510px; } }
     @media only screen and (min-width: 1024px) {
@@ -3875,6 +3920,8 @@ label {
   .resources img {
     margin-bottom: 10px;
     margin-left: 15px; }
+  .resources .featured-services__link:hover {
+    color: #21232b; }
 
 .dark-green {
   color: #0b354c; }
