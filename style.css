@@ -2287,6 +2287,87 @@ body {
 
 .search {
   background: #21232b; }
+  .search .header {
+    padding-bottom: 100px; }
+  .search__search {
+    margin-bottom: 60px !important;
+    color: #21232b; }
+    .search__search form div {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: start;
+      -webkit-justify-content: start;
+              justify-content: start; }
+    .search__search input[type='text'] {
+      border: 5px solid #b14437;
+      border-right: none;
+      -webkit-flex-basis: 60%;
+              flex-basis: 60%;
+      height: 60px; }
+      @media only screen and (min-width: 480px) {
+        .search__search input[type='text'] {
+          -webkit-flex-basis: 75%;
+                  flex-basis: 75%; } }
+    .search__search .button {
+      -webkit-flex-basis: 40%;
+              flex-basis: 40%;
+      margin-top: 0 !important;
+      border-radius: 0 4px 4px 0;
+      height: 60px; }
+      @media only screen and (min-width: 480px) {
+        .search__search .button {
+          -webkit-flex-basis: 25%;
+                  flex-basis: 25%; } }
+      @media only screen and (max-width: 360px) {
+        .search__search .button {
+          font-size: 1.2rem; } }
+  .search article, .search__search {
+    max-width: 760px;
+    margin: 0 auto; }
+  .search .post {
+    border-bottom: 5px solid #b5afa0;
+    padding: 30px 0; }
+    @media only screen and (min-width: 480px) {
+      .search .post__header {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+                justify-content: space-between; } }
+    .search .post h2 {
+      -webkit-flex-basis: 80%;
+              flex-basis: 80%;
+      padding-right: 30px;
+      font-size: 1.8rem;
+      text-transform: capitalize;
+      margin-top: 0; }
+    .search .post__badge {
+      color: #dd6052;
+      font-size: 1.4rem;
+      -webkit-flex-basis: 20%;
+              flex-basis: 20%;
+      margin-bottom: 15px; }
+      @media only screen and (min-width: 480px) {
+        .search .post__badge {
+          text-align: right;
+          margin-bottom: 0; } }
+      .search .post__badge.blue-badge {
+        color: #246fc9; }
+    .search .post__excerpt {
+      color: #b5afa0;
+      font-size: 1.6rem; }
+  .search .services-first {
+    margin-top: 190px; }
 
 /* Slider */
 .slick-slider {

@@ -1,0 +1,78 @@
+{# see `archive.twig` for an alternative strategy of extending templates #}
+{% extends "base.twig" %}
+
+{% block content %}
+
+    <div class="wrapper">
+        {% set result = posts | length > 1 ? 'Results' : 'Result' %}
+        <h1 class="font42 light-pink text-center">{{ posts | length }}
+            {{ result }}
+            for '{{ fn('the_search_query') }}'</h1>
+        <div class="search__search">
+            {% include "partial/searchform.twig" %}
+        </div>
+        {% for post in posts %}
+            <article>
+
+                {% set postType = post.post_type %}
+                {% set badge = postType == 'post'? 'the lab' : postType == 'service'? 'services' : 'page' %}
+                {% set badgeClass = postType == 'post'? 'blue-badge': '' %}
+                {% set excerpt = postType == 'service' ? post.post_excerpt : post.content | excerpt(30) %}
+                <div class="post">
+                    <div class="post__header">
+                        <h2>
+                            <a class="light-pink" href="{{ post.link }}">{{ post.title }}</a>
+                        </h2>
+                        <div class="post__badge uppercase bold {{ badgeClass }}">{{ badge }}</div>
+                    </div>
+                    <div class="post__excerpt">
+                        {{ excerpt }}
+                    </div>
+                </div>
+            </article>
+        {% endfor %}
+
+        <div class="text-image bg-black services-first">
+            <div class="wrapper">
+
+                <div class="text-image__item">
+                    <div class="text-image__text">
+                        <h2 class="font42 bold light-pink text-image__title">Our B2B Marketing Services Include:</h2>
+                    </div>
+                    <div class="text-image__image">
+                        <img src="{{ theme.path }}/assets/img/services-image.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="featured-services {{ class }}">
+
+
+            <div class="featured-services__container">
+                {% for item in options.services %}
+
+                    <div class="featured-services__item">
+                        <div class="featured-services__item--wrap" style="background:url({{ TimberImage(item.services_background) | e('esc_url')}}) no-repeat left top/cover;">
+                            <div class="featured-services__item--content">
+                                <h3 class="featured-services__item--title blod uppercase">
+                                    <a class="dark-green" href="{{ item.post_permalink }}">{{ item.post_title }}</a>
+                                </h3>
+                                <div class="featured-services__item--teaser">{{ item.post_excerpt }}</div>
+                            </div>
+                            <a href="{{ item.link }}"><img src="{{ theme.path }}/assets/img/arrow-thin.svg" alt=""></a>
+                            {# TODO: Services link #}
+                        </div>
+                    </div>
+
+
+                {% endfor %}
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+{% endblock %}
