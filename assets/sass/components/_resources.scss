@@ -60,4 +60,16 @@
 			color: $black;
 		}
 	}
+	.featured-services__item--wrap {
+		// box-shadow: -9px 10px 15px -10px rgba(0, 0, 0, 0.4);
+		box-shadow: none;
+	}
+	.featured-services__item--content {
+		box-shadow: -9px 10px 15px -10px rgba(0, 0, 0, 0.4);
+	}
+
+	.slick-list {
+		// padding-top: 31px;
+		// padding-bottom: 21px;
+	}
 }

@@ -2718,7 +2718,6 @@ body {
 .hero-single {
   min-height: 800px;
   padding: 50px 0;
-  z-index: -2;
   position: relative;
   background-image: -webkit-linear-gradient(top, #21232b 0%, #21232b 9%, rgba(33, 35, 43, 0) 100%);
   background-image: linear-gradient(180deg, #21232b 0%, #21232b 9%, rgba(33, 35, 43, 0) 100%); }
@@ -4030,6 +4029,10 @@ input {
     margin-left: 15px; }
   .resources .featured-services__link:hover {
     color: #21232b; }
+  .resources .featured-services__item--wrap {
+    box-shadow: none; }
+  .resources .featured-services__item--content {
+    box-shadow: -9px 10px 15px -10px rgba(0, 0, 0, 0.4); }
 
 .dark-green {
   color: #0b354c; }
