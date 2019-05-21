@@ -1719,7 +1719,9 @@ img.alignright,
     max-width: 160px; } }
 
 .header-logo__link {
-  max-height: 35px; }
+  max-height: 35px;
+  text-align: center;
+  }
 
 .header-menu {
   display: -webkit-box;
@@ -2390,6 +2392,32 @@ body {
 .contact-us-page .hero__buttons {
   display: none; }
 
+.account-setup-page .hero__buttons {
+  display: none; }
+
+.account-setup-page .hero {
+  min-height: 200px; }
+
+.account-menu {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-bottom: 1px solid #dcd8cb;
+  margin-bottom: 100px; }
+  .account-menu__item,
+  .account-menu span {
+    color: #707070;
+    font-size: 1.2rem;
+    padding: 0 3px; }
+    .account-menu__item.current, .account-menu__item:hover,
+    .account-menu span.current,
+    .account-menu span:hover {
+      color: #dd6052; }
+
+.login-page .hero {
+  min-height: 200px; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -2772,7 +2800,9 @@ body {
 .home .hero:after,
 .archive .hero:after,
 .single-service .hero:after,
-.page-template-default .hero:after {
+.page-template-default .hero:after,
+.page-template-login .hero:after,
+.page-template-account-setup .hero:after {
   content: none; }
 
 .tease-post {

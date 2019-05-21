@@ -60,6 +60,14 @@
 		"oAP": "/404.php",
 		"oF": 0
 		},
+	"/account.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/account.php",
+		"oF": 0
+		},
 	"/acf-json/group_5cca8a53e5f2a.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -1825,6 +1833,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/sass/layout/_account.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/layout/_account.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/sass/layout/_agency.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2166,6 +2187,14 @@
 		"oAP": "/light-page.php",
 		"oF": 0
 		},
+	"/login.php": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/login.php",
+		"oF": 0
+		},
 	"/page.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -2295,6 +2324,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/404.twig",
+		"oF": 0
+		},
+	"/templates/account.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/account.twig",
 		"oF": 0
 		},
 	"/templates/archive.twig": {
@@ -2575,6 +2612,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/light-page.twig",
+		"oF": 0
+		},
+	"/templates/login.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/login.twig",
 		"oF": 0
 		},
 	"/templates/menu.twig": {

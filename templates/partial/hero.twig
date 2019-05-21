@@ -41,6 +41,7 @@
             </div>
         {% endif %}
 
+
         <div class="hero__buttons text-center">
             {% if fn('is_front_page') %}
                 <a class="button button--salmon" href="#scrollTo">get a Proposal</a>
@@ -49,11 +50,11 @@
 
                 {% include "partial/client-button.twig" %}
                 {% if post.custom_button == false %}
-                    <a class="button button--dark button--login" href="#">Login
+                    <a class="button button--dark button--login" href="/login">Login
                         <img src="{{theme.path}}/assets/img/icon-login-arrow.svg" alt=""></a>
                 {% endif %}
 
-            {% endif %}
+            {% endif %}x
         </div>
 
 
