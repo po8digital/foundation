@@ -1,0 +1,10 @@
+.services-page {
+	@include min-screen($l) {
+		.featured-sites__title {
+			margin-top: 106px;
+		}
+		.text-image {
+			padding-top: 0;
+		}
+	}
+}

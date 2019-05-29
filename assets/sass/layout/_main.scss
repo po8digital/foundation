@@ -42,6 +42,9 @@ body {
 		}
 		//TODO: align dd labels to the left and make the filters work
 		&--cats {
+			// span {
+			// 	flex-basis: 60%;
+			// }
 			select {
 				width: 100%;
 				@include min-screen($s) {

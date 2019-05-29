@@ -40,6 +40,9 @@
 		width: 100%;
 		padding: 10px;
 		text-align: center;
+		&:hover {
+			color: $light-pink;
+		}
 	}
 	&__title {
 		margin-bottom: 35px;
@@ -57,7 +60,7 @@
 	}
 	.featured-services__link {
 		&:hover {
-			color: $black;
+			color: $dark-blue;
 		}
 		margin-left: -20px;
 	}
@@ -67,6 +70,7 @@
 	}
 	.featured-services__item--content {
 		box-shadow: -9px 10px 15px -10px rgba(0, 0, 0, 0.4);
+		min-height: 250px;
 	}
 
 	.slick-list {

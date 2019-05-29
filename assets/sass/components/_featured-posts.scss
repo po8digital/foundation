@@ -12,6 +12,19 @@
 		flex-basis: 50%;
 		padding-right: 15px;
 		margin-bottom: 15px;
+		a {
+			h5 {
+				color: $dark-blue;
+			}
+			&:hover {
+				.tease-post__read-more {
+					color: $dark-blue;
+				}
+				h5 {
+					color: $blue !important;
+				}
+			}
+		}
 
 		&--wrap {
 			background: #ebe8dc;

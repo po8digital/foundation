@@ -5,13 +5,17 @@
         <h3 class="font32 dark-blue bold featured-posts__title">{{ block.title | e('esc_html')}}</h3>
         <div class="featured-posts__container">
             {% for item in block.posts %}
+
                 <div class="featured-posts__item">
-                    <div class="featured-posts__item--wrap">
-                        <h5>
-                            <a class="dark-blue" href="{{ item.link | e('esc_url')}}">{{ item.title | e('esc_html')}}</a>
-                        </h5>
-                        {% include "partial/read-more.twig" %}
-                    </div>
+                    <a href="{{ item.link | e('esc_url')}}">
+                        <div class="featured-posts__item--wrap">
+                            <h5>
+                                {{ item.title | e('esc_html')}}
+                            </h5>
+                            {% include "partial/read-more.twig" %}
+                        </div>
+                    </a>
+                    {# TODO: link wrap problem #}
                 </div>
 
 

@@ -42,6 +42,10 @@
 
 	.button {
 		border-radius: 4px;
+		box-shadow: none;
+		&:hover {
+			transform: translateY(0);
+		}
 
 		@include min-screen(500px) {
 			border-radius: 4px 0 0 4px;
@@ -81,23 +85,37 @@
 			height: 34px;
 			width: 34px;
 			border-radius: 50%;
+			transition: $transition;
 		}
 	}
 	@include min-screen($m) {
-		.wpfai-list-item:after {
-			font-size: 1.2rem;
-			color: $blue;
-			text-transform: uppercase;
-			font-family: 'Avenir';
-			font-weight: 500;
+		.wpfai-link {
+			opacity: 1;
+			&:hover {
+				.fa-stack {
+					background: $dark-blue;
+				}
+				&:after {
+					color: $dark-blue;
+				}
+			}
+
+			&:after {
+				font-size: 1.2rem;
+				color: $blue;
+				text-transform: uppercase;
+				font-family: 'Avenir';
+				font-weight: 500;
+				transition: $transition;
+			}
 		}
-		.facebook:after {
+		.facebook a:after {
 			content: 'FACEBOOK';
 		}
-		.twitter:after {
+		.twitter a:after {
 			content: 'twitter';
 		}
-		.linkedin:after {
+		.linkedin a:after {
 			content: 'linkedin';
 		}
 	}

@@ -3,6 +3,7 @@ jQuery(document).ready(function($) {
 		autoplay: true,
 		speed: 1000,
 		arrow: false,
+		fade: true,
 		dots: true,
 	});
 
