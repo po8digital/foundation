@@ -23,7 +23,7 @@
 		padding: 0 15px;
 		justify-content: space-around;
 		align-items: center;
-		transition: all 0.4s ease-in-out;
+		transition: $transition;
 		&:hover {
 			box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.35);
 		}

@@ -5,12 +5,10 @@ const texts = $$('.animated-text__item');
 
 const animTextTl = new TimelineMax({
 	repeat: -1,
-	repeatDelay: 1,
+	repeatDelay: 0.3,
 	paused: false,
 });
 
 texts.forEach(textItem => {
-	animTextTl
-		.to(textItem, 2, { opacity: 1, y: -5 })
-		.to(textItem, 2, { opacity: 0, y: 20 });
+	animTextTl.to(textItem, 1, { opacity: 1 }).to(textItem, 1, { opacity: 0 });
 });

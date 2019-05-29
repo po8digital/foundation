@@ -17,6 +17,10 @@
 	background: $medium-blue url('./assets/img/footer-bg.svg') no-repeat bottom
 		right;
 	background-size: auto 98%;
+	@include min-screen(700px) {
+		background-position-y: 20px;
+	}
+
 	@include screen(700px, $m) {
 		background-position-x: 573px;
 	}

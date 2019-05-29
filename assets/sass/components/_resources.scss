@@ -59,6 +59,7 @@
 		&:hover {
 			color: $black;
 		}
+		margin-left: -20px;
 	}
 	.featured-services__item--wrap {
 		// box-shadow: -9px 10px 15px -10px rgba(0, 0, 0, 0.4);
@@ -71,5 +72,8 @@
 	.slick-list {
 		// padding-top: 31px;
 		// padding-bottom: 21px;
+	}
+	a:hover {
+		color: $blue;
 	}
 }

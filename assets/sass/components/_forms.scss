@@ -7,7 +7,7 @@ input[type='submit'] {
 	border: none;
 	border-bottom: 5px solid $brown;
 	width: 97% !important;
-	transition: all 0.4s ease-in-out;
+	transition: $transition;
 	cursor: pointer;
 	&:hover {
 		background: lighten($salmon, 5%);
@@ -18,7 +18,7 @@ input[type='text'],
 textarea {
 	background: transparent;
 	border: none;
-	border-bottom: 4px solid $grey;
+	border-bottom: 4px solid rgba($grey, 0.3);
 	color: $grey;
 	padding-left: 15px !important;
 	padding-right: 0;
@@ -29,11 +29,11 @@ textarea {
 label {
 	color: $grey;
 	font-size: 1.6rem;
-	margin-left: 15px;
-	transform: translateY(30px);
-	transition: all 0.4s ease-in-out;
+
+	transform: translate(15px, 30px);
+	transition: $transition4;
 	&.is-active {
-		transform: translateY(0);
+		transform: translate(0);
 		font-size: 1.2rem !important;
 	}
 }
