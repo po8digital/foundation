@@ -2646,6 +2646,14 @@
 		"oAP": "/templates/page.twig",
 		"oF": 0
 		},
+	"/templates/partial/_butter-animated.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/partial/_butter-animated.twig",
+		"oF": 0
+		},
 	"/templates/partial/badge.twig": {
 		"cB": 0,
 		"ft": 8192,

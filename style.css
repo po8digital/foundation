@@ -2156,7 +2156,9 @@ body {
     .home .animated-text {
       padding-top: 270px; } }
   .home .animated-text__title {
-    color: #b14437; }
+    color: #b14437;
+    z-index: 10;
+    }
 
 .home .featured-services {
   padding: 30px 0 100px;
