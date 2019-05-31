@@ -2434,6 +2434,10 @@ body {
   .services-page .text-image {
     padding-top: 0; } }
 
+.services-page .featured-sites {
+  margin-top: -106px;
+  padding-top: 106px; }
+
 /* Slider */
 .slick-slider {
   position: relative;
