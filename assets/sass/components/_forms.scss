@@ -43,3 +43,13 @@ label {
 input {
 	outline: none;
 }
+.ginput_container_select {
+	border-bottom: 4px solid rgba($grey, 0.3);
+	padding-bottom: 18px;
+	padding-left: 10px;
+	select {
+		background: $black;
+		border: none;
+		color: $grey;
+	}
+}

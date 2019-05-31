@@ -6,11 +6,17 @@ body {
 	overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 }
+.blog {
+	.hero {
+		padding-top: 50px;
+		padding-bottom: 45px;
+	}
+}
 
 .lab {
 	background: url('./assets/img/lab-bg.svg') no-repeat -10px 0;
 	background-size: 101% auto;
-	padding-top: 60px;
+	padding-top: 30px;
 
 	.posts-wrapper {
 		padding: 60px 30px;
@@ -22,7 +28,7 @@ body {
 	}
 	&__dd {
 		@include flexbox;
-		padding: 0 60px 60px;
+		padding: 0 60px 30px;
 		> div {
 			span {
 				color: $light-pink;
