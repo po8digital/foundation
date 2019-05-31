@@ -1,0 +1,11 @@
+.error404 {
+	background: $black;
+	.header {
+		padding-bottom: 100px;
+	}
+
+	&__subtitle {
+		font-size: 2rem;
+		margin-bottom: 40px;
+	}
+}

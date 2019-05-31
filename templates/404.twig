@@ -1,5 +1,12 @@
-{% extends "base.twig" %}
-
-{% block content %}
-	Sorry, we couldn't find what you're looking for.
+{% extends "base.twig" %} {% block content %}
+<div class="wrapper">
+	<h1 class="font42 light-pink text-center">404</h1>
+	<div class=" error404__subtitle text-center grey">
+		Oooops the page you’re looking for doesn’t exist. Try searching for it here:
+	</div>
+	<div class="search__search">
+		{% include "partial/searchform.twig" %}
+	</div>
+	{% include "partial/featured-services-option.twig" %}
+</div>
 {% endblock %}
