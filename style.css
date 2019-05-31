@@ -2059,7 +2059,6 @@ body {
 
 .home-blue-section {
   background: #7db6ef;
-  padding-bottom: 100px;
   position: relative; }
   .home-blue-section:before {
     content: '';
@@ -2078,6 +2077,16 @@ body {
       .home-blue-section:before {
         height: 202px;
         top: -201px; } }
+  .home-blue-section:after {
+    content: '';
+    background: url("./assets/img/curve-blue-bottom.svg") no-repeat left bottom;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    bottom: -200px;
+    z-index: 2; }
   @media only screen and (min-width: 1024px) {
     .home-blue-section .wrapper {
       display: -webkit-box;
@@ -2107,7 +2116,9 @@ body {
   margin: 0;
   background: #faf5ef;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  padding-bottom: 100px;
+  }
   .home .featured-posts:after {
     content: '';
     background: url(./assets/img/curve-beige-bottom.svg);
@@ -2134,22 +2145,12 @@ body {
       .home .featured-posts:after {
         height: 460px;
         bottom: -243px; } }
-  .home .featured-posts:before {
-    content: url(assets/img/curve-beige-top.svg);
-    position: absolute;
-    top: -374px;
-    left: -62px;
-    z-index: -1; }
-    @media only screen and (min-width: 1450px) {
-      .home .featured-posts:before {
-        content: url(assets/img/curve-beige-top-3500.svg);
-        top: -755px; } }
   .home .featured-posts__container, .home .featured-posts__title {
     max-width: 1125px;
     padding: 0 30px;
     margin: 0 auto;
     position: relative;
-    top: -140px; }
+    top: 48px; }
   .home .featured-posts__title {
     margin-bottom: 20px; }
 
