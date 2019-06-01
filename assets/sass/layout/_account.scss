@@ -1,9 +1,12 @@
-.account-setup-page {
+.page-template-account {
 	.hero__buttons {
 		display: none;
 	}
 	.hero {
 		min-height: 200px;
+	}
+	.booking-form {
+		background: $light-white;
 	}
 }
 

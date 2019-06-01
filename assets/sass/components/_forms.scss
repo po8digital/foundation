@@ -53,3 +53,6 @@ input {
 		color: $grey;
 	}
 }
+body .content-wrapper input:-internal-autofill-selected {
+	background-color: $black !important;
+}

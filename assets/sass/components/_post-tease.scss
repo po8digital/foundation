@@ -1,12 +1,13 @@
 .tease-post {
 	// TODO: hover colors
 	margin-bottom: 77px;
-	@include min-screen(1010px) {
-		@include flexbox;
-	}
+
+	@include flexbox;
 
 	&__media {
-		flex-basis: 45%;
+		@include min-screen(1010px) {
+			flex-basis: 45%;
+		}
 		padding-right: 15px;
 		position: relative;
 		img {
@@ -31,7 +32,9 @@
 		}
 	}
 	&__content {
-		flex-basis: 55%;
+		@include min-screen(1010px) {
+			flex-basis: 55%;
+		}
 		position: relative;
 		&--bottom {
 			@include min-screen(1010px) {

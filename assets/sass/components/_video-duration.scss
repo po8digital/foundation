@@ -13,6 +13,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+
 	&__button {
 		background-color: rgba($light-white, 0.9);
 		box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.35);
@@ -24,6 +25,7 @@
 		justify-content: space-around;
 		align-items: center;
 		transition: $transition;
+
 		&:hover {
 			box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.35);
 		}
