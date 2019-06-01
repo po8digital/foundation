@@ -2700,8 +2700,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
   z-index: 100;
   width: 100%;
   padding: 50px;
@@ -2892,7 +2892,8 @@ body {
           justify-content: space-between; }
   .tease-post__media {
     padding-right: 15px;
-    position: relative; }
+    position: relative;
+    max-width: 515px; }
     @media only screen and (min-width: 1010px) {
       .tease-post__media {
         -webkit-flex-basis: 45%;
@@ -3011,25 +3012,27 @@ body {
     position: relative;
     top: -1px; }
 
-@media only screen and (min-width: 1010px) {
-  .small-posts-wrapper,
-  .category .posts-wrapper {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-            justify-content: space-between; } }
+.small-posts-wrapper,
+.category .posts-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between; }
 
 .tease-post--small,
 .category .tease-post {
-  -webkit-flex-basis: 33%;
-          flex-basis: 33%;
   display: block; }
+  @media only screen and (min-width: 1010px) {
+    .tease-post--small,
+    .category .tease-post {
+      -webkit-flex-basis: 33%;
+              flex-basis: 33%; } }
   .tease-post--small .tease-post__cat,
   .category .tease-post .tease-post__cat {
     margin-top: 10px; }

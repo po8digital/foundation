@@ -10,6 +10,7 @@
 		}
 		padding-right: 15px;
 		position: relative;
+		max-width: 515px;
 		img {
 			box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
 			border-radius: 4px;
@@ -138,13 +139,14 @@
 
 .small-posts-wrapper,
 .category .posts-wrapper {
-	@include min-screen(1010px) {
-		@include flexbox;
-	}
+	@include flexbox;
 }
 .tease-post--small,
 .category .tease-post {
-	flex-basis: 33%;
+	@include min-screen(1010px) {
+		flex-basis: 33%;
+	}
+
 	display: block;
 	.tease-post__cat {
 		margin-top: 10px;
