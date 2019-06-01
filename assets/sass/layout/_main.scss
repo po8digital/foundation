@@ -14,9 +14,26 @@ body {
 }
 
 .lab {
-	background: url('./assets/img/lab-bg.svg') no-repeat -10px 0;
-	background-size: 101% auto;
+	@include min-screen(1600px) {
+		background: url('./assets/img/lab-bg.svg') no-repeat -10px 0;
+		background-size: 101% auto;
+	}
+
 	padding-top: 30px;
+	position: relative;
+	@include max-screen(1600px) {
+		&:before {
+			content: '';
+			background: url('./assets/img/lab-bg.svg');
+			background-size: cover;
+			position: absolute;
+			left: -8px;
+			top: 0;
+			width: 101%;
+			height: 655px;
+			z-index: -1;
+		}
+	}
 
 	.posts-wrapper {
 		padding: 60px 30px;
