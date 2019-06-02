@@ -16,6 +16,15 @@
                 "id": ""
             },
             "acfe_permissions": "",
+            "acfe_flexible_stylised_button": 0,
+            "acfe_flexible_hide_empty_message": 0,
+            "acfe_flexible_empty_message": "",
+            "acfe_flexible_layouts_thumbnails": 0,
+            "acfe_flexible_layouts_templates": 0,
+            "acfe_flexible_modal": {
+                "acfe_flexible_modal_enabled": "0"
+            },
+            "acfe_flexible_layouts_state": "",
             "layouts": {
                 "layout_5ccffcdc12004": {
                     "key": "layout_5ccffcdc12004",
@@ -2275,6 +2284,60 @@
                     ],
                     "min": "",
                     "max": ""
+                },
+                "layout_5cf36838fb37b": {
+                    "key": "layout_5cf36838fb37b",
+                    "name": "block_premium",
+                    "label": "Block Premium",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_5cf36843fb37c",
+                            "label": "Premium Content",
+                            "name": "premium_content",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        },
+                        {
+                            "key": "field_5cf3691bfb37d",
+                            "label": "Class",
+                            "name": "class",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "acfe_validate": "",
+                            "acfe_update": "",
+                            "acfe_permissions": "",
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
                 }
             },
             "button_label": "Add Block",
@@ -2306,5 +2369,5 @@
     "acfe_permissions": "",
     "acfe_note": "",
     "acfe_meta": "",
-    "modified": 1558193021
+    "modified": 1559456040
 }

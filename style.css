@@ -1714,6 +1714,10 @@ img.alignright,
         color: #ffeae1;
         font-size: 1.2rem; }
 
+@media only screen and (min-width: 768px) {
+  .header-logo {
+    margin-left: -60px !important; } }
+
 @media only screen and (max-width: 724px) {
   .header-logo img {
     max-width: 160px; } }
@@ -2410,11 +2414,10 @@ body {
     margin-top: 190px; }
 
 .contact-us-page .hero {
-  padding-bottom: 0; }
+  padding-bottom: 30px; }
 
 .contact-us-page .text-image {
-  padding-top: 0;
-  margin-top: -100px; }
+  padding-top: 0; }
   .contact-us-page .text-image__item {
     margin-bottom: 0; }
 
@@ -4201,6 +4204,24 @@ body .content-wrapper input:-internal-autofill-selected {
     min-height: 250px; }
   .resources a:hover {
     color: #246fc9; }
+
+.bac {
+  margin-top: -10px;
+  padding: 50px 40px;
+  position: relative; }
+  .bac__title {
+    margin-bottom: 15px !important; }
+  .bac__subtitle {
+    margin-bottom: 25px; }
+  .bac:before {
+    content: '';
+    width: 100%;
+    height: 700px;
+    background-image: -webkit-linear-gradient(top, transparent 0%, #faf5ef 100%);
+    background-image: linear-gradient(180deg, transparent 0%, #faf5ef 100%);
+    position: absolute;
+    top: -700px;
+    left: 0; }
 
 .dark-green {
   color: #0b354c; }

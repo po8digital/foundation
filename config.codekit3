@@ -1323,6 +1323,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/sass/components/_become-a-client.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/components/_become-a-client.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/sass/components/_benefits.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2522,6 +2535,14 @@
 		"oAP": "/templates/blocks/_openings.twig",
 		"oF": 0
 		},
+	"/templates/blocks/_premium.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/blocks/_premium.twig",
+		"oF": 0
+		},
 	"/templates/blocks/_resources.twig": {
 		"cB": 0,
 		"ft": 8192,
@@ -2696,6 +2717,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/partial/badge.twig",
+		"oF": 0
+		},
+	"/templates/partial/become-a-client.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/templates/partial/become-a-client.twig",
 		"oF": 0
 		},
 	"/templates/partial/cat-dd.twig": {

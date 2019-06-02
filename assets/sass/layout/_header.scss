@@ -32,6 +32,10 @@
 }
 
 .header-logo {
+	@include min-screen($m) {
+		margin-left: -60px !important;
+	}
+
 	img {
 		@include max-screen(724px) {
 			max-width: 160px;

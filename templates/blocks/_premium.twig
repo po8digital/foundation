@@ -1,0 +1,11 @@
+{% extends "blocks/_block-base.twig" %}
+{% block contentBlock %}
+    <div class="content-block {{ class }}">
+        {% if fn('is_user_logged_in') %}
+            {{ block.premium_content | e('wp_kses_post')}}
+        {% else %}
+            {% include "partial/become-a-client.twig" %}
+        {% endif %}
+
+    </div>
+{% endblock %}
