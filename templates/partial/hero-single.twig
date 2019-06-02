@@ -7,7 +7,7 @@
             {{ post.title }}
         </h1>
 
-        {% if post.is_premium %}
+        {% if post.is_premium and fn('is_user_logged_in') == false %}
             <div class="hero__buttons text-center">
                 {% include "partial/client-button.twig" %}
                 <a class="button button--dark" href="#">Login</a>

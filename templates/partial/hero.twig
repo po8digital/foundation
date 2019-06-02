@@ -1,54 +1,52 @@
 <section class="hero bg-black ">
-	<div class="wrapper">
-		{% set heroTitle = post.hero_title ? post.hero_title | e('wp_kses_post') :
-		title | e('esc_html') %} {% set title_prefix = (fn('is_archive')) ? 'The Lab
+    <div class="wrapper">
+        {% set heroTitle = post.hero_title ? post.hero_title | e('wp_kses_post') :
+		title | e('esc_html') %}
+        {% set title_prefix = (fn('is_archive')) ? 'The Lab
 		:' : '' %}
-		<h1 class="font42 text-center light-pink bold no-margin">
-			{{ title_prefix }} {{ heroTitle }}
-		</h1>
-		{% if post.hero_content or fn('is_archive') %}
-		<div class="hero__content text-center grey">
-			{{ post.hero_content | e('wp_kses_post') |wpautop}}
+        <h1 class="font42 text-center light-pink bold no-margin">
+            {{ title_prefix }}
+            {{ heroTitle }}
+        </h1>
+        {% if post.hero_content or fn('is_archive') %}
+            <div class="hero__content text-center grey">
+                {{ post.hero_content | e('wp_kses_post') |wpautop}}
 
-			{% if fn('is_archive') %}
-			{{ cat_subtitle | e('esc_html')}}
-			{% endif %}
-		</div>
-		{% endif %} {% if fn('is_front_page') %}
-		<div class="home-search">
-			{% include "partial/searchform.twig" %}
-			<div class="home-search__svg">
-				{% include "partial/_butter-animated.twig" %}
-			</div>
-		</div>
-		{% endif %}
+                {% if fn('is_archive') %}
+                    {{ cat_subtitle | e('esc_html')}}
+                {% endif %}
+            </div>
+        {% endif %}
+        {% if fn('is_front_page') %}
+            <div class="home-search">
+                {% include "partial/searchform.twig" %}
+                <div class="home-search__svg">
+                    {% include "partial/_butter-animated.twig" %}
+                </div>
+            </div>
+        {% endif %}
 
-		<div class="hero__buttons text-center">
-			{% if fn('is_front_page') %}
-			<a class="button button--salmon" href="#scrollTo">get a Proposal</a>
-			<a class="button button--blue" href="/research">OR GET OUR RESEARCH</a>
-			{% else %} {% include "partial/client-button.twig" %} {% if
-			post.custom_button == false %}
-			<a class="button button--dark button--login" href="/login"
-				>Login
-				<img src="{{ theme.path }}/assets/img/icon-login-arrow.svg" alt=""
-			/></a>
+        <div class="hero__buttons text-center">
+            {% if fn('is_front_page') %}
+                <a class="button button--salmon" href="#scrollTo">get a Proposal</a>
+                <a class="button button--blue" href="/research">OR GET OUR RESEARCH</a>
+            {% else %}
+                {% include "partial/client-button.twig" %}
+                {% if
+			post.custom_button == false and fn('is_user_logged_in') == false %}
+                    <a class="button button--dark button--login" href="/login">Login
+                        <img src="{{ theme.path }}/assets/img/icon-login-arrow.svg" alt=""/></a>
 
-			{% endif %} {% endif %}
-		</div>
-	</div>
+                {% endif %}
+            {% endif %}
+        </div>
+    </div>
 </section>
 
 {% if post.thumbnail %}
-<style>
-	.hero {
-		background: linear-gradient(
-				180deg,
-				#21232b 0,
-				#21232b 9%,
-				rgba(33, 35, 43, 0) 50%
-			),
-			url('{{post.thumbnail}}') no-repeat center center/cover;
-	}
-</style>
+    <style>
+        .hero {
+            background: linear-gradient(180deg, #21232b 0, #21232b 9%, rgba(33, 35, 43, 0) 50%), url('{{post.thumbnail}}') no-repeat center center/cover;
+        }
+    </style>
 {% endif %}

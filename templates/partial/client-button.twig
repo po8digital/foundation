@@ -1,13 +1,14 @@
 {% set customButton = post.custom_button %}
-{% set text = customButton ? customButton['title'] : 'become a client' %}
+{% set logged = fn('is_user_logged_in') %}
+{% set text = customButton ? customButton['title'] : logged ? 'account':'become a client' %}
 {% set iconChoice = post.custom_button_icon == 'star' ? 'star-icon' : post.custom_button_icon == 'thumb'? 'thumb-icon': 'arrow-icon' %}
 
 
 {% set colorChoice = post.custom_button_color == 'dark' ? 'dark' : post.custom_button_color == 'blue'? 'blue': 'salmon' %}
 
-{% set icon = customButton ? iconChoice : 'star-icon' %}
+{% set icon = customButton ? iconChoice : logged ? 'icon-login-arrow': 'star-icon' %}
 {% set color = customButton ? colorChoice : 'blue' %}
 
-{% set link = customButton ? customButton['url'] : '/become-a-client' %}
+{% set link = customButton ? customButton['url'] : logged ? '/account' : '/become-a-client' %}
 <a href="{{ link }}" class="button button--{{color}}">{{text}}
     <img src="{{ theme.path }}/assets/img/{{icon}}.svg" alt=""/></a>

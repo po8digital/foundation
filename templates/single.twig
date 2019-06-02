@@ -26,7 +26,7 @@
                             <div class="share-bar">{{ fn('wpfai_social') }}</div>
                         </div>
                         {% include "partial/hero-meta.twig" %}
-                        {% if post.is_premium == false %}
+                        {% if post.is_premium == false and fn('is_user_logged_in') == false %}
                             {% include "partial/CTA.twig" %}
                         {% endif %}
                     </div>
