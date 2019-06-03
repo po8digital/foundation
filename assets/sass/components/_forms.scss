@@ -15,13 +15,15 @@ input[type='submit'] {
 	margin-top: 20px !important;
 }
 input[type='text'],
+input[type='password'],
 textarea {
-	background: transparent;
+	background-color: transparent;
 	border: none;
 	border-bottom: 4px solid rgba($grey, 0.3);
 	color: $grey;
-	padding-left: 15px !important;
-	padding-right: 0;
+	// padding-left: 15px !important;
+	// padding-right: 0;
+	padding: 0 0 15px 15px !important;
 }
 textarea {
 	height: 140px !important;
@@ -48,11 +50,23 @@ input {
 	padding-bottom: 18px;
 	padding-left: 10px;
 	select {
-		background: $black;
+		background: transparent;
 		border: none;
 		color: $grey;
 	}
 }
-body .content-wrapper input:-internal-autofill-selected {
-	background-color: $black !important;
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+	-webkit-text-fill-color: $grey;
+
+	transition: background-color 5000s ease-in-out 0s;
 }

@@ -7,6 +7,42 @@
 	}
 	.booking-form {
 		background: $light-white;
+		&__form {
+			max-width: 590px;
+		}
+		li {
+			border-bottom: none;
+		}
+		.gsection_title {
+			font-size: 3.2rem;
+		}
+	}
+	.gform_wrapper
+		li.gfield.gfield_creditcard_warning
+		div.gfield_creditcard_warning_message {
+		display: none;
+	}
+	.gform_wrapper li.gfield.gfield_creditcard_warning {
+		border: none;
+		background: transparent;
+	}
+	input[type='text'],
+	input[type='password'] {
+		color: $medium-grey !important;
+
+		border-bottom: 4px solid rgba($medium-grey, 0.3);
+		color: #000 !important;
+	}
+	.ginput_container_email {
+		input {
+			color: $green !important;
+			border-color: $green;
+		}
+	}
+	.gfield_description {
+		font-size: 1.4rem;
+		background: #fff;
+		padding: 14px !important;
 	}
 }
 

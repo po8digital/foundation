@@ -2441,6 +2441,36 @@ body {
 
 .page-template-account .booking-form {
   background: #faf5ef; }
+  .page-template-account .booking-form__form {
+    max-width: 590px; }
+  .page-template-account .booking-form li {
+    border-bottom: none; }
+  .page-template-account .booking-form .gsection_title {
+    font-size: 3.2rem; }
+
+.page-template-account .gform_wrapper
+li.gfield.gfield_creditcard_warning
+div.gfield_creditcard_warning_message {
+  display: none; }
+
+.page-template-account .gform_wrapper li.gfield.gfield_creditcard_warning {
+  border: none;
+  background: transparent; }
+
+.page-template-account input[type='text'],
+.page-template-account input[type='password'] {
+  color: #707070 !important;
+  border-bottom: 4px solid rgba(112, 112, 112, 0.3);
+  color: #000 !important; }
+
+.page-template-account .ginput_container_email input {
+  color: #3ea576 !important;
+  border-color: #3ea576; }
+
+.page-template-account .gfield_description {
+  font-size: 1.4rem;
+  background: #fff;
+  padding: 14px !important; }
 
 .account-menu {
   text-align: center;
@@ -3825,13 +3855,13 @@ input[type='submit'] {
     background: #e17467; }
 
 input[type='text'],
+input[type='password'],
 textarea {
-  background: transparent;
+  background-color: transparent;
   border: none;
   border-bottom: 4px solid rgba(183, 183, 183, 0.3);
   color: #b7b7b7;
-  padding-left: 15px !important;
-  padding-right: 0; }
+  padding: 0 0 15px 15px !important; }
 
 textarea {
   height: 140px !important; }
@@ -3859,12 +3889,23 @@ input {
   padding-bottom: 18px;
   padding-left: 10px; }
   .ginput_container_select select {
-    background: #21232b;
+    background: transparent;
     border: none;
     color: #b7b7b7; }
 
-body .content-wrapper input:-internal-autofill-selected {
-  background-color: #21232b !important; }
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #b7b7b7;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s; }
 
 .slide {
   position: relative; }
