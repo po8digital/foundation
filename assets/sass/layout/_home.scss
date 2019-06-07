@@ -1,9 +1,23 @@
 .home {
 	background: $light-white;
+	.hero__title {
+		opacity: 0;
+	}
+	.hero__buttons {
+		.button--salmon,
+		.button--blue {
+			opacity: 0;
+		}
+	}
 }
 .home-animated-image {
-	padding-top: 100px;
-	margin-bottom: 100px;
+	padding-top: 50px;
+	margin-bottom: 50px;
+	@include min-screen($m) {
+		padding-top: 100px;
+		margin-bottom: 100px;
+	}
+
 	position: relative;
 	.big-image {
 		width: 100%;
@@ -52,13 +66,19 @@
 }
 .home-asteroid {
 	position: relative;
+	@include max-screen(1199px) {
+		margin-top: -100px;
+	}
+	@include max-screen($m) {
+		padding-top: 50px;
+	}
 
-	@include min-screen($l) {
+	@include min-screen(1200px) {
 		margin-bottom: -200px;
 	}
 
 	.wrapper {
-		@include min-screen($l) {
+		@include min-screen(1200px) {
 			display: flex;
 		}
 	}
@@ -66,15 +86,11 @@
 		width: 300px;
 		height: 300px;
 		display: none;
-		@include screen($l, 1440px) {
+		@include screen(1200px, 1440px) {
 			display: block;
 		}
-		@include min-screen($m) {
-			width: 500px;
-			height: 500px;
-		}
 
-		@include min-screen($l) {
+		@include min-screen(1200px) {
 			width: 800px;
 			height: 800px;
 		}
@@ -82,7 +98,7 @@
 		background: rgba(0, 0, 0, 0.2);
 		border-radius: 50%;
 		transform: translate(80px, 150px);
-		@include min-screen($l) {
+		@include min-screen(1200px) {
 			transform: translate(-50px, 80px);
 		}
 
@@ -92,8 +108,11 @@
 	&__image {
 		transform: translate(-70px, -56px);
 
-		@include min-screen($l) {
+		@include min-screen(1200px) {
 			transform: translate(-180px, -120px);
+		}
+		@include max-screen(1199px) {
+			margin-top: 50px;
 		}
 		position: relative;
 	}
@@ -104,7 +123,7 @@
 		flex-basis: 80%;
 		order: 2;
 
-		@include min-screen($l) {
+		@include min-screen(1200px) {
 			max-width: 360px;
 			margin-bottom: 0;
 			transform: translateX(-100px);
@@ -114,14 +133,18 @@
 }
 .asteroid {
 	z-index: 10;
-	position: absolute;
-	@include max-screen($l) {
-		width: 70%;
-		top: 278px;
-		left: 39px;
+	position: relative;
+	@include min-screen(1200px) {
+		position: absolute;
+		top: -111px;
+		left: -200px;
 	}
-	top: -111px;
-	left: -200px;
+
+	@include max-screen(1199px) {
+		width: 70%;
+		// top: 278px;
+		// left: 39px;
+	}
 }
 .home-blue-section {
 	background: $light-blue;
@@ -134,8 +157,8 @@
 		left: 0;
 		width: 100%;
 		height: 68px;
-		top: -28px;
-		@include min-screen($m) {
+		top: -57px;
+		@include min-screen($s) {
 			height: 205px;
 			top: -117px;
 		}
@@ -157,6 +180,7 @@
 
 	.wrapper {
 		margin-bottom: -70px;
+
 		@include min-screen($l) {
 			display: flex;
 		}
@@ -170,9 +194,19 @@
 			max-width: 360px;
 			margin-bottom: 0;
 		}
+		@include max-screen($l) {
+			position: relative;
+			top: -90px;
+		}
 	}
 	&__image {
-		transform: translate(200px, -100px);
+		position: relative;
+		z-index: 10;
+		transform: translateY(20px);
+
+		@include min-screen($l) {
+			transform: translate(200px, -100px);
+		}
 	}
 	.button {
 		background: $black;
@@ -199,11 +233,11 @@
 			left: 0;
 			width: 100%;
 			height: 77px;
-			bottom: -68px;
+			bottom: -8px;
 			z-index: -1;
 			@include min-screen($s) {
 				height: 136px;
-				bottom: -87px;
+				bottom: -67px;
 			}
 			@include min-screen($m) {
 				height: 189px;

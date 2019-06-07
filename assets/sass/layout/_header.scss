@@ -1,8 +1,14 @@
 .header {
 	padding: 0 20px;
+	&__content{
 	@include flexbox(space-between, row nowrap);
 	align-items: center;
 	overflow: hidden;
+	.home &{
+		opacity: 0;
+	}
+	}
+
 }
 
 .header-search {

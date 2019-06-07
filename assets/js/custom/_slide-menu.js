@@ -5,7 +5,7 @@ const slideMenu = $('.slide-menu');
 const close = $('.slide-menu__close');
 // const itemWithChildrens = $('.menu-item-has-children');
 // const openChildrensTrigger;
-console.log(dataset('after'));
+// console.log(dataset('after'));
 
 const openMenu = () => slideMenu.classList.add('isOpen');
 const closeMenu = () => slideMenu.classList.remove('isOpen');
