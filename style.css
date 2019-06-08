@@ -2781,22 +2781,24 @@ div.gfield_creditcard_warning_message {
     right: 20px;
     top: 20px;
     cursor: pointer; }
-  .slide-menu__nav ul {
-    padding: 0;
-    margin-bottom: 100px; }
-    .slide-menu__nav ul .menu-item {
-      padding: 10px 0;
-      font-size: 4.2rem; }
-    .slide-menu__nav ul .menu-item-has-children {
-      position: relative; }
-      .slide-menu__nav ul .menu-item-has-children:after {
-        content: url("./assets/img/menu-arrow.svg");
-        position: absolute;
-        top: 5px;
-        right: 20px;
-        cursor: pointer; }
-    .slide-menu__nav ul ul {
-      display: none; }
+  .slide-menu__nav {
+    position: relative; }
+    .slide-menu__nav ul {
+      padding: 0;
+      margin-bottom: 100px; }
+      .slide-menu__nav ul .menu-item {
+        padding: 10px 0;
+        font-size: 4.2rem; }
+      .slide-menu__nav ul .menu-item-has-children {
+        position: relative; }
+        .slide-menu__nav ul .menu-item-has-children:after {
+          content: url("./assets/img/menu-arrow.svg");
+          position: absolute;
+          top: 5px;
+          right: 20px;
+          cursor: pointer; }
+      .slide-menu__nav ul ul {
+        display: none; }
   .slide-menu__social {
     margin-bottom: 100px; }
     .slide-menu__social .fa {
@@ -2805,7 +2807,29 @@ div.gfield_creditcard_warning_message {
       .slide-menu__social .fa:hover {
         color: #246fc9; }
   .slide-menu .top-menu-login {
-    display: none; }
+    position: absolute;
+    right: 0;
+    bottom: 175px; }
+    .slide-menu .top-menu-login a {
+      color: #ffeae1;
+      font-size: 1.4rem;
+      letter-spacing: 2.1px;
+      text-transform: uppercase;
+      background-color: #31333c;
+      border-radius: 4px;
+      padding: 10px 40px 10px 30px;
+      position: relative; }
+      .slide-menu .top-menu-login a:hover {
+        background-color: #2c2e36; }
+      .slide-menu .top-menu-login a:after {
+        content: url("./assets/img/arrow-short.svg");
+        position: absolute;
+        top: 9px;
+        right: 16px; }
+      .logged-in .slide-menu .top-menu-login a {
+        padding: 10px 30px; }
+        .logged-in .slide-menu .top-menu-login a:after {
+          content: none; }
 
 .button {
   display: inline-block;

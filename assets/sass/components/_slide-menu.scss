@@ -4,7 +4,6 @@
 	right: 0;
 	transform: translateX(110%);
 	z-index: 100;
-	// display: none;
 	&.isOpen {
 		display: block;
 		transform: translateX(0);
@@ -23,6 +22,7 @@
 		cursor: pointer;
 	}
 	&__nav {
+		position: relative;
 		ul {
 			padding: 0;
 			margin-bottom: 100px;
@@ -56,6 +56,33 @@
 		}
 	}
 	.top-menu-login {
-		display: none;
+		position: absolute;
+		right: 0;
+		bottom: 175px;
+		a {
+			color: #ffeae1;
+			font-size: 1.4rem;
+			letter-spacing: 2.1px;
+			text-transform: uppercase;
+			background-color: #31333c;
+			border-radius: 4px;
+			padding: 10px 40px 10px 30px;
+			position: relative;
+			&:hover {
+				background-color: darken(#31333c, 2%);
+			}
+			&:after {
+				content: url('./assets/img/arrow-short.svg');
+				position: absolute;
+				top: 9px;
+				right: 16px;
+			}
+			.logged-in & {
+				padding: 10px 30px;
+				&:after {
+					content: none;
+				}
+			}
+		}
 	}
 }
