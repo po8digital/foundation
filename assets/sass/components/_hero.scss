@@ -1,4 +1,7 @@
 .hero {
+	@include max-screen($m) {
+		padding-bottom: 50px !important;
+	}
 	padding: 90px 0 1px;
 	.page-template-services & {
 		min-height: 430px;

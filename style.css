@@ -2452,11 +2452,18 @@ body {
 .contact-us-page .booking-form {
   padding-top: 0; }
   .contact-us-page .booking-form__text {
-    margin-top: 30px; }
+    margin-top: 30px;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .contact-us-page .booking-form__text {
+        text-align: right; } }
   .contact-us-page .booking-form__title {
     margin-bottom: 0; }
   .contact-us-page .booking-form__content {
     margin-bottom: 25px; }
+  @media only screen and (max-width: 768px) {
+    .contact-us-page .booking-form {
+      margin-top: -30px; } }
 
 .contact-us-page .hero__buttons {
   display: none; }
@@ -2886,6 +2893,9 @@ div.gfield_creditcard_warning_message {
 
 .hero {
   padding: 90px 0 1px; }
+  @media only screen and (max-width: 768px) {
+    .hero {
+      padding-bottom: 50px !important; } }
   .page-template-services .hero {
     min-height: 430px; }
   .careers-page .hero {
