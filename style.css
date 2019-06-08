@@ -2804,6 +2804,8 @@ div.gfield_creditcard_warning_message {
       margin-right: 25px; }
       .slide-menu__social .fa:hover {
         color: #246fc9; }
+  .slide-menu .top-menu-login {
+    display: none; }
 
 .button {
   display: inline-block;
@@ -4295,6 +4297,69 @@ select:-webkit-autofill:focus {
     position: absolute;
     top: -700px;
     left: 0; }
+
+.fixed-menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #dd6052;
+  z-index: 100;
+  display: none; }
+  .fixed-menu__right-item {
+    position: absolute;
+    right: -20px;
+    top: 0; }
+    .fixed-menu__right-item a {
+      color: #21232b; }
+  .fixed-menu__nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative; }
+    .fixed-menu__nav ul {
+      margin: 0;
+      padding: 0; }
+    .fixed-menu__nav > ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: space-around;
+              justify-content: space-around; }
+    .fixed-menu__nav .menu-item {
+      position: relative; }
+      .fixed-menu__nav .menu-item:hover > a {
+        color: #ffeae1; }
+      .fixed-menu__nav .menu-item:hover.menu-item-has-children:after {
+        content: url(./assets/img/top-menu-arrow-white.svg); }
+      .fixed-menu__nav .menu-item a {
+        color: #21232b;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-family: 'Avenir';
+        font-weight: bold; }
+      .fixed-menu__nav .menu-item ul {
+        opacity: 0;
+        position: absolute;
+        top: 28px;
+        left: -30px;
+        background: #d94c3d;
+        width: auto;
+        white-space: nowrap;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
+        padding: 15px 40px 20px;
+        z-index: 10; }
+        .fixed-menu__nav .menu-item ul .top-menu-login {
+          display: none; }
+      .fixed-menu__nav .menu-item:hover ul {
+        opacity: 1; }
+  .fixed-menu .menu-item-has-children:after {
+    content: url(./assets/img/top-menu-arrow.svg);
+    position: absolute;
+    top: 0;
+    right: -20px; }
+  .fixed-menu .top-menu-login a {
+    color: #932c20; }
 
 .dark-green {
   color: #0b354c; }
