@@ -3946,6 +3946,21 @@ label {
             transform: translate(0);
     font-size: 1.2rem !important; }
 
+.gfield_checkbox label,
+.checkboxes label {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0); }
+
+.checkboxes {
+  margin-top: 50px !important; }
+
+.gfield_checkbox label {
+  -webkit-transform: translate(5px, 6px);
+          transform: translate(5px, 6px); }
+
+.gfield_checkbox li {
+  height: 30px; }
+
 .gfield_required {
   color: #dd6052 !important; }
 
