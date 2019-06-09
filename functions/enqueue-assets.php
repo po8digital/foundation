@@ -3,7 +3,14 @@ function wst_styles_and_scripts()
 {
 	wp_enqueue_script('GSAP', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js', array(), '2.1.2', true);
 
-	wp_enqueue_script('animation-js', THEME_JS . '/animation.min.js', ['GSAP'], '1.0.0', true);
+	wp_enqueue_script('scrollmagic', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js', array(), '2.0.7', true);
+
+	wp_enqueue_script('scroll-anim', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js', array('scrollmagic', 'GSAP'), '2.0.7', true);
+
+	wp_enqueue_script('scroll-indicators', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js', array('scrollmagic'), '2.0.7', true);
+
+
+	wp_enqueue_script('animation-js', THEME_JS . '/animation.min.js', ['GSAP', 'scrollmagic'], '1.0.0', true);
 
 	wp_enqueue_script('custom-js', THEME_JS . '/custom.min.js', ['jquery'], '1.0.0', true);
 
@@ -14,6 +21,4 @@ function wst_styles_and_scripts()
 	wp_enqueue_style('fancybox-css', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css', array(), '3.5.7');
 
 	wp_enqueue_script('fancybox-js', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js', ['jquery'], '3.5.7', true);
-
-
 }

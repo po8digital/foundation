@@ -1,11 +1,18 @@
 .fixed-menu {
 	position: fixed;
 	left: 0;
-	top: 0;
+	top: -30px;
+	opacity: 0;
 	width: 100%;
 	background-color: $salmon;
 	z-index: 100;
-	display: none;
+	transition: $transition4;
+	visibility: hidden;
+	&.active {
+		top: 0;
+		opacity: 1;
+		visibility: visible;
+	}
 
 	&__right-item {
 		position: absolute;
@@ -27,20 +34,26 @@
 		> ul {
 			display: flex;
 			justify-content: space-around;
-		}
-		.menu-item {
-			position: relative;
-			&:hover {
-				> a {
-					color: $light-pink;
-				}
+			> .menu-item {
+				&:hover {
+					// > a {
+					// 	color: $light-pink;
+					// }
 
-				&.menu-item-has-children {
-					&:after {
-						content: url(./assets/img/top-menu-arrow-white.svg);
+					&.menu-item-has-children {
+						&:after {
+							content: url(./assets/img/top-menu-arrow-white.svg);
+						}
+					}
+					> ul {
+						opacity: 1;
+						visibility: visible;
 					}
 				}
 			}
+		}
+		.menu-item {
+			position: relative;
 
 			a {
 				color: $black;
@@ -48,9 +61,13 @@
 				text-transform: uppercase;
 				font-family: 'Avenir';
 				font-weight: bold;
+				&:hover {
+					color: $light-pink;
+				}
 			}
 			ul {
 				opacity: 0;
+				visibility: hidden;
 				position: absolute;
 				top: 28px;
 				left: -30px;
@@ -64,11 +81,11 @@
 					display: none;
 				}
 			}
-			&:hover {
-				ul {
-					opacity: 1;
-				}
-			}
+			// &:hover {
+			// 	ul {
+			// 		opacity: 1;
+			// 	}
+			// }
 		}
 	}
 	.menu-item-has-children {

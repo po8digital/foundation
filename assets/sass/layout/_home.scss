@@ -11,10 +11,9 @@
 	}
 }
 .home-animated-image {
-	padding-top: 50px;
+	// padding-top: 50px;
 	margin-bottom: 50px;
 	@include min-screen($m) {
-		padding-top: 100px;
 		margin-bottom: 100px;
 	}
 
@@ -22,19 +21,18 @@
 	.big-image {
 		width: 100%;
 		height: auto;
+		#triangle {
+			// transform: translate(157px, -49px);
+		}
 	}
-	.glasses {
-		position: absolute;
-		top: 40px;
-		left: 37%;
-	}
-	.home-triangle {
-		position: absolute;
-		bottom: -100px;
-		left: 150px;
-		transform-origin: center center;
-		transform: rotate(-30deg);
-	}
+
+	// .home-triangle {
+	// 	position: absolute;
+	// 	bottom: -100px;
+	// 	left: 150px;
+	// 	transform-origin: center center;
+	// 	transform: rotate(-30deg);
+	// }
 }
 
 .home-2cols {

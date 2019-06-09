@@ -1,9 +1,9 @@
 (function($) {
 	$(window).scroll(function() {
 		if ($(this).scrollTop() >= 500) {
-			$('.fixed-menu').addClass('isScrolled');
+			$('#fixedMenu').addClass('isScrolled');
 		} else {
-			$('.fixed-menu').removeClass('isScrolled');
+			$('#fixedMenu').removeClass('isScrolled');
 		}
 	});
 })(jQuery);

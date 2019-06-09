@@ -45,3 +45,51 @@ animHeroTl
 		{ opacity: 1, y: 0, ease: Back.easeOut },
 		'-=1.5'
 	);
+
+//Scroll animation
+
+var controller = new ScrollMagic.Controller();
+
+const menuScene = new ScrollMagic.Scene({
+	triggerElement: '.header',
+	triggerHook: 0,
+	offset: 400,
+})
+	.setClassToggle('#fixedMenu', 'active')
+	// .addIndicators()
+	.addTo(controller);
+//TODO: only works on homepage find why
+
+const glassesTween = new TweenMax.to('#glasses', 4, {
+	scale: 1.2,
+	y: -10,
+	x: -50,
+	rotation: 8,
+	transformOrigin: 'center center',
+});
+
+const triangleTween = new TweenMax.fromTo(
+	'#triangle',
+	4,
+	{ x: 165, y: -49, rotation: -10, transformOrigin: 'center center' },
+	{
+		y: 50,
+		x: -50,
+		rotation: 50,
+		transformOrigin: 'center center',
+	}
+);
+
+const glassesScene = new ScrollMagic.Scene({
+	triggerElement: '.home .hero__title',
+	triggerHook: 0,
+})
+	.setTween(glassesTween)
+	.addTo(controller);
+
+const triangleScene = new ScrollMagic.Scene({
+	triggerElement: '.home .hero__buttons',
+	triggerHook: 0,
+})
+	.setTween(triangleTween)
+	.addTo(controller);
