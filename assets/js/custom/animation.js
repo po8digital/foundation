@@ -60,6 +60,8 @@ const menuScene = new ScrollMagic.Scene({
 	.addTo(controller);
 //TODO: only works on homepage find why
 
+//Glasses
+
 const glassesTween = new TweenMax.to('#glasses', 4, {
 	scale: 1.2,
 	y: -10,
@@ -67,6 +69,16 @@ const glassesTween = new TweenMax.to('#glasses', 4, {
 	rotation: 8,
 	transformOrigin: 'center center',
 });
+
+const glassesScene = new ScrollMagic.Scene({
+	triggerElement: '.home .hero__title',
+	triggerHook: 0,
+})
+	.setTween(glassesTween)
+	// .addIndicators()
+	.addTo(controller);
+
+//Triangle
 
 const triangleTween = new TweenMax.fromTo(
 	'#triangle',
@@ -80,16 +92,131 @@ const triangleTween = new TweenMax.fromTo(
 	}
 );
 
-const glassesScene = new ScrollMagic.Scene({
-	triggerElement: '.home .hero__title',
-	triggerHook: 0,
-})
-	.setTween(glassesTween)
-	.addTo(controller);
-
 const triangleScene = new ScrollMagic.Scene({
 	triggerElement: '.home .hero__buttons',
 	triggerHook: 0,
 })
 	.setTween(triangleTween)
+	.addTo(controller);
+
+//Two col
+
+const twoColTween = new TimelineMax()
+	.fromTo(
+		'.home-2cols__item:first',
+		2,
+		{ y: 100, opacity: 0 },
+		{ y: 0, opacity: 1 }
+	)
+	.fromTo(
+		'.home-2cols__item:last',
+		2,
+		{ y: 150, opacity: 0 },
+		{ y: 0, opacity: 1 },
+		'-=1.5'
+	);
+
+const twoColScene = new ScrollMagic.Scene({
+	triggerElement: '.home-2cols',
+	triggerHook: 1,
+	offset: 100,
+})
+	.setTween(twoColTween)
+	// .addIndicators()
+	.addTo(controller);
+
+//Asteroid
+
+const asteroidTween = new TimelineMax()
+	.fromTo(
+		'.asteroid',
+		2,
+		{
+			x: -120,
+			y: 120,
+			scale: 0.9,
+		},
+		{
+			x: 0,
+			y: 0,
+			scale: 1,
+		}
+	)
+	.fromTo(
+		'.home-asteroid__text',
+		2,
+		{
+			opacity: 0,
+			y: 150,
+		},
+		{
+			opacity: 1,
+			y: 0,
+		},
+		'-=1.5'
+	);
+
+const asteroidScene = new ScrollMagic.Scene({
+	triggerElement: '.asteroid',
+	triggerHook: 1,
+	offset: 200,
+})
+	.setTween(asteroidTween)
+	// .addIndicators()
+	.addTo(controller);
+
+//Blue zone
+
+const blueTween = new TweenMax.fromTo(
+	'.home-blue-section__content',
+	2,
+	{ y: 200, opacity: 0 },
+	{ y: 100, opacity: 1 }
+);
+
+const blueScene = new ScrollMagic.Scene({
+	triggerElement: '.home-blue-section__content',
+	triggerHook: 1,
+	offset: 100,
+})
+	.setTween(blueTween)
+	// .addIndicators()
+	.addTo(controller);
+
+//Services
+
+const servicesTween = new TimelineMax()
+	.fromTo('.home .featured-services__container', 2, { y: 50 }, { y: 0 })
+	.to(
+		'.home .featured-services .featured-services__item:nth-child(2)',
+		1.5,
+		{ y: -20 },
+		'-=0.5'
+	);
+
+const servicesScene = new ScrollMagic.Scene({
+	triggerElement: '.home .featured-services__container',
+	triggerHook: 1,
+	offset: 120,
+})
+	.setTween(servicesTween)
+	// .addIndicators()
+	.addTo(controller);
+
+//Macbook
+
+const macBook = CSSRulePlugin.getRule('.home .resources:before');
+const macBookTween = new TweenMax.fromTo(
+	macBook,
+	2,
+	{ cssRule: { y: 100 } },
+	{ cssRule: { y: 0 } }
+);
+const macBookScene = new ScrollMagic.Scene({
+	triggerElement: '.home .resources',
+	triggerHook: 1,
+	offset: 200,
+})
+	.setTween(macBookTween)
+	.addIndicators()
 	.addTo(controller);

@@ -37,7 +37,7 @@
 
 .home-2cols {
 	margin-top: -100px;
-	padding-top: 100px;
+	// padding-top: 100px;
 	.wrapper {
 		max-width: 900px;
 		@include min-screen($m) {
@@ -134,8 +134,8 @@
 	position: relative;
 	@include min-screen(1200px) {
 		position: absolute;
-		top: -111px;
-		left: -200px;
+		top: -94px;
+		left: -153px;
 	}
 
 	@include max-screen(1199px) {

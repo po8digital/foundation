@@ -1982,8 +1982,7 @@ body {
     height: auto; }
 
 .home-2cols {
-  margin-top: -100px;
-  padding-top: 100px; }
+  margin-top: -100px; }
   .home-2cols .wrapper {
     max-width: 900px; }
     @media only screen and (min-width: 768px) {
@@ -2084,8 +2083,8 @@ body {
   @media only screen and (min-width: 1200px) {
     .asteroid {
       position: absolute;
-      top: -111px;
-      left: -200px; } }
+      top: -94px;
+      left: -153px; } }
   @media only screen and (max-width: 1199px) {
     .asteroid {
       width: 70%; } }

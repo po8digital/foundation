@@ -9,8 +9,12 @@ function wst_styles_and_scripts()
 
 	wp_enqueue_script('scroll-indicators', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js', array('scrollmagic'), '2.0.7', true);
 
+	wp_enqueue_script('css-plugin', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js', array('GSAP'), '2.1.3', true);
 
-	wp_enqueue_script('animation-js', THEME_JS . '/animation.min.js', ['GSAP', 'scrollmagic'], '1.0.0', true);
+	wp_enqueue_script('css-rule', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSRulePlugin.min.js', array('GSAP', 'css-plugin'), '2.1.3', true);
+
+
+	wp_enqueue_script('animation-js', THEME_JS . '/animation.min.js', ['GSAP', 'scrollmagic', 'css-plugin', 'css-rule'], '1.0.0', true);
 
 	wp_enqueue_script('custom-js', THEME_JS . '/custom.min.js', ['jquery'], '1.0.0', true);
 
