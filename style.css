@@ -2788,9 +2788,38 @@ div.gfield_creditcard_warning_message {
           position: absolute;
           top: 5px;
           right: 20px;
-          cursor: pointer; }
+          cursor: pointer;
+          -webkit-transition: all 0.4s ease-in-out;
+          transition: all 0.4s ease-in-out; }
+        .slide-menu__nav ul .menu-item-has-children.active ul {
+          display: block; }
+        .slide-menu__nav ul .menu-item-has-children.active:after {
+          -webkit-transform-origin: center center;
+                  transform-origin: center center;
+          -webkit-transform: rotate(180deg);
+                  transform: rotate(180deg); }
       .slide-menu__nav ul ul {
-        display: none; }
+        -webkit-transition: all 1 ease-in-out;
+        transition: all 1 ease-in-out;
+        display: none;
+        margin-bottom: 0;
+        padding: 0 0 0 30px;
+        border-left: 3px solid #dd6052;
+        margin: 30px 0 20px; }
+        .slide-menu__nav ul ul .menu-item {
+          padding: 0;
+          line-height: 1; }
+          .slide-menu__nav ul ul .menu-item a {
+            color: #dd6052;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-family: 'Avenir';
+            font-weight: 900;
+            line-height: 1; }
+            .slide-menu__nav ul ul .menu-item a:hover {
+              color: #ffeae1; }
+          .slide-menu__nav ul ul .menu-item.top-menu-login {
+            display: none; }
   .slide-menu__social {
     margin-bottom: 100px; }
     .slide-menu__social .fa {
