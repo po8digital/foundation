@@ -1,5 +1,8 @@
 {% extends "base.twig" %}
 {% block content %}
     {% include "partial/hero.twig" %}
+    <div class="wrapper login-wrapper">
+        {{ fn('dynamic_sidebar','login-area') }}
+    </div>
 
 {% endblock %}

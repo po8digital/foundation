@@ -4459,6 +4459,38 @@ select:-webkit-autofill:focus {
   .fixed-menu .top-menu-login a {
     color: #932c20; }
 
+.page-template-login .wrapper {
+  max-width: 550px; }
+
+.page-template-login .login-wrapper {
+  color: #faf5ef; }
+  .page-template-login .login-wrapper a {
+    color: #246fc9; }
+
+.page-template-login input {
+  width: 100%; }
+
+.page-template-login input[type='text'] {
+  color: #3ea576;
+  border-bottom: 5px solid #3ea576;
+  position: relative; }
+
+.page-template-login .gfield:nth-child(2) {
+  margin-top: 50px; }
+
+.page-template-login .gfield:first-child .ginput_container:after {
+  content: 'Your email address is your username for logging into the Foundation Lab';
+  font-size: 1.4rem;
+  color: #21232b;
+  padding: 12px 9px;
+  background: #fff;
+  width: 100%;
+  position: relative;
+  top: 6px; }
+
+.page-template-login .gform_login_widget {
+  padding: 50px 0 100px; }
+
 .dark-green {
   color: #0b354c; }
 

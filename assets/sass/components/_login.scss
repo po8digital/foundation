@@ -1,0 +1,40 @@
+.page-template-login {
+	.wrapper {
+		max-width: 550px;
+	}
+	.login-wrapper {
+		color: $light-white;
+		a {
+			color: $blue;
+		}
+	}
+	input {
+		width: 100%;
+	}
+	input[type='text'] {
+		color: $green;
+		border-bottom: 5px solid $green;
+		position: relative;
+	}
+	.gfield:nth-child(2) {
+		margin-top: 50px;
+	}
+	.gfield:first-child {
+		.ginput_container {
+			&:after {
+				content: 'Your email address is your username for logging into the Foundation Lab';
+
+				font-size: 1.4rem;
+				color: $black;
+				padding: 12px 9px;
+				background: #fff;
+				width: 100%;
+				position: relative;
+				top: 6px;
+			}
+		}
+	}
+	.gform_login_widget {
+		padding: 50px 0 100px;
+	}
+}

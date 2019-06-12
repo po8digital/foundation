@@ -12,5 +12,13 @@ function wst_register_widget_areas()
 		'before_title'  => '<h3 class="widgettitle uppercase light-pink text-small bold no-margin">',
 		'after_title'   => '</h3>'
 	));
+	register_sidebar(array(
+		'name'          => __(' Login Area', TEXT_DOMAIN),
+		'id'            => 'login-area',
+		'description'   => __('Add login widget.', TEXT_DOMAIN),
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
+
+	));
 }
 add_action('widgets_init', 'wst_register_widget_areas');
