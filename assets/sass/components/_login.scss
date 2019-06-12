@@ -1,13 +1,12 @@
 .page-template-login {
-	.wrapper {
-		max-width: 550px;
-	}
 	.login-wrapper {
+		max-width: 550px;
 		color: $light-white;
 		a {
 			color: $blue;
 		}
 	}
+
 	input {
 		width: 100%;
 	}

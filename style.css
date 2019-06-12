@@ -4459,10 +4459,8 @@ select:-webkit-autofill:focus {
   .fixed-menu .top-menu-login a {
     color: #932c20; }
 
-.page-template-login .wrapper {
-  max-width: 550px; }
-
 .page-template-login .login-wrapper {
+  max-width: 550px;
   color: #faf5ef; }
   .page-template-login .login-wrapper a {
     color: #246fc9; }
