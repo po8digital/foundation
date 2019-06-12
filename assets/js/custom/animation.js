@@ -1,4 +1,5 @@
 import { $, $$ } from './_utilities';
+const w = window.innerWidth;
 
 // AnimatedText
 const texts = $$('.animated-text__item');
@@ -40,6 +41,7 @@ const menuScene = new ScrollMagic.Scene({
 	.setClassToggle('#fixedMenu', 'active')
 	// .addIndicators()
 	.addTo(controller);
+
 //TODO: only works on homepage find why
 
 //Glasses
@@ -108,35 +110,36 @@ const twoColScene = new ScrollMagic.Scene({
 	.addTo(controller);
 
 //Asteroid
-
-const asteroidTween = new TimelineMax()
-	.fromTo(
-		'.asteroid',
-		2,
-		{
-			x: -120,
-			y: 120,
-			scale: 0.9,
-		},
-		{
-			x: 0,
-			y: 0,
-			scale: 1,
-		}
-	)
-	.fromTo(
-		'.home-asteroid__text',
-		2,
-		{
-			opacity: 0,
-			y: 150,
-		},
-		{
-			opacity: 1,
-			y: 0,
-		},
-		'-=1.5'
-	);
+if (w >= 1200 && w <= 1440) {
+	const asteroidTween = new TimelineMax()
+		.fromTo(
+			'.asteroid',
+			2,
+			{
+				x: -120,
+				y: 120,
+				scale: 0.9,
+			},
+			{
+				x: 0,
+				y: 0,
+				scale: 1,
+			}
+		)
+		.fromTo(
+			'.home-asteroid__text',
+			2,
+			{
+				opacity: 0,
+				y: 150,
+			},
+			{
+				opacity: 1,
+				y: 0,
+			},
+			'-=1.5'
+		);
+}
 
 const asteroidScene = new ScrollMagic.Scene({
 	triggerElement: '.asteroid',

@@ -8,6 +8,10 @@
 	z-index: 100;
 	transition: $transition4;
 	visibility: hidden;
+	display: none;
+	@include min-screen($m) {
+		display: block;
+	}
 	&.active {
 		top: 0;
 		opacity: 1;
