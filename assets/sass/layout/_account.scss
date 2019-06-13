@@ -4,6 +4,7 @@
 	}
 	.hero {
 		min-height: 200px;
+		padding-bottom: 70px;
 	}
 	.booking-form {
 		background: $light-white;
@@ -64,6 +65,34 @@
 		}
 	}
 }
+
+.country-select {
+	transform: translateY(25px);
+	.ginput_container_select {
+		border-bottom: 4px solid #d1cdc9 !important;
+	}
+}
+.ginput_container_creditcard {
+	.ginput_cardinfo_left {
+		width: 100%;
+		float: none !important;
+
+		.ginput_card_field:first-child select {
+		}
+	}
+}
+.ginput_card_security_code {
+	@include min-screen($s) {
+		width: 400px;
+	}
+}
+
+.gsection_title {
+	padding-top: 50px !important;
+}
+
+//TODO: styling corrections on account setup
+
 .login-page {
 	.hero {
 		min-height: 200px;

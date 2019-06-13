@@ -2479,7 +2479,8 @@ body {
   display: none; }
 
 .page-template-account .hero {
-  min-height: 200px; }
+  min-height: 200px;
+  padding-bottom: 70px; }
 
 .page-template-account .booking-form {
   background: #faf5ef; }
@@ -2530,6 +2531,23 @@ div.gfield_creditcard_warning_message {
     .account-menu span.current,
     .account-menu span:hover {
       color: #dd6052; }
+
+.country-select {
+  -webkit-transform: translateY(25px);
+          transform: translateY(25px); }
+  .country-select .ginput_container_select {
+    border-bottom: 4px solid #d1cdc9 !important; }
+
+.ginput_container_creditcard .ginput_cardinfo_left {
+  width: 100%;
+  float: none !important; }
+
+@media only screen and (min-width: 480px) {
+  .ginput_card_security_code {
+    width: 400px; } }
+
+.gsection_title {
+  padding-top: 50px !important; }
 
 .login-page .hero {
   min-height: 200px; }
@@ -3945,6 +3963,8 @@ div.gfield_creditcard_warning_message {
 input[type='submit'] {
   padding: 18px 15px;
   background: #dd6052;
+  -webkit-transition: all 0.4s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
   border: none;
   border-bottom: 5px solid #b14437;
   width: 97% !important;
@@ -4003,11 +4023,13 @@ label {
 input {
   outline: none; }
 
-.ginput_container_select {
+.ginput_container_select,
+.ginput_card_field {
   border-bottom: 4px solid rgba(183, 183, 183, 0.3);
   padding-bottom: 18px;
   padding-left: 10px; }
-  .ginput_container_select select {
+  .ginput_container_select select,
+  .ginput_card_field select {
     background: transparent;
     border: none;
     color: #b7b7b7; }

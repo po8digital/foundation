@@ -1,6 +1,7 @@
 input[type='submit'] {
 	padding: 18px 15px;
 	background: $salmon;
+	transition: $transition4 !important;
 	@include min-screen($xs) {
 		padding: 18px 30px;
 	}
@@ -62,7 +63,8 @@ label {
 input {
 	outline: none;
 }
-.ginput_container_select {
+.ginput_container_select,
+.ginput_card_field {
 	border-bottom: 4px solid rgba($grey, 0.3);
 	padding-bottom: 18px;
 	padding-left: 10px;
