@@ -1,0 +1,19 @@
+<div class="report">
+	<h2 class="report__title font42 light text-center no-margin">
+		Get the report
+	</h2>
+	{% if fn('is_user_logged_in') %}
+	<div class="report__subtitle bold light font21  text-center">
+		{{ options.report_subtext | e('esc_html')}}
+	</div>
+	<div class="report__button text-center">
+		<a
+			href="{{ TimberImage(post.resource_download) | e('esc_url')}}"
+			class="button button--green"
+			download
+			>Download now <img src="{{ theme.path }}/assets/img/dl-green.svg" alt=""
+		/></a>
+	</div>
+
+	{% else %} {% endif %}
+</div>

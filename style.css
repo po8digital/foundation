@@ -4630,6 +4630,17 @@ select:-webkit-autofill:focus {
   .account-lb .button--green {
     cursor: pointer; }
 
+.report {
+  background: #195090;
+  border-radius: 4px;
+  padding: 50px 30px 80px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
+  margin-bottom: 50px; }
+  .report__button {
+    margin-top: 50px; }
+  .report__subtitle {
+    margin-top: 20px; }
+
 .dark-green {
   color: #0b354c; }
 

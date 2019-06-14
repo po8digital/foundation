@@ -1,0 +1,14 @@
+.report {
+	background: $medium-blue;
+	border-radius: 4px;
+	padding: 50px 30px 80px;
+	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
+	margin-bottom: 50px;
+
+	&__button {
+		margin-top: 50px;
+	}
+	&__subtitle {
+		margin-top: 20px;
+	}
+}
