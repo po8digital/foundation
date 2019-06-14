@@ -25,21 +25,33 @@
                 </div>
             </div>
         {% endif %}
+        {% set isAccounfInfo = fn('is_page_template','account-info.php') %}
 
-        <div class="hero__buttons text-center">
-            {% if fn('is_front_page') %}
-                <a class="button button--salmon" href="#scrollTo">get a Proposal</a>
-                <a class="button button--blue" href="/research">OR GET OUR RESEARCH</a>
-            {% else %}
-                {% include "partial/client-button.twig" %}
-                {% if
+        {% if isAccounfInfo %}
+            <h1 class="hero__title font42 text-center light-pink bold no-margin">
+                Hi,
+                {{name}}
+            </h1>
+        {% endif %}
+        {% if isAccounfInfo == false %}
+            <div class="hero__buttons text-center">
+                {% if fn('is_front_page') %}
+                    <a class="button button--salmon" href="#scrollTo">get a Proposal</a>
+                    <a class="button button--blue" href="/research">OR GET OUR RESEARCH</a>
+                {% else %}
+                    {% include "partial/client-button.twig" %}
+                    {% if
 			post.custom_button == false and fn('is_user_logged_in') == false %}
-                    <a class="button button--dark button--login" href="/login">Login
-                        <img src="{{ theme.path }}/assets/img/icon-login-arrow.svg" alt=""/></a>
+                        <a class="button button--dark button--login" href="/login">Login
+                            <img src="{{ theme.path }}/assets/img/icon-login-arrow.svg" alt=""/></a>
 
+                    {% endif %}
                 {% endif %}
-            {% endif %}
-        </div>
+            </div>
+        {% elseif (fn('is_user_logged_in')) %}
+            {{ fn('dynamic_sidebar','login-area') }}
+        {% endif %}
+
     </div>
 </section>
 

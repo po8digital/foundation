@@ -45,6 +45,13 @@
 			background: lighten($darkest-grey, 2%);
 		}
 	}
+	&--green {
+		background: $green;
+		border-color: darken($green, 10%);
+		&:hover {
+			background: lighten($green, 2%);
+		}
+	}
 	img {
 		display: none;
 		@include min-screen($xs) {

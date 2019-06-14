@@ -1,0 +1,69 @@
+{% extends "base.twig" %}
+{% block content %}
+    {% include "partial/hero.twig" %}
+    {# TODO: logout doesn't work #}
+    <div class="wrapper login-wrapper">
+        <h3 class="font32 bold black">Your account information:</h3>
+        <div class="acount-info__content">
+            <div class="account-info__item">
+                <h4>Email Address:
+
+                </h4>
+                <div class="account-info__info">{{email}}
+                    <a class="green-link" href="">(edit)</a>
+                </div>
+            </div>
+            <div class="account-info__item">
+                <h4>Password:</h4>
+                <div class="account-info__info">********<a class="green-link" href="">(edit)</a>
+                </div>
+            </div>
+            <div class="account-info__item">
+                <h4>Billing:</h4>
+                <div class="account-info__info">VISA ************1234
+                    <a class="green-link" href="">(edit)</a>
+                </br>
+                123 Address goes here</br>
+            City, State</br>
+        Zip/Postal</br>
+	Country</div></div></div></div>
+<div class="wrapper">
+	<div class="spacer"></div>
+</div>
+	<div class="wrapper login-wrapper">
+	<h3 class="font32 bold black">Your plan:</h3>
+	<div class="account-info__plan bold active">
+		PLAN 1 - $10/mo
+	</div>
+	<a href="" class="green-link cancel-link">cancel this plan</a>
+	<div class="account-info__plan bold">
+		PLAN 1 - $100/yr
+	</div>
+	<a href="" class="green-link upgrade-link">change to this plan</a>
+</div>
+
+<div class="account-lb cancel-lb">
+	<div class="close"><img src="{{theme.path}}/assets/img/close.svg" alt=""></div>
+	<div class="wrapper">
+		<h2 class="account-lb__title font42 light-pink text-center bold">Are you sure you want to cancel your plan?</h2>
+		<div class="account-lb__subtitle font21 light-pink text-center">If you cancel your plan you will no longer be able to access our premium content.</div>
+		<div class="hero__buttons text-center">
+			<a href="" class="button button--dark">Yes - cancel plan</a>
+			<div  class="button button--green">no - nevermind</div>
+		</div>
+	</div>
+</div>
+
+<div class="account-lb upgrade-lb">
+		<div class="close"><img src="{{theme.path}}/assets/img/close.svg" alt=""></div>
+		<div class="wrapper">
+			<h2 class="account-lb__title font42 light-pink text-center bold">Are you sure you want to change your plan?</h2>
+			<div class="account-lb__subtitle font21 light-pink text-center">If you change your plan you will be billed yearly instead of monthly. Saving $20/yr</div>
+			<div class="hero__buttons text-center">
+				<a href="" class="button button--dark">Yes - change plan</a>
+				<div  class="button button--green">no - nevermind</div>
+			</div>
+		</div>
+	</div>
+
+	{% endblock %}

@@ -1,12 +1,4 @@
 .page-template-login {
-	.login-wrapper {
-		max-width: 550px;
-		color: $light-white;
-		a {
-			color: $blue;
-		}
-	}
-
 	input {
 		width: 100%;
 	}
@@ -35,5 +27,13 @@
 	}
 	.gform_login_widget {
 		padding: 50px 0 100px;
+	}
+}
+
+.wrapper.login-wrapper {
+	max-width: 550px;
+	color: $light-white;
+	a {
+		color: $blue;
 	}
 }

@@ -103,7 +103,8 @@
 .single-service,
 .page-template-default,
 .page-template-login,
-.page-template-account {
+.page-template-account,
+.page-template-account-info {
 	.hero {
 		&:after {
 			content: none;

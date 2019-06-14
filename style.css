@@ -2573,6 +2573,67 @@ div.gfield_creditcard_warning_message {
     font-size: 2rem;
     margin-bottom: 40px; }
 
+.page-template-account-info {
+  color: #21232b; }
+  .page-template-account-info .gform_login_widget p {
+    display: none; }
+  .page-template-account-info .gform_login_widget a {
+    background: #31333c;
+    color: #ffeae1;
+    margin: 30px auto;
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 12px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    letter-spacing: 2.4px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out; }
+    .page-template-account-info .gform_login_widget a:hover {
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.75);
+      -webkit-transform: translateY(-5px) !important;
+              transform: translateY(-5px) !important;
+      background: #2a2c34; }
+
+.account-info__item {
+  font-size: 1.6rem; }
+  .account-info__item h4 {
+    color: #21232b; }
+
+.account-info__plan {
+  background-color: #dd6052;
+  padding: 20px;
+  border-radius: 3px;
+  opacity: 0.5;
+  font-size: 1.8rem;
+  margin-bottom: 20px; }
+  .account-info__plan.active {
+    opacity: 1; }
+
+.account-info__item {
+  color: #21232b; }
+  .account-info__item h4 {
+    margin: 30px 0 0; }
+
+.green-link {
+  color: #3ea576 !important;
+  margin-left: 5px; }
+
+.spacer {
+  width: 100%;
+  height: 2px;
+  background-color: #f5efe7;
+  margin: 40px auto; }
+
+.cancel-link,
+.upgrade-link {
+  margin-bottom: 50px;
+  margin-left: 50px;
+  display: block; }
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -2930,6 +2991,11 @@ div.gfield_creditcard_warning_message {
     border-color: #21232b; }
     .button--dark:hover {
       background: #2e2e2e; }
+  .button--green {
+    background: #3ea576;
+    border-color: #30805b; }
+    .button--green:hover {
+      background: #41ac7b; }
   .button img {
     display: none; }
     @media only screen and (min-width: 360px) {
@@ -3030,7 +3096,8 @@ div.gfield_creditcard_warning_message {
 .single-service .hero:after,
 .page-template-default .hero:after,
 .page-template-login .hero:after,
-.page-template-account .hero:after {
+.page-template-account .hero:after,
+.page-template-account-info .hero:after {
   content: none; }
 
 .tease-post {
@@ -4481,12 +4548,6 @@ select:-webkit-autofill:focus {
   .fixed-menu .top-menu-login a {
     color: #932c20; }
 
-.page-template-login .login-wrapper {
-  max-width: 550px;
-  color: #faf5ef; }
-  .page-template-login .login-wrapper a {
-    color: #246fc9; }
-
 .page-template-login input {
   width: 100%; }
 
@@ -4510,6 +4571,64 @@ select:-webkit-autofill:focus {
 
 .page-template-login .gform_login_widget {
   padding: 50px 0 100px; }
+
+.wrapper.login-wrapper {
+  max-width: 550px;
+  color: #faf5ef; }
+  .wrapper.login-wrapper a {
+    color: #246fc9; }
+
+.account-lb {
+  height: 0;
+  opacity: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  background: rgba(11, 53, 76, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out; }
+  .account-lb .close {
+    position: absolute;
+    top: 200px;
+    right: 60px;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 8px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden; }
+  .account-lb__title {
+    margin: 0; }
+  .account-lb.active {
+    height: 100%;
+    opacity: 1; }
+    .account-lb.active .close {
+      opacity: 1;
+      visibility: visible; }
+  .account-lb .button--green {
+    cursor: pointer; }
 
 .dark-green {
   color: #0b354c; }
