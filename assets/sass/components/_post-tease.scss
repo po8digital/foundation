@@ -133,16 +133,24 @@
 		position: relative;
 		top: -1px;
 	}
+	a {
+		color: $dark-grey;
+		&:hover {
+			color: $dark-blue;
+		}
+	}
 }
 
 //inner posts
 
 .small-posts-wrapper,
-.category .posts-wrapper {
+.category .posts-wrapper,
+.author .posts-wrapper {
 	@include flexbox;
 }
 .tease-post--small,
-.category .tease-post {
+.category .tease-post,
+.author .tease-post {
 	@include min-screen(1010px) {
 		flex-basis: 33%;
 	}

@@ -1,7 +1,18 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	{% for post in posts %}
-		{% include ["tease-"~post.post_type~".twig", "tease.twig"] %}
-	{% endfor %}
+    {% include "partial/hero.twig" %}
+    <section class="lab">
+        <div class="wrapper">
+            {% include "partial/cat-dd.twig" %}
+        </div>
+        <div class="wrapper posts-wrapper">
+
+            {% for post in posts %}
+                {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+            {% endfor %}
+
+            {% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3}) } %}
+        </div>
+    </section>
 {% endblock %}
