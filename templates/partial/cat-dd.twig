@@ -3,7 +3,7 @@
         <span class="bold uppercase">Category:
         </span>
         <select id="cat-select" onchange="location=this.value;">
-            <option value="title">Select Category</option>
+
             <option value="/the-lab">View All</option>
             {% for cat in cats %}
                 <option value="/category/{{ cat.slug }}">{{ cat.name }}</option>

@@ -25,4 +25,9 @@ function wst_styles_and_scripts()
 	wp_enqueue_style('fancybox-css', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css', array(), '3.5.7');
 
 	wp_enqueue_script('fancybox-js', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js', ['jquery'], '3.5.7', true);
+
+
+	if (is_archive() or is_home()) {
+		wp_enqueue_script('selectric-js', THEME_JS . '/selectric.min.js', ['jquery'], '1.13.0', true);
+	}
 }
