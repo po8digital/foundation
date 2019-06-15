@@ -2382,6 +2382,7 @@ body {
       border-right: none;
       -webkit-flex-basis: 60%;
               flex-basis: 60%;
+      padding: 15px !important;
       height: 60px; }
       @media only screen and (min-width: 480px) {
         .search__search input[type='text'] {
@@ -2403,8 +2404,8 @@ body {
           font-size: 1.2rem; } }
       .search__search .button:hover {
         box-shadow: none;
-        -webkit-transform: translateY(0);
-                transform: translateY(0); }
+        -webkit-transform: translateY(0) !important;
+                transform: translateY(0) !important; }
   .search article, .search__search {
     max-width: 760px;
     margin: 0 auto; }
@@ -3574,8 +3575,8 @@ div.gfield_creditcard_warning_message {
     box-shadow: none;
     text-align: center; }
     .share-bottom .button:hover {
-      -webkit-transform: translateY(0);
-              transform: translateY(0); }
+      -webkit-transform: translateY(0) !important;
+              transform: translateY(0) !important; }
     @media only screen and (min-width: 500px) {
       .share-bottom .button {
         border-radius: 4px 0 0 4px;

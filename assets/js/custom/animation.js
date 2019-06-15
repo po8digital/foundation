@@ -31,6 +31,8 @@ animHeroTl
 
 //Scroll animation
 
+//Top Menu
+
 var controller = new ScrollMagic.Controller();
 
 const menuScene = new ScrollMagic.Scene({
