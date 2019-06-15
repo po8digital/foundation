@@ -4283,6 +4283,9 @@ label {
     -webkit-transform: translate(0);
             transform: translate(0);
     font-size: 1.2rem !important; }
+    label.is-active + div input,
+    label.is-active + div textarea {
+      border-color: #b7b7b7; }
 
 .gfield_checkbox label,
 .checkboxes label {

@@ -38,6 +38,12 @@ label {
 	&.is-active {
 		transform: translate(0);
 		font-size: 1.2rem !important;
+		+ div {
+			input,
+			textarea {
+				border-color: $grey;
+			}
+		}
 	}
 }
 .gfield_checkbox,
