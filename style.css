@@ -4041,13 +4041,11 @@ div.gfield_creditcard_warning_message {
     display: -webkit-box;
     display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-            justify-content: space-between; }
+    -webkit-box-pack: space-evenly;
+    -webkit-justify-content: space-evenly;
+            justify-content: space-evenly;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap; }
   .featured-sites__item {
     -webkit-flex-basis: 50%;
             flex-basis: 50%;
@@ -4060,8 +4058,8 @@ div.gfield_creditcard_warning_message {
                 flex-basis: 33%; } }
     @media only screen and (min-width: 768px) {
       .featured-sites__item {
-        -webkit-flex-basis: 20%;
-                flex-basis: 20%; } }
+        -webkit-flex-basis: 16.66%;
+                flex-basis: 16.66%; } }
 
 .animated-text {
   padding: 74px 0 108px; }

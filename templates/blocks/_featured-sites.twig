@@ -6,7 +6,7 @@
             {% if block.sites %}
                 <div class="featured-sites__container">
                     {% for item in block.sites %}
-                        <div class="featured-sites__item bold grey">{{ item.title | e('esc_html')}}</div>
+                        <div class="featured-sites__item bold grey"><img src="{{ TimberImage(item.logo) | e('esc_url')}}" alt=""></div>
 
                     {% endfor %}
                 </div>

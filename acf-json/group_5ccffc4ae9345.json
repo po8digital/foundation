@@ -952,9 +952,9 @@
                             "sub_fields": [
                                 {
                                     "key": "field_5cd3cb89e3a51",
-                                    "label": "Title",
-                                    "name": "title",
-                                    "type": "text",
+                                    "label": "Logo",
+                                    "name": "logo",
+                                    "type": "image",
                                     "instructions": "",
                                     "required": 0,
                                     "conditional_logic": 0,
@@ -966,11 +966,17 @@
                                     "acfe_validate": "",
                                     "acfe_update": "",
                                     "acfe_permissions": "",
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "acfe_thumbnail": 0
                                 }
                             ]
                         },
@@ -2369,5 +2375,5 @@
     "acfe_permissions": "",
     "acfe_note": "",
     "acfe_meta": "",
-    "modified": 1559456040
+    "modified": 1560579559
 }

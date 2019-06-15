@@ -26,7 +26,9 @@
 		margin: 0 auto 50px;
 	}
 	&__container {
-		@include flexbox;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
 	}
 	&__item {
 		flex-basis: 50%;
@@ -37,7 +39,7 @@
 			flex-basis: 33%;
 		}
 		@include min-screen($m) {
-			flex-basis: 20%;
+			flex-basis: 16.66%;
 		}
 	}
 }
