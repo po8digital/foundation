@@ -2108,8 +2108,8 @@ body {
     .asteroid {
       -webkit-flex-basis: 50%;
               flex-basis: 50%;
-      -webkit-transform: translateY(-150px);
-              transform: translateY(-150px); } }
+      -webkit-transform: translate(-100px, -50px) !important;
+              transform: translate(-100px, -50px) !important; } }
 
 .home-blue-section {
   background: #7db6ef;

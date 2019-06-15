@@ -139,16 +139,16 @@ const asteroidTween = new TimelineMax()
 		},
 		'-=1.5'
 	);
-
-const asteroidScene = new ScrollMagic.Scene({
-	triggerElement: '.asteroid',
-	triggerHook: 1,
-	offset: 200,
-})
-	.setTween(asteroidTween)
-	// .addIndicators()
-	.addTo(controller);
-
+if (w >= 1200 && w <= 1440) {
+	const asteroidScene = new ScrollMagic.Scene({
+		triggerElement: '.asteroid',
+		triggerHook: 1,
+		offset: 200,
+	})
+		.setTween(asteroidTween)
+		// .addIndicators()
+		.addTo(controller);
+}
 //Blue zone
 
 const blueTween = new TweenMax.fromTo(

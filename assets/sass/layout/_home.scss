@@ -163,7 +163,7 @@
 	}
 	@include min-screen(1440px) {
 		flex-basis: 50%;
-		transform: translateY(-150px);
+		transform: translate(-100px, -50px) !important;
 	}
 }
 .home-blue-section {
