@@ -2,8 +2,7 @@
 {% block content %}
     {% include "partial/hero.twig" %}
     <div class="home-dark ">
-        <div
-            class="home-animated-image bg-black">
+        <div class="home-animated-image bg-black">
             {% include "partial/_home-hero.twig" %}
 
         </div>
@@ -41,10 +40,16 @@
                 <div class="home-blue-section__content">
                     <h3 class="font32">
                         Want to access our proprietory library of data & research for B2B
-                        					Brands?
+                                                                        					Brands?
                     </h3>
-                    <a class="button" href="#">Become a Client
-                        <img src="{{ theme.path }}/assets/img/star-icon-light.svg" alt=""/></a>
+                    {% if fn('is_user_logged_in') %}
+                        <a class="button" href="/the-lab">Go to the Lab
+                            <img src="{{ theme.path }}/assets/img/star-icon-light.svg" alt=""/></a>
+                    {% else %}
+                        <a class="button" href="/become-a-client">Become a Client
+                            <img src="{{ theme.path }}/assets/img/star-icon-light.svg" alt=""/></a>
+                    {% endif %}
+
                 </div>
                 <div class="home-blue-section__image">
                     <img src="{{ theme.path }}/assets/img/2hands.svg" alt=""/>
