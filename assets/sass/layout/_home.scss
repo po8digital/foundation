@@ -71,10 +71,10 @@
 		padding-top: 50px;
 	}
 
-	@include screen(1200px, 1440px) {
+	@include screen(1200px, 1441px) {
 		margin-bottom: -200px;
 	}
-	@include min-screen(1440px) {
+	@include min-screen(1441px) {
 		padding-top: 100px;
 	}
 
@@ -87,7 +87,7 @@
 		width: 300px;
 		height: 300px;
 		display: none;
-		@include screen(1200px, 1440px) {
+		@include screen(1200px, 1441px) {
 			display: block;
 		}
 
@@ -116,7 +116,7 @@
 			margin-top: 50px;
 		}
 		position: relative;
-		@include min-screen(1440px) {
+		@include min-screen(1441px) {
 			display: none;
 		}
 	}
@@ -124,10 +124,10 @@
 	&__text {
 		max-width: 600px;
 		margin: 0 auto;
-		@include max-screen(1440px) {
+		@include max-screen(1441px) {
 			flex-basis: 80%;
 		}
-		@include min-screen(1440px) {
+		@include min-screen(1441px) {
 			flex-basis: 50%;
 		}
 
@@ -139,7 +139,7 @@
 			transform: translateX(-100px);
 			margin-bottom: 100px;
 		}
-		@include min-screen(1440px) {
+		@include min-screen(1441px) {
 			transform: translate(100px, -100px);
 		}
 	}
@@ -147,12 +147,12 @@
 .asteroid {
 	z-index: 10;
 	position: relative;
-	@include screen(1200px, 1440px) {
+	@include screen(1200px, 1441px) {
 		position: absolute;
 		top: -94px;
 		left: -153px;
 	}
-	// @include min-screen(1440px) {
+	// @include min-screen(1441px) {
 	// 	top: -294px;
 	// }
 
@@ -161,7 +161,7 @@
 		// top: 278px;
 		// left: 39px;
 	}
-	@include min-screen(1440px) {
+	@include min-screen(1441px) {
 		flex-basis: 50%;
 		transform: translate(-100px, -50px) !important;
 	}
