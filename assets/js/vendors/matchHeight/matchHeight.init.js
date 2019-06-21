@@ -5,5 +5,4 @@
 	$('.archive .tease-post__content--top').matchHeight();
 	$('.select-plan__content').matchHeight();
 	$('.home-2cols__content').matchHeight();
-	$('.related-posts__item').matchHeight();
 })(jQuery);

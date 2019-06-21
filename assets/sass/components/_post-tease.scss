@@ -1,4 +1,5 @@
 .tease-post {
+	// TODO: hover colors
 	margin-bottom: 77px;
 
 	@include flexbox;
@@ -90,6 +91,7 @@
 				color: $dark-blue;
 			}
 		}
+	
 		&--icon {
 			display: inline-block;
 			background: $blue;
@@ -137,6 +139,20 @@
 		&:hover {
 			color: $dark-blue;
 		}
+	}
+}
+
+.parent-link{
+	&:hover{
+		.tease-post__read-more--icon {
+			background: $dark-blue;
+		}
+		.tease-post__read-more--text {
+			color: $dark-blue;
+		}
+	}
+	.tease-post__read-more > div{
+		@include flexbox(start, ro nowrap);
 	}
 }
 
