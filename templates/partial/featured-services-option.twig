@@ -17,7 +17,7 @@
 		{% for item in options.services %}
 
 		<div class="featured-services__item">
-			<a class="dark-green" href="{{ item.post_permalink }}">
+			<a class="dark-green" href="{{ function('get_permalink', item.ID) }}">
 				<div
 					class="featured-services__item--wrap"
 					style="background:url({{ TimberImage(item.services_background) | e('esc_url')}}) no-repeat left top/cover;"
