@@ -12,11 +12,19 @@
 $context = Timber::context();
 $timber_post = Timber::query_post();
 $context['post'] = $timber_post;
-// $cat = implode(get_the_category());
+
+global $post;
+
+$cat = get_the_category();
+$catids = array();
+foreach($cat as $item){
+	$catids[] = $item->cat_ID;
+}
 $args = array(
 	'post_type' => 'post',
+	'post__not_in' => array($post->ID),
 	'posts_per_page' => 3,
-	// 'category_name' => $cat,
+	'cat' => implode(',', $catids),
 );
 
 //TODO: get the category and exclude this post
