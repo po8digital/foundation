@@ -57,14 +57,17 @@
 			background: $salmon;
 		}
 		@include max-screen(500px) {
-			margin-bottom: 15px;
+			// margin-bottom: 15px;
+			width: 100%;
+			border: none;
+			border-radius: 4px 4px 0 0;
 		}
 	}
 	.share-bar {
 		@include flexbox(center, row nowrap);
 		background: $light-grey;
 		border-bottom: 5px solid $dark-grey;
-		border-radius: 4px;
+		border-radius: 0 0 4px 4px;
 		padding: 12px 30px;
 		width: 100%;
 		@include min-screen(500px) {
