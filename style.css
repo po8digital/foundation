@@ -3489,27 +3489,22 @@ div.gfield_creditcard_warning_message {
           justify-content: space-between; }
 
 .tease-post--small,
-.category .tease-post,
-.author .tease-post {
+.category .tease-post {
   display: block; }
   @media only screen and (min-width: 1010px) {
     .tease-post--small,
-    .category .tease-post,
-    .author .tease-post {
+    .category .tease-post {
       -webkit-flex-basis: 33%;
               flex-basis: 33%; } }
   .tease-post--small .tease-post__cat,
-  .category .tease-post .tease-post__cat,
-  .author .tease-post .tease-post__cat {
+  .category .tease-post .tease-post__cat {
     margin-top: 10px; }
   .tease-post--small .tease-post__content--bottom,
-  .category .tease-post .tease-post__content--bottom,
-  .author .tease-post .tease-post__content--bottom {
+  .category .tease-post .tease-post__content--bottom {
     position: relative;
     margin-top: 30px; }
   .tease-post--small .tease-post-title,
-  .category .tease-post .tease-post-title,
-  .author .tease-post .tease-post-title {
+  .category .tease-post .tease-post-title {
     margin-bottom: 30px; }
 
 .pagination {
@@ -4887,6 +4882,43 @@ select:-webkit-autofill:focus {
     margin-top: 50px; }
   .report__subtitle {
     margin-top: 20px; }
+  .report .gfield,
+  .report .gform_footer {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0 !important;
+    text-align: center; }
+  .report input[type='submit'] {
+    background: #3ea576;
+    border-color: #30805b; }
+    .report input[type='submit']:hover {
+      background: #41ac7b; }
+  .report .dlm-nf-download-link {
+    display: inline-block;
+    padding: 15px 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    font-family: 'Avenir';
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border-bottom: 5px solid;
+    letter-spacing: 2.4px;
+    background: #3ea576;
+    border-color: #30805b; }
+    @media only screen and (min-width: 360px) {
+      .report .dlm-nf-download-link {
+        padding: 15px 30px; } }
+    .report .dlm-nf-download-link a {
+      color: #ffeae1; }
+    .report .dlm-nf-download-link:hover {
+      background: #41ac7b;
+      box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.75);
+      -webkit-transform: translateY(-5px) !important;
+              transform: translateY(-5px) !important; }
 
 .dark-green {
   color: #0b354c; }

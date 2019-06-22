@@ -91,7 +91,7 @@
 				color: $dark-blue;
 			}
 		}
-	
+
 		&--icon {
 			display: inline-block;
 			background: $blue;
@@ -142,8 +142,8 @@
 	}
 }
 
-.parent-link{
-	&:hover{
+.parent-link {
+	&:hover {
 		.tease-post__read-more--icon {
 			background: $dark-blue;
 		}
@@ -151,7 +151,7 @@
 			color: $dark-blue;
 		}
 	}
-	.tease-post__read-more > div{
+	.tease-post__read-more > div {
 		@include flexbox(start, ro nowrap);
 	}
 }
@@ -164,8 +164,7 @@
 	@include flexbox;
 }
 .tease-post--small,
-.category .tease-post,
-.author .tease-post {
+.category .tease-post {
 	@include min-screen(1010px) {
 		flex-basis: 33%;
 	}

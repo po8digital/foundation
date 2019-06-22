@@ -11,4 +11,50 @@
 	&__subtitle {
 		margin-top: 20px;
 	}
+	.gfield,
+	.gform_footer {
+		max-width: 350px;
+		margin: 0 auto;
+		padding: 0 !important;
+		text-align: center;
+	}
+	input[type='submit'] {
+		background: $green;
+		border-color: darken($green, 10%);
+
+		&:hover {
+			background: lighten($green, 2%);
+		}
+	}
+	.dlm-nf-download-link {
+		display: inline-block;
+		padding: 15px 15px;
+		box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+		transition: $transition4;
+
+		@include min-screen($xs) {
+			padding: 15px 30px;
+		}
+
+		font-family: 'Avenir';
+		font-weight: 500;
+		font-size: 1.4rem;
+
+		font-size: 1.6rem;
+
+		text-transform: uppercase;
+		border-radius: 4px;
+		border-bottom: 5px solid;
+		letter-spacing: 2.4px;
+		background: $green;
+		border-color: darken($green, 10%);
+		a {
+			color: $light-pink;
+		}
+		&:hover {
+			background: lighten($green, 2%);
+			box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.75);
+			transform: translateY(-5px) !important;
+		}
+	}
 }

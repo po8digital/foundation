@@ -132,6 +132,16 @@
 		"oAP": "/archive.php",
 		"oF": 0
 		},
+	"/assets/css/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/assets/css/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"/assets/fonts/Avenir-Black.eot": {
 		"cB": 0,
 		"ft": 8192,
@@ -548,6 +558,16 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"/assets/img/fb.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/fb.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"/assets/img/footer-bg.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -643,6 +663,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/img/lens.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/linkedin.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/linkedin.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -1043,6 +1073,16 @@
 		"miP": 0,
 		"oA": 2,
 		"oAP": "/assets/img/top-menu-arrow.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"/assets/img/twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "/assets/img/twitter.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
@@ -2082,6 +2122,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/assets/sass/layout/_author.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/assets/sass/layout/_author.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/assets/sass/layout/_contact.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -2909,6 +2962,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/templates/page.twig",
+		"oF": 0
+		},
+	"/templates/partial/_author-intro.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 1,
+		"oAP": "/templates/partial/_author-intro.twig",
 		"oF": 0
 		},
 	"/templates/partial/_butter-animated.twig": {
