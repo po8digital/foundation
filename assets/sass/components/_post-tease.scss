@@ -165,6 +165,8 @@
 }
 .tease-post--small,
 .category .tease-post {
+	padding-right: 15px;
+
 	@include min-screen(1010px) {
 		flex-basis: 33%;
 	}
@@ -179,5 +181,8 @@
 	}
 	.tease-post-title {
 		margin-bottom: 30px;
+	}
+	.tease-post__media {
+		padding-right: 0;
 	}
 }

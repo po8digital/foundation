@@ -2555,9 +2555,7 @@ div.gfield_creditcard_warning_message {
 
 @media only screen and (min-width: 1024px) {
   .services-page .featured-sites__title {
-    margin-top: 106px; }
-  .services-page .text-image {
-    padding-top: 0; } }
+    margin-top: 106px; } }
 
 .services-page .featured-sites {
   margin-top: -106px;
@@ -2724,6 +2722,9 @@ div.gfield_creditcard_warning_message {
     height: 5px;
     background-color: #0b354c;
     margin: 50px auto; }
+
+.careers-page .hero {
+  padding-bottom: 160px; }
 
 /* Slider */
 .slick-slider {
@@ -3188,8 +3189,12 @@ div.gfield_creditcard_warning_message {
       padding: 0;
       margin-bottom: 100px; }
       .slide-menu__nav ul .menu-item {
-        padding: 10px 0;
-        font-size: 4.2rem; }
+        padding: 5px 0;
+        font-size: 3.2rem; }
+        @media only screen and (min-width: 480px) {
+          .slide-menu__nav ul .menu-item {
+            padding: 10px 0;
+            font-size: 4.2rem; } }
       .slide-menu__nav ul .menu-item-has-children {
         position: relative; }
         .slide-menu__nav ul .menu-item-has-children:after {
@@ -3217,7 +3222,8 @@ div.gfield_creditcard_warning_message {
         margin: 30px 0 20px; }
         .slide-menu__nav ul ul .menu-item {
           padding: 0;
-          line-height: 1; }
+          line-height: 0.7;
+          margin-bottom: 18px; }
           .slide-menu__nav ul ul .menu-item a {
             color: #dd6052;
             font-size: 2rem;
@@ -3231,6 +3237,10 @@ div.gfield_creditcard_warning_message {
             display: none; }
   .slide-menu__social {
     margin-bottom: 100px; }
+    @media only screen and (max-width: 480px) {
+      .slide-menu__social {
+        -webkit-transform: translateY(-60px);
+                transform: translateY(-60px); } }
     .slide-menu__social .fa {
       font-size: 5rem;
       margin-right: 25px; }
@@ -3238,8 +3248,12 @@ div.gfield_creditcard_warning_message {
         color: #246fc9; }
   .slide-menu .top-menu-login {
     position: absolute;
-    right: 0;
-    bottom: 175px; }
+    right: -20px;
+    bottom: 120px; }
+    @media only screen and (min-width: 480px) {
+      .slide-menu .top-menu-login {
+        bottom: 175px;
+        right: 0; } }
     .slide-menu .top-menu-login a {
       color: #ffeae1;
       font-size: 1.4rem;
@@ -3251,11 +3265,12 @@ div.gfield_creditcard_warning_message {
       position: relative; }
       .slide-menu .top-menu-login a:hover {
         background-color: #2c2e36; }
-      .slide-menu .top-menu-login a:after {
-        content: url("./assets/img/arrow-short.svg");
-        position: absolute;
-        top: 9px;
-        right: 16px; }
+      @media only screen and (min-width: 480px) {
+        .slide-menu .top-menu-login a:after {
+          content: url("./assets/img/arrow-short.svg");
+          position: absolute;
+          top: 9px;
+          right: 16px; } }
       .logged-in .slide-menu .top-menu-login a {
         padding: 10px 30px; }
         .logged-in .slide-menu .top-menu-login a:after {
@@ -3580,6 +3595,7 @@ div.gfield_creditcard_warning_message {
 
 .tease-post--small,
 .category .tease-post {
+  padding-right: 15px;
   display: block; }
   @media only screen and (min-width: 1010px) {
     .tease-post--small,
@@ -3596,6 +3612,9 @@ div.gfield_creditcard_warning_message {
   .tease-post--small .tease-post-title,
   .category .tease-post .tease-post-title {
     margin-bottom: 30px; }
+  .tease-post--small .tease-post__media,
+  .category .tease-post .tease-post__media {
+    padding-right: 0; }
 
 .pagination {
   display: -webkit-box;
@@ -3949,17 +3968,36 @@ div.gfield_creditcard_warning_message {
       line-height: 3.4rem; }
 
 .text-image {
-  padding: 100px 0 50px; }
+  padding: 120px 0 50px; }
   .text-image__title {
     margin-top: 0;
     margin-bottom: 80px; }
   .text-image.services-first {
     padding: 0; }
     .text-image.services-first .text-image__item {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      display: block; }
       .text-image.services-first .text-image__item img {
         position: relative;
         right: -16px; }
+      @media only screen and (min-width: 960px) {
+        .text-image.services-first .text-image__item {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-flow: row nowrap;
+                  flex-flow: row nowrap;
+          -webkit-box-pack: justify;
+          -webkit-justify-content: space-between;
+                  justify-content: space-between;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+                  align-items: center; } }
+    @media only screen and (max-width: 960px) {
+      .text-image.services-first .text-image__image {
+        right: 0 !important; } }
   .text-image.inverse-order {
     padding-bottom: 0; }
     .text-image.inverse-order .text-image__text {
@@ -4045,6 +4083,13 @@ div.gfield_creditcard_warning_message {
                 transform: translateY(-50px); } }
   .featured-services .wrapper {
     max-width: 1124px; }
+    @media only screen and (max-width: 1024px) {
+      .featured-services .wrapper {
+        -webkit-transform: translateY(-35px);
+                transform: translateY(-35px); }
+        .featured-services .wrapper.no-padding {
+          -webkit-transform: translateY(-23px);
+                  transform: translateY(-23px); } }
   .featured-services__container {
     display: -webkit-box;
     display: -webkit-flex;
@@ -4058,6 +4103,11 @@ div.gfield_creditcard_warning_message {
       .featured-services__container {
         -webkit-flex-wrap: nowrap;
                 flex-wrap: nowrap; } }
+    @media only screen and (max-width: 500px) {
+      .featured-services__container {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+                justify-content: center; } }
   .featured-services__item {
     padding-right: 10px;
     margin-bottom: 10px; }
@@ -4410,8 +4460,8 @@ label {
   margin-top: 50px !important; }
 
 .gfield_checkbox label {
-  -webkit-transform: translate(5px, 6px);
-          transform: translate(5px, 6px); }
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px); }
 
 .gfield_checkbox li {
   height: 30px; }

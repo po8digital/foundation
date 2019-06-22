@@ -1,5 +1,5 @@
 .text-image {
-	padding: 100px 0 50px;
+	padding: 120px 0 50px;
 	&__title {
 		margin-top: 0;
 		margin-bottom: 80px;
@@ -11,6 +11,16 @@
 			img {
 				position: relative;
 				right: -16px;
+			}
+			display: block;
+			@include min-screen(960px) {
+				@include flexbox(space-between, row nowrap);
+				align-items: center;
+			}
+		}
+		.text-image__image {
+			@include max-screen(960px) {
+				right: 0 !important;
 			}
 		}
 	}

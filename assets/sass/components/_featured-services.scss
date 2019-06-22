@@ -4,7 +4,6 @@
 	@include min-screen($l) {
 		background: linear-gradient(180deg, transparent 15%, $black 15%);
 	}
-
 	@include min-screen($l) {
 		transform: translateY(-62px);
 		&.no-padding {
@@ -14,6 +13,12 @@
 
 	.wrapper {
 		max-width: 1124px;
+		@include max-screen($l) {
+			transform: translateY(-35px);
+			&.no-padding {
+				transform: translateY(-23px);
+			}
+		}
 	}
 	&__container {
 		display: flex;
@@ -21,6 +26,9 @@
 		flex-wrap: wrap;
 		@include min-screen($xl) {
 			flex-wrap: nowrap;
+		}
+		@include max-screen(500px) {
+			justify-content: center;
 		}
 	}
 	&__item {

@@ -7,6 +7,8 @@
 	&.isOpen {
 		display: block;
 		transform: translateX(0);
+		// position: fixed;
+		// height: 100%;
 	}
 	width: 100%;
 	padding: 50px;
@@ -27,8 +29,12 @@
 			padding: 0;
 			margin-bottom: 100px;
 			.menu-item {
-				padding: 10px 0;
-				font-size: 4.2rem;
+				@include min-screen($s) {
+					padding: 10px 0;
+					font-size: 4.2rem;
+				}
+				padding: 5px 0;
+				font-size: 3.2rem;
 			}
 			.menu-item-has-children {
 				position: relative;
@@ -69,8 +75,8 @@
 				margin: 30px 0 20px;
 				.menu-item {
 					padding: 0;
-					line-height: 1;
-					// margin-bottom: 20px;
+					line-height: 0.7;
+					margin-bottom: 18px;
 					a {
 						color: $salmon;
 						font-size: 2rem;
@@ -91,6 +97,9 @@
 	}
 	&__social {
 		margin-bottom: 100px;
+		@include max-screen($s) {
+			transform: translateY(-60px);
+		}
 		.fa {
 			font-size: 5rem;
 			margin-right: 25px;
@@ -101,8 +110,12 @@
 	}
 	.top-menu-login {
 		position: absolute;
-		right: 0;
-		bottom: 175px;
+		right: -20px;
+		@include min-screen($s) {
+			bottom: 175px;
+			right: 0;
+		}
+		bottom: 120px;
 		a {
 			color: #ffeae1;
 			font-size: 1.4rem;
@@ -115,11 +128,13 @@
 			&:hover {
 				background-color: darken(#31333c, 2%);
 			}
-			&:after {
-				content: url('./assets/img/arrow-short.svg');
-				position: absolute;
-				top: 9px;
-				right: 16px;
+			@include min-screen($s) {
+				&:after {
+					content: url('./assets/img/arrow-short.svg');
+					position: absolute;
+					top: 9px;
+					right: 16px;
+				}
 			}
 			.logged-in & {
 				padding: 10px 30px;

@@ -16,6 +16,7 @@ itemsWithChildrens.forEach(item =>
 		}
 	})
 );
+//TODO: doesn't work on mobile
 
 const openMenu = () => slideMenu.classList.add('isOpen');
 const closeMenu = () => slideMenu.classList.remove('isOpen');
