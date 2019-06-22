@@ -24,6 +24,7 @@ if (isset($wp_query->query_vars['author'])) {
 	$context['author_fb'] = get_field('user_facebook', 'user_' . $author_id);
 	$context['author_linkedin'] = get_field('user_linkedin', 'user_' . $author_id);
 	$context['author_twitter'] = get_field('user_twitter', 'user_' . $author_id);
+	$context['author_pic'] = get_field('user_picture', 'user_' . $author_id);
 	$context['title']  = 'Author Archives: ' . $author;
 	$context['cats'] = get_categories();
 }

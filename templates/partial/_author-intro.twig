@@ -1,33 +1,50 @@
 <div class="author-intro">
     <div class="wrapper">
-        <div class="author-intro__avatar">
-            <img src="{{author_avatar}}" alt="avatar for {{author}}">
-        </div>
+        {% if author_pic %}
+            <div class="author-intro__avatar">
+                <img src="{{author_pic | resize(300, 300)}}" alt="avatar for {{author}}">
+            </div>
+        {% endif %}
+
         <div class="author-intro__content">
             <h2 class="black">{{ author }}</h2>
-            <div class="auhtor-intro__position">
+            <div class="author-intro__position">
                 {{ author_position }}
             </div>
-            <div class="auhtor-intro__bio">
+            <div class="author-intro__bio">
                 {{ fn('the_author_description') }}
             </div>
-            <div class="auhtor-intro__social">
-                <div class="auhtor-intro__social-item">
-                    <a href="{{author_fb}}">
-                        <img src="{{theme.path}}/assets/img/fb.svg" alt="">
-                    </a>
-                </div>
-                <div class="auhtor-intro__social-item">
-                    <a href="{{author_linkedin}}">
-                        <img src="{{theme.path}}/assets/img/linkedin.svg" alt="">
-                    </a>
-                </div>
-                <div class="auhtor-intro__social-item">
-                    <a href="{{author_twitter}}">
-                        <img src="{{theme.path}}/assets/img/twitter.svg" alt="">
-                    </a>
-                </div>
+            <div class="author-intro__social">
+                {% if author_fb %}
+                    <div class="author-intro__social-item">
+                        <a href="{{author_fb}}">
+                            <img src="{{theme.path}}/assets/img/fb.svg" alt="">
+                        </a>
+                    </div>
+                {% endif %}
+                {% if author_linkedin %}
+                    <div class="author-intro__social-item">
+                        <a href="{{author_linkedin}}">
+                            <img src="{{theme.path}}/assets/img/linkedin.svg" alt="">
+                        </a>
+                    </div>
+                {% endif %}
+
+                {% if author_twitter %}
+                    <div class="author-intro__social-item">
+                        <a href="{{author_twitter}}">
+                            <img src="{{theme.path}}/assets/img/twitter.svg" alt="">
+                        </a>
+                    </div>
+                {% endif %}
+
             </div>
         </div>
+    </div>
+    <div class="author-intro__title">
+        <h2 class="dark-green text-center">More From
+            {{author}}
+            In The Lab</h2>
+        <div class="spacer"></div>
     </div>
 </div>
