@@ -21,20 +21,17 @@ const heroRedButton = $('.hero__buttons .button--salmon');
 const heroBlueButton = $('.hero__buttons .button--blue');
 const homeHeader = $('.home .header__content');
 
-try{
-
+try {
 	const animHeroTl = new TimelineMax();
-	
-	animHeroTl
-	.to(homeHeader, 2, { opacity: 1 })
-	.fromTo(heroTitle, 2, { y: 10 }, { opacity: 1, y: 0 }, '-=1.5')
-	.fromTo(heroRedButton, 2, { y: 15 }, { opacity: 1, y: 0 }, '-=1.5')
-	.fromTo(heroBlueButton, 2, { y: 40 }, { opacity: 1, y: 0 }, '-=1.5');
 
-} catch(error){
+	animHeroTl
+		.to(homeHeader, 2, { opacity: 1 })
+		.fromTo(heroTitle, 2, { y: 10 }, { opacity: 1, y: 0 }, '-=1.5')
+		.fromTo(heroRedButton, 2, { y: 15 }, { opacity: 1, y: 0 }, '-=1.5')
+		.fromTo(heroBlueButton, 2, { y: 40 }, { opacity: 1, y: 0 }, '-=1.5');
+} catch (error) {
 	console.log(error);
 }
-
 
 //Scroll animation
 
@@ -178,14 +175,12 @@ const blueScene = new ScrollMagic.Scene({
 
 //Services
 
-const servicesTween = new TimelineMax()
-	.fromTo('.home .featured-services__container', 2, { y: 50 }, { y: 0 })
-	.to(
-		'.home .featured-services .featured-services__item:nth-child(2)',
-		1.5,
-		{ y: -20 },
-		'-=0.5'
-	);
+const servicesTween = new TimelineMax().fromTo(
+	'.home .featured-services__container',
+	2,
+	{ y: 50 },
+	{ y: 0 }
+);
 
 const servicesScene = new ScrollMagic.Scene({
 	triggerElement: '.home .featured-services__container',

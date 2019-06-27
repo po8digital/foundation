@@ -51,7 +51,13 @@
 			border-radius: 4px;
 			box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 			position: relative;
+			transition: $transition4;
 			&:hover {
+				@include min-screen($m) {
+					transform: translateY(-15px);
+				}
+				transform: translateY(-5px);
+				box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.55);
 				.featured-services__item--overlay {
 					opacity: 0;
 				}
