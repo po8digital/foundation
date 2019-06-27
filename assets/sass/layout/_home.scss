@@ -288,7 +288,11 @@
 	.animated-text {
 		background: $salmon;
 		position: relative;
-		padding-top: 268px;
+		padding-top: 170px;
+		@include min-screen($s) {
+			padding-top: 268px;
+		}
+
 		@include min-screen(1450px) {
 			padding-top: 380px;
 		}

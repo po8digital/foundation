@@ -53,7 +53,7 @@
 			position: relative;
 			transition: $transition4;
 			&:hover {
-				@include min-screen($m) {
+				@include min-screen(810px) {
 					transform: translateY(-15px);
 				}
 				transform: translateY(-5px);

@@ -2235,7 +2235,10 @@ body {
 .home .animated-text {
   background: #dd6052;
   position: relative;
-  padding-top: 268px; }
+  padding-top: 170px; }
+  @media only screen and (min-width: 480px) {
+    .home .animated-text {
+      padding-top: 268px; } }
   @media only screen and (min-width: 1450px) {
     .home .animated-text {
       padding-top: 380px; } }
@@ -4154,7 +4157,7 @@ div.gfield_creditcard_warning_message {
         -webkit-transform: translateY(-5px);
                 transform: translateY(-5px);
         box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.55); }
-        @media only screen and (min-width: 768px) {
+        @media only screen and (min-width: 810px) {
           .featured-services__item--wrap:hover {
             -webkit-transform: translateY(-15px);
                     transform: translateY(-15px); } }
