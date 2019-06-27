@@ -1752,7 +1752,9 @@ img.alignright,
         padding-left: 15px; } }
 
 .footer {
-  overflow: hidden; }
+  overflow: hidden;
+  z-index: 100;
+  position: relative; }
   .footer .wrapper {
     max-width: 870px; }
 
@@ -1765,6 +1767,7 @@ img.alignright,
   background-color: #195090;
   color: #195090;
   position: relative;
+  overflow: hidden;
   background: #195090 url("./assets/img/footer-bg.svg") no-repeat bottom right;
   background-size: auto 98%; }
   @media only screen and (min-width: 700px) {
@@ -1776,6 +1779,9 @@ img.alignright,
   @media only screen and (max-width: 700px) {
     .fat-footer {
       background-position-y: 750px; } }
+  @media only screen and (max-width: 480px) {
+    .fat-footer {
+      background: #195090; } }
   @media only screen and (min-width: 700px) {
     .fat-footer:before {
       content: '';
@@ -1803,6 +1809,14 @@ img.alignright,
     @media only screen and (min-width: 700px) {
       .fat-footer .wrapper {
         padding-left: 100px; } }
+  @media only screen and (max-width: 480px) {
+    .fat-footer__mobile-bg {
+      background: url("./assets/img/footer-bg.svg") no-repeat;
+      width: 294px;
+      height: 612px;
+      position: absolute;
+      right: 0;
+      bottom: -448px; } }
   .fat-footer__social {
     display: -webkit-box;
     display: -webkit-flex;
@@ -3245,7 +3259,7 @@ div.gfield_creditcard_warning_message {
       font-size: 5rem;
       margin-right: 25px; }
       .slide-menu__social .fa:hover {
-        color: #246fc9; }
+        color: #ffeae1; }
   .slide-menu .top-menu-login {
     position: absolute;
     right: -20px;

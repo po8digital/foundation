@@ -1,5 +1,7 @@
 .footer {
 	overflow: hidden;
+	z-index: 100;
+	position: relative;
 	.wrapper {
 		max-width: 870px;
 	}
@@ -13,6 +15,7 @@
 	background-color: $medium-blue;
 	color: $medium-blue;
 	position: relative;
+	overflow: hidden;
 
 	background: $medium-blue url('./assets/img/footer-bg.svg') no-repeat bottom
 		right;
@@ -27,6 +30,21 @@
 	@include max-screen(700px) {
 		// background-position-x: 100px;
 		background-position-y: 750px;
+	}
+	@include max-screen($s) {
+		background: $medium-blue;
+		// padding-bottom: 0;
+		// margin-bottom: -400px;
+		// &:after {
+		// 	content: '';
+		// 	display: inline-block;
+		// 	width: 294px;
+		// 	height: 500px;
+		// 	background: url('./assets/img/footer-bg.svg') no-repeat;
+		// 	position: relative;
+		// 	bottom: -487px;
+		// 	right: -80px;
+		// }
 	}
 	@include min-screen(700px) {
 		&:before {
@@ -49,6 +67,17 @@
 		}
 		padding-left: 35px;
 		@include flexbox(start, row nowrap);
+	}
+	&__mobile-bg {
+		// display: none;
+		@include max-screen($s) {
+			background: url('./assets/img/footer-bg.svg') no-repeat;
+			width: 294px;
+			height: 612px;
+			position: absolute;
+			right: 0;
+			bottom: -448px;
+		}
 	}
 	&__social {
 		@include flexbox(start, column);

@@ -38,17 +38,16 @@ try {
 //Top Menu
 
 var controller = new ScrollMagic.Controller();
-
-const menuScene = new ScrollMagic.Scene({
-	triggerElement: '.header',
-	triggerHook: 0,
-	offset: 400,
-})
-	.setClassToggle('#fixedMenu', 'active')
-	// .addIndicators()
-	.addTo(controller);
-
-//TODO: only works on homepage find why
+if (w > 768) {
+	const menuScene = new ScrollMagic.Scene({
+		triggerElement: '.header',
+		triggerHook: 0,
+		offset: 400,
+	})
+		.setClassToggle('#fixedMenu', 'active')
+		// .addIndicators()
+		.addTo(controller);
+}
 
 //Glasses
 
