@@ -2014,9 +2014,10 @@ body {
         padding-bottom: 200px; } }
   .home-2cols__item {
     max-width: 600px;
-    margin: 0 auto 100px; }
+    margin: 100px auto; }
     @media only screen and (min-width: 768px) {
       .home-2cols__item {
+        margin: 0 auto 100px;
         -webkit-flex-basis: 50%;
                 flex-basis: 50%;
         max-width: 360px;
@@ -4863,6 +4864,9 @@ select:-webkit-autofill:focus {
       color: #132d7f; }
   .resources .featured-services__item--wrap {
     box-shadow: none; }
+    .resources .featured-services__item--wrap:hover {
+      -webkit-transform: translateY(0);
+              transform: translateY(0); }
   .resources .featured-services__item--content {
     box-shadow: -9px 10px 15px -10px rgba(0, 0, 0, 0.4);
     min-height: 250px; }
@@ -4982,7 +4986,9 @@ select:-webkit-autofill:focus {
   background: #fff;
   width: 100%;
   position: relative;
-  top: 6px; }
+  top: 2px;
+  display: inline-block;
+  text-align: center; }
 
 .page-template-login .gform_login_widget {
   padding: 50px 0 100px; }

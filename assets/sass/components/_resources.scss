@@ -58,6 +58,7 @@
 		margin-bottom: 10px;
 		margin-left: 15px;
 	}
+
 	.featured-services__link {
 		&:hover {
 			color: $dark-blue;
@@ -67,6 +68,9 @@
 	.featured-services__item--wrap {
 		// box-shadow: -9px 10px 15px -10px rgba(0, 0, 0, 0.4);
 		box-shadow: none;
+		&:hover {
+			transform: translateY(0);
+		}
 	}
 	.featured-services__item--content {
 		box-shadow: -9px 10px 15px -10px rgba(0, 0, 0, 0.4);

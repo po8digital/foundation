@@ -27,7 +27,7 @@ $args = array(
 	'cat' => implode(',', $catids),
 );
 
-//TODO: get the category and exclude this post
+
 $context['same_cat'] = Timber::get_posts($args);
 
 if (post_password_required($timber_post->ID)) {

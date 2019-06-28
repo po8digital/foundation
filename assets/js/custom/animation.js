@@ -1,24 +1,11 @@
 import { $, $$ } from './_utilities';
 const w = window.innerWidth;
 
-// AnimatedText
-const texts = $$('.animated-text__item');
-
-const animTextTl = new TimelineMax({
-	repeat: -1,
-	repeatDelay: 0.3,
-	paused: false,
-});
-
-texts.forEach(textItem => {
-	animTextTl.to(textItem, 1, { opacity: 1 }).to(textItem, 1, { opacity: 0 });
-});
-
 // heroanimation
 
 const heroTitle = $('.home .hero__title');
-const heroRedButton = $('.hero__buttons .button--salmon');
-const heroBlueButton = $('.hero__buttons .button--blue');
+const heroRedButton = $('.home .hero__buttons .button--salmon');
+const heroBlueButton = $('.home .hero__buttons .button--blue');
 const homeHeader = $('.home .header__content');
 
 try {
@@ -32,6 +19,19 @@ try {
 } catch (error) {
 	console.log(error);
 }
+
+// AnimatedText
+const texts = $$('.animated-text__item');
+
+const animTextTl = new TimelineMax({
+	repeat: -1,
+	repeatDelay: 0.3,
+	paused: false,
+});
+
+texts.forEach(textItem => {
+	animTextTl.to(textItem, 1, { opacity: 1 }).to(textItem, 1, { opacity: 0 });
+});
 
 //Scroll animation
 

@@ -1,3 +1,24 @@
+// @keyframes fadeInUpShort {
+// 	from {
+// 		opacity: 0;
+// 		transform: translateY(15px);
+// 	}
+// 	to {
+// 		opacity: 1;
+// 		transform: translateY(0);
+// 	}
+// }
+
+// @keyframes fadeInUpLong {
+// 	from {
+// 		opacity: 0;
+// 		transform: translateY(40px);
+// 	}
+// 	to {
+// 		opacity: 1;
+// 		transform: translateY(0);
+// 	}
+// }
 .home {
 	background: $light-white;
 	.hero__title {
@@ -8,6 +29,15 @@
 		.button--blue {
 			opacity: 0;
 		}
+
+		// .button--salmon {
+		// 	&:hover {
+		// 		animation: fadInUpShort 2s ease-in-out 2s;
+		// 	}
+		// }
+		// .button--blue {
+		// 	animation: fadInUpLong 2s ease-in-out 3s;
+		// }
 	}
 }
 .home-animated-image {
@@ -47,8 +77,10 @@
 	}
 	&__item {
 		max-width: 600px;
-		margin: 0 auto 100px;
+		margin: 100px auto;
+
 		@include min-screen($m) {
+			margin: 0 auto 100px;
 			flex-basis: 50%;
 			max-width: 360px;
 			margin-bottom: 0;
