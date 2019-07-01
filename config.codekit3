@@ -4689,7 +4689,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http://ross-simmonds/",
+	"externalServerAddress": "http://localhost:8888/ross/",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",

@@ -1,9 +1,10 @@
 .report {
 	background: $medium-blue;
 	border-radius: 4px;
-	padding: 50px 30px 80px;
+	padding: 50px 30px 60px;
 	box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
 	margin-bottom: 50px;
+	text-align: center;
 
 	&__button {
 		margin-top: 50px;
@@ -56,5 +57,20 @@
 			box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.75);
 			transform: translateY(-5px) !important;
 		}
+	}
+	.gform_wrapper form li, .gform_wrapper li{
+		margin-left: auto!important;
+	}
+	.gform_wrapper .gform_footer{
+		margin:0 auto;
+	}
+	.gform_wrapper .gform_footer input.button, .gform_wrapper .gform_footer input[type=submit], .gform_wrapper .gform_page_footer input.button, .gform_wrapper .gform_page_footer input[type=submit]{
+		margin:0;
+	}
+	.gform_button button{
+		margin:20px;
+	}
+	.gform_wrapper .top_label .gfield_label{
+		display: inline;
 	}
 }

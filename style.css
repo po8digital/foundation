@@ -5072,9 +5072,10 @@ select:-webkit-autofill:focus {
 .report {
   background: #195090;
   border-radius: 4px;
-  padding: 50px 30px 80px;
+  padding: 50px 30px 60px;
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  text-align: center; }
   .report__button {
     margin-top: 50px; }
   .report__subtitle {
@@ -5116,6 +5117,16 @@ select:-webkit-autofill:focus {
       box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.75);
       -webkit-transform: translateY(-5px) !important;
               transform: translateY(-5px) !important; }
+  .report .gform_wrapper form li, .report .gform_wrapper li {
+    margin-left: auto !important; }
+  .report .gform_wrapper .gform_footer {
+    margin: 0 auto; }
+  .report .gform_wrapper .gform_footer input.button, .report .gform_wrapper .gform_footer input[type=submit], .report .gform_wrapper .gform_page_footer input.button, .report .gform_wrapper .gform_page_footer input[type=submit] {
+    margin: 0; }
+  .report .gform_button button {
+    margin: 20px; }
+  .report .gform_wrapper .top_label .gfield_label {
+    display: inline; }
 
 .dark-green {
   color: #0b354c; }
