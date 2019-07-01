@@ -8,12 +8,7 @@ const itemsWithChildrens = $$('.slide-menu .menu-item-has-children');
 // console.log(dataset('after'));
 itemsWithChildrens.forEach(item =>
 	item.on('click', e => {
-		if (e.offsetX > 300) {
-			item.classList.toggle('active');
-			console.log('clicked after');
-		} else {
-			console.log('clicked not after');
-		}
+		item.classList.toggle('active');
 	})
 );
 //TODO: doesn't work on mobile
