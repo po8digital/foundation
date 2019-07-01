@@ -19,21 +19,19 @@
 
         </div>
         <div class="tease-post__read-more uppercase text-small">
-            {% set length = post.categories | length  %}
-
-            {# {% if length > 1} #}
-            <a href="#">
+            {%  if related_posts > 1  %}
+            <a href="{{ current_cat_permalink }}">
                 {% include "partial/read-more-icon.twig" %}
                 <div class="tease-post__read-more--text">
                     See all
-                    <strong>{{length}}
+                    <strong>{{ related_posts }}
                         articles</strong>
                     on this topic
                 </div>
             </a>
             {# //TODO: get the number of posts of the cat and the link #}
 
-            {# {% endif %} #}
+            {% endif %}
 
         </div>
 

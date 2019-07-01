@@ -27,8 +27,18 @@ $args = array(
 	'cat' => implode(',', $catids),
 );
 
-
 $context['same_cat'] = Timber::get_posts($args);
+$context['current_cat_permalink'] = get_category_link($catids[0]);
+
+$related_posts = get_posts(
+    array(
+        'post_type' => 'post',
+        'post__not_in' => array($post->ID),
+        'posts_per_page' => -1,
+        'cat' => implode(',', $catids),
+    )
+);
+$context['related_posts'] = sizeof($related_posts);
 
 if (post_password_required($timber_post->ID)) {
 	Timber::render('single-password.twig', $context);
