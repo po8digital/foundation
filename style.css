@@ -3635,25 +3635,22 @@ div.gfield_creditcard_warning_message {
     padding-right: 0; }
 
 .pagination {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -webkit-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-pack: start;
-  -webkit-justify-content: start;
-          justify-content: start;
   margin-top: 140px;
-  padding-left: 0; }
+  padding-left: 0;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 20px; }
   .pagination li {
     color: #fff;
     font-size: 2.4rem;
-    padding-right: 100px; }
-    .pagination li:nth-last-child(2), .pagination li:nth-last-child(3) {
-      display: none; }
-    .pagination li.current span {
+    /*padding-right: 100px;*/
+    display: inline-block;
+    /*float: left;*/
+    /*&:nth-last-child(2),
+		&:nth-last-child(3) {
+			display: none;
+		}*/ }
+    .pagination li.current span.current {
       background: #246fc9;
       height: 70px;
       width: 70px;
@@ -3673,13 +3670,34 @@ div.gfield_creditcard_warning_message {
       -webkit-align-items: center;
               align-items: center;
       margin-top: -15px; }
+    .pagination li.current span.dots {
+      color: #b7b7b7; }
     .pagination li.last {
       text-transform: uppercase;
-      letter-spacing: 4.8px; }
+      letter-spacing: 2.5px; }
       .pagination li.last.disabled {
-        color: #dcd8cb; }
+        color: #dcd8cb;
+        margin-left: 20px; }
     .pagination li a {
-      color: #b7b7b7; }
+      color: #b7b7b7;
+      height: 70px;
+      width: 70px;
+      display: inline-block;
+      border-radius: 50%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row nowrap;
+              flex-flow: row nowrap;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+              align-items: center;
+      margin-top: -15px; }
 
 .wrap700 {
   position: relative; }

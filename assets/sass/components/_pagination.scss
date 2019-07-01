@@ -1,37 +1,57 @@
 .pagination {
 	// TODO: fix pagination last
-	@include flexbox(start, row nowrap);
+	//@include flexbox(start, row nowrap);
 	margin-top: 140px;
 	padding-left: 0;
+	width:100%;
+	overflow: hidden;
+	padding-top: 20px;
 	li {
 		color: $white;
 		font-size: 2.4rem;
-		padding-right: 100px;
-		&:nth-last-child(2),
+		/*padding-right: 100px;*/
+		display: inline-block;
+		/*float: left;*/
+		/*&:nth-last-child(2),
 		&:nth-last-child(3) {
 			display: none;
-		}
+		}*/
 		&.current {
-			span {
-				background: $blue;
-				height: 70px;
-				width: 70px;
-				border-radius: 50%;
-				display: inline-block;
-				@include flexbox(center, row nowrap);
-				align-items: center;
-				margin-top: -15px;
+			span{
+				&.current {
+					background: $blue;
+					height: 70px;
+					width: 70px;
+					border-radius: 50%;
+					display: inline-block;
+					@include flexbox(center, row nowrap);
+					align-items: center;
+					margin-top: -15px;
+				}
+				&.dots{
+					color: $grey;
+				}
 			}
+			
 		}
 		&.last {
 			text-transform: uppercase;
-			letter-spacing: 4.8px;
+			letter-spacing: 2.5px;
 			&.disabled {
 				color: $light-grey;
+				margin-left: 20px;
 			}
 		}
 		a {
 			color: $grey;
+			height: 70px;
+			width: 70px;
+			display: inline-block;
+
+			border-radius: 50%;
+			@include flexbox(center, row nowrap);
+			align-items: center;
+			margin-top: -15px;
 		}
 	}
 }
