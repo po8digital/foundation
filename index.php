@@ -14,8 +14,34 @@
  */
 
 $context = Timber::context();
-$context['posts'] = new Timber\PostQuery();
+
+if(isset($_GET['sort'])) {
+    if ($_GET['sort'] == 'recent') {
+
+        $args = array(
+            'post_type' => 'post',
+            'orderby' => 'date',
+            'order' => 'DESC'
+        );
+    } else {
+        $args = array(
+            'post_type' => 'post',
+            'meta_key' => 'wpb_post_views_count',
+            'orderby' => 'meta_value_num',
+            'order' => 'ASC'
+        );
+
+    }
+    $context['posts'] = Timber::get_posts( $args );
+} else {
+    $context['posts'] = new Timber\PostQuery();
+}
+
 $templates = array('index.twig');
+global $wp;
+$context['current_url'] = home_url( $wp->request );
+
+
 // if (is_home()) {
 // 	array_unshift($templates, 'front-page.twig', 'home.twig');
 // }

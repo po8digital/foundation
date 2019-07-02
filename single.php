@@ -8,6 +8,7 @@
  * @subpackage  Timber
  * @since    Timber 0.1
  */
+//echo wpb_get_post_views(get_the_ID());
 
 $context = Timber::context();
 $timber_post = Timber::query_post();

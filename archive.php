@@ -13,10 +13,15 @@
  * @subpackage  Timber
  * @since   Timber 0.2
  */
+global $wp;
+$category_id =  get_category( get_query_var( 'cat' ) );
 
 $templates = array('archive.twig', 'index.twig');
 
 $context = Timber::context();
+
+$context['current_url'] = home_url( $wp->request );
+$context['active_cat'] = $category_id->slug;
 
 $context['title'] = 'Archive';
 if (is_day()) {
@@ -38,6 +43,30 @@ $term = get_queried_object();
 $context['cat_subtitle'] = get_field('category_subtitle', $term);
 $context['cats'] = get_categories();
 
-$context['posts'] = new Timber\PostQuery();
+if(isset($_GET['sort'])) {
+    if ($_GET['sort'] == 'recent') {
+
+        $args = array(
+            'post_type' => 'post',
+            'category' => $category_id->slug,
+            'orderby' => 'date',
+            'order' => 'DESC'
+        );
+    } else {
+        $args = array(
+            'post_type' => 'post',
+            'category' => $category_id->slug,
+            'meta_key' => 'wpb_post_views_count',
+            'orderby' => 'meta_value_num',
+            'order' => 'ASC'
+        );
+
+    }
+    $context['posts'] = Timber::get_posts( $args );
+} else {
+    $context['posts'] = new Timber\PostQuery();
+}
+
+
 
 Timber::render($templates, $context);

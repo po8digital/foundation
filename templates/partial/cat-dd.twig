@@ -1,22 +1,20 @@
 <div class="lab__dd">
     <div class="lab__dd--cats">
         <span class="bold uppercase">Category:
+            {#{{ function('select_cat_dropdown', active_cat, 'b2b-marketing' ) }}#}
         </span>
         <select id="cat-select" onchange="location=this.value;">
             <option value="/the-lab">View All &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
             {% for cat in cats %}
-                <option value="/category/{{ cat.slug }}">{{ cat.name }}</option>
-            {% endfor %}
-
+                <option {{ function('select_cat_dropdown', active_cat, cat.slug ) }} value="/category/{{ cat.slug }}">{{ cat.name }}</option>
+        {% endfor %}
         </select>
     </div>
     <div class="lab__dd--sort">
-        <span class="bold uppercase">Sort By:
-        </span>
-        <select id="sort-select">
-            <option value="Recent">Most Recent</option>
-            <option value="cat 1">Cat 1</option>
-            <option value="cat 2">Cat 2</option>
+        <span class="bold uppercase">Sort By:</span>
+        <select id="sort-select" onchange="location=this.value;">
+            <option value="{{ current_url }}/?sort=recent" {{ function('select_sort_dropdown', 'recent') }}>Most Recent</option>
+            <option value="{{ current_url }}/?sort=popular" {{ function('select_sort_dropdown', 'popular') }}>Most popular</option>
         </select>
 
 
