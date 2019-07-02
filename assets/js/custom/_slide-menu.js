@@ -4,11 +4,17 @@ const trigger = $('.header-menu__trigger');
 const slideMenu = $('.slide-menu');
 const close = $('.slide-menu__close');
 const itemsWithChildrens = $$('.slide-menu .menu-item-has-children');
+var $diff = 0;
 // const openChildrensTrigger;
 // console.log(dataset('after'));
 itemsWithChildrens.forEach(item =>
 	item.on('click', e => {
-		item.classList.toggle('active');
+		$diff = (jQuery(item).width() - e.offsetX);
+		if ( $diff <= 40 ) {
+			item.classList.toggle('active');
+		} else {
+			//console.log('clicked not after' + (jQuery(item).width() +' - '+ e.offsetX) +' = ' + $diff);
+		}
 	})
 );
 //TODO: doesn't work on mobile
