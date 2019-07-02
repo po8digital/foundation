@@ -45,7 +45,12 @@ body {
 	}
 	&__dd {
 		@include flexbox;
-		padding: 0 60px 30px;
+		justify-content: center;
+		@include min-screen(826px) {
+			justify-content: space-between;
+
+		}
+		padding: 0 30px 30px;
 		> div {
 			span {
 				color: $light-pink;
@@ -53,6 +58,7 @@ body {
 				letter-spacing: 1.4px;
 			}
 		}
+
 		select {
 			background: $light-white;
 			border: none;
@@ -65,9 +71,11 @@ body {
 		}
 		//TODO: align dd labels to the left and make the filters work
 		&--cats {
-			// span {
-			// 	flex-basis: 60%;
-			// }
+			margin-bottom: 10px;
+			@include min-screen($s) {
+				display: flex;
+				align-items: center;
+			}
 			select {
 				width: 100%;
 				@include min-screen($s) {
@@ -76,6 +84,11 @@ body {
 			}
 		}
 		&--sort {
+			@include min-screen($s) {
+				display: flex;
+				align-items: center;
+				margin-bottom: 10px;
+			}
 			select {
 				width: 100%;
 			}

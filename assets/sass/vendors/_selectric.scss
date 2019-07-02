@@ -5,6 +5,10 @@
 .selectric-wrapper {
 	position: relative;
 	cursor: pointer;
+	margin-left: 0;
+	@include min-screen($s) {
+		margin-left:10px;
+	}
 }
 
 .selectric-responsive {
@@ -172,6 +176,9 @@
 .selectric-items .selectric-scroll {
 	height: 100%;
 	overflow: auto;
+	li:first-child{
+		display: none;
+	}
 }
 
 .selectric-above .selectric-items {

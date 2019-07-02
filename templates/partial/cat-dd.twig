@@ -3,8 +3,7 @@
         <span class="bold uppercase">Category:
         </span>
         <select id="cat-select" onchange="location=this.value;">
-
-            <option value="/the-lab">View All</option>
+            <option value="/the-lab">View All &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
             {% for cat in cats %}
                 <option value="/category/{{ cat.slug }}">{{ cat.name }}</option>
             {% endfor %}
