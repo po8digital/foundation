@@ -58,7 +58,7 @@ if(isset($_GET['sort'])) {
             'category' => $category_id->slug,
             'meta_key' => 'wpb_post_views_count',
             'orderby' => 'meta_value_num',
-            'order' => 'ASC'
+            'order' => 'DESC'
         );
 
     }

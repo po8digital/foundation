@@ -28,7 +28,7 @@ if(isset($_GET['sort'])) {
             'post_type' => 'post',
             'meta_key' => 'wpb_post_views_count',
             'orderby' => 'meta_value_num',
-            'order' => 'ASC'
+            'order' => 'DESC'
         );
 
     }
